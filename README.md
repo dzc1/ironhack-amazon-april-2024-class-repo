@@ -47,9 +47,7 @@
 
   - [Command Line Crash Course](https://youtu.be/uwAqEzhyjtw)
   - [HTML Crash Course - English](https://youtu.be/UB1O30fR-EE)
-  - [HTML Crash Course - Spanish](https://www.youtube.com/watch?v=rbuYtrNUxg4)
   - [CSS Crash Course - English](https://youtu.be/yfoY53QXEnI)
-  - [CSS Crash Course - Spanish](https://www.youtube.com/watch?v=wZniZEbPAzk)
   - [Git & Github Tutorial - English](https://www.youtube.com/watch?v=HkdAHXoRtos)
   - [Git & Github Tutorial - Spanish](https://www.youtube.com/watch?v=vlCXdvcgiE0)
   - [CSS Grid Crash Course](https://youtu.be/0xMQfnTU6oo)
