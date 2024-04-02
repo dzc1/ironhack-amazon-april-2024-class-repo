@@ -1,11 +1,18 @@
 <h1 align="center">
-  <a href="https://github.com/dzc1/amazon-class01-apr23">
+  <a href="https://github.com/dzc1/ironhack-amazon-april-2024-class-repo">
     <img src="./assets/imgs/banner.png" alt="Amazon Hybrid Class">
   </a>
 </h1>
 <p align="center">This repository serves as a guide for your class.</p>
 <p align="center">Where we will be learning about HTML, CSS3, Javascript, Vue & Supabase.</p>
 <p align="center" style="font: 16px">Created with ❤️ by Diego Zito.</p>
+<p align="center" style="font: 16px">Bootcamp Dates 2nd April - 20th July</p>
+
+<h1 align="center">
+  <a href="https://github.com/dzc1/ironhack-amazon-april-2024-class-repo">
+    <img src="./assets/imgs/schedule.png" alt="Amazon Hybrid Class">
+  </a>
+</h1>
 
 ## Zoom Link
 
@@ -17,13 +24,13 @@
    <summary>Table of Contents</summary>
    <ul>
       <li>
-       <a href="">HTML Basics</a>
+       <a href="">Week 1</a>
       </li>
       <li>
-       <a href="">CSS Basics</a>
+       <a href="">Week 2</a>
       </li>
       <li>
-       <a href="">Javascript Basics</a>
+       <a href="">Week 3</a>
       </li>
    </ul>
 </details>
