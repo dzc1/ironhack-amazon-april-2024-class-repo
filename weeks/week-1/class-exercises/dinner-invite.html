@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Birthday Dinner Invite</title>
+    <style>
+      label,
+      input,
+      textarea {
+        display: block;
+      }
+
+      input[type="checkbox"] {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <!-- First  Name -->
+      <label for="first">First Name</label>
+      <input type="text" id="first" />
+      <!-- Last Name -->
+      <label for="last">Last Name</label>
+      <input type="text" id="last" />
+      <!-- Phone Number -->
+      <label for="phone">Phone Number</label>
+      <input
+        type="tel"
+        id="phone"
+        placeholder="333-444-555"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+      />
+      <!-- Option to choose between [fish, chicken or vegetarian] -->
+      <label for="main-food">Select Main Food</label>
+      <select id="main-food">
+        <option value="fish">Fish</option>
+        <option value="chicken">Chicken</option>
+        <option value="vegetarian">Vegetarian</option>
+      </select>
+      <!-- Side Dishes fries, salad, soup, bread, pannini -->
+      <p>Select Multiple Side Dishes:</p>
+      <label for="fries">
+        fries
+        <input type="checkbox" name="" id="fries" />
+      </label>
+      <label for="salad">
+        Salad
+        <input type="checkbox" name="" id="salad" />
+      </label>
+      <label for="soup">
+        Soup
+        <input type="checkbox" name="" id="soup" />
+      </label>
+      <label for="bread">
+        Bread
+        <input type="checkbox" name="" id="bread" />
+      </label>
+      <!-- Food Allergies - Text Area -->
+      <label for="allergies">Food Allergies</label>
+      <textarea
+        placeholder="Hey, if you die in my dinner cause you ate the fish and never told me is on you... , write your food allergies here if any.."
+        id="allergies"
+        cols="30"
+        rows="10"
+      ></textarea>
+      <button>Let's get fatter together!</button>
+    </form>
+  </body>
+</html>
+
+<!-- WHAT WE NEED -->
+<!-- 
+    Generate a form to ask your friends to come to your birthday dinner!
+First & last Name
+Phone Number
+Give the invite the option to choose between [fish, chicken or vegetarian] - ONLY ONE
+Give the use the possiblity to  select multiple from the following sides - [fries, salad, soup, bread, pannini]
+Provide the user with a long-text-option to give us any hints/information about their food allergies! -->
