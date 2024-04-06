@@ -121,3 +121,15 @@ For example, if we are working on a project to create a game app, we can use Git
 ## Git Commands
 
 Follow these steps to make changes to your repository:
+
+### Commands to push to github
+
+git add .
+git commit -m "descriptive message about recent changes"
+git push origin main
+
+#### DRAFT
+
+git add .
+git commit -m "snfjohjfdkgdfjdo"
+git push origin main

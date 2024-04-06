@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Working with IMG's</title>
+    <style>
+      img {
+        display: block;
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>Images</h4>
+    <p>Images can improve the design and the appearance of a web page</p>
+    <p>Accepted file formats JPEG, PNG, SVG, ICO, GIF, APNG</p>
+
+    <strong>Syntax</strong>
+    <br />
+    <!-- <img src="specifies the path to the image that we want to display, wether it is internal or external" alt="Speicfies the alternate text for  the image in case it does not load onto our site"> -->
+
+    <!-- STRUCTURE -->
+    <!-- <img src="" alt=""> -->
+
+    <!-- Linking an internal image within our project -->
+    <!-- <img
+      src="./assets/imgs/wu-tang-logo.jpeg"
+      alt="This image is an image of the Wu Tang Logo"
+    /> -->
+
+    <!-- Linking an internal image within our project that contains width * heighjt attrs -->
+    <img
+      src="./assets/imgs/wu-tang-logo.jpeg"
+      alt="This image is an image of the Wu Tang Logo"
+      height="300"
+      width="300"
+    />
+
+    <!-- Linking an external image -->
+
+    <img
+      src=" https://i.ytimg.com/vi/JxHEwk6yj-0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLALWYuAUK6pMg4DDplJUfSFTiTV-A"
+      alt="Image of the members of the band Oasis"
+      height="300"
+      width="300"
+    />
+
+    <!-- Linking an external file suh as gif      -->
+    <img
+      src="https://media.giphy.com/media/oYtMzktkQz4Jy/giphy.gif"
+      alt="Wu Tang Clan gif"
+      height="300"
+      width="300"
+    />
+
+    <!-- Having an image as a link -->
+    <a
+      href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img
+        src="https://assets-global.website-files.com/643067b6b03b847eb9c418d0/648b215d9d6638f9da99b7a6_62f6bc9d4666f0a23ca506d4_tag_hero_preview.png"
+        alt="img of tags, will be serving as btn"
+        height="300"
+        width="300"
+      />
+    </a>
+
+    <!-- Using another element that wraps the img tag to provide more context on the screen, not really commonly used. -->
+    <h2>Using Figure Tag</h2>
+
+    <!-- Figure + Figcaption - BOTTOM -->
+    <figure>
+      <img
+        src="https://www.cleveland.com/resizer/ABej5G29hYgj1e9TrhvlzO9TL74=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/33T4IKCOWJDJXNPJWF2BEYYH4Y.jpg"
+        alt="Image of Outkast, Big Boi and Andre3000"
+        height="300"
+        width="300"
+      />
+      <figcaption>
+        Image of Outkast, Big Boi and Andre3000 - DISPLAYED ON SCREEN
+      </figcaption>
+    </figure>
+    <!-- Figure + Figcaption - TOP -->
+    <figure>
+      <figcaption>
+        Image of Outkast, Big Boi and Andre3000 - DISPLAYED ON SCREEN
+      </figcaption>
+      <img
+        src="https://www.cleveland.com/resizer/ABej5G29hYgj1e9TrhvlzO9TL74=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/33T4IKCOWJDJXNPJWF2BEYYH4Y.jpg"
+        alt="Image of Outkast, Big Boi and Andre3000"
+        height="300"
+        width="300"
+      />
+    </figure>
+  </body>
+</html>

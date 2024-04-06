@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout Distribution</title>
+    <link rel="stylesheet" href="main.css" />
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header block to distribute my navigation, site-logo for branding and a button with a primary action as the header of my site -->
+    <header>
+      <!-- site logo -->
+      <img src="some-slogo" alt="site logo" />
+      <!-- navigation links -->
+      <nav>
+        <ul>
+          <!-- Home anchor tag -->
+          <li><a href="link-1">Home</a></li>
+          <!-- Home about us tag -->
+          <li><a href="link-2">About Us</a></li>
+          <!-- Home team tag -->
+          <li><a href="link-3">Team</a></li>
+        </ul>
+      </nav>
+      <!-- button with a primary action -->
+      <a href="link-4">login button</a>
+    </header>
+    <!-- main block with different sections of this document -->
+    <main>
+      <!-- content section 1 -->
+      <section>
+        <!-- left container div -->
+        <div><p>Hello there from the left side</p></div>
+        <!-- right container div -->
+        <div><p>Hello there from the right side</p></div>
+      </section>
+      <!-- content section 2 -->
+      <section>
+        <!-- stacked container div -->
+        <div><p>Container 1</p></div>
+        <!-- stacked container div -->
+        <div><p>Container 2</p></div>
+        <!-- stacked container div -->
+        <div><p>Container 3</p></div>
+      </section>
+      <!-- content section 3 -->
+      <section>
+        <!-- article row div -->
+        <div>
+          <!-- article 1 -->
+          <article>
+            <img src="some-img-here" alt="image information" />
+            <h4>Article Title</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+              fuga! Obcaecati, sint! Officiis suscipit quos perferendis fuga
+              accusamus expedita minima ut eveniet possimus maxime assumenda
+              asperiores, porro repellendus blanditiis molestiae?
+            </p>
+          </article>
+          <!-- article 2 -->
+          <article>
+            <img src="some-img-here" alt="image information" />
+            <h4>Article Title</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+              fuga! Obcaecati, sint! Officiis suscipit quos perferendis fuga
+              accusamus expedita minima ut eveniet possimus maxime assumenda
+              asperiores, porro repellendus blanditiis molestiae?
+            </p>
+          </article>
+          <!-- article 3 -->
+          <article>
+            <img src="some-img-here" alt="image information" />
+            <h4>Article Title</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+              fuga! Obcaecati, sint! Officiis suscipit quos perferendis fuga
+              accusamus expedita minima ut eveniet possimus maxime assumenda
+              asperiores, porro repellendus blanditiis molestiae?
+            </p>
+          </article>
+        </div>
+      </section>
+      <!-- content section 4 - table -->
+      <section>
+        <table>
+          <tr>
+            <th>Artist / Band Name</th>
+            <th>Genre</th>
+            <th>Country</th>
+          </tr>
+          <tr>
+            <td>The Strokes</td>
+            <td>Rock</td>
+            <td>USA</td>
+          </tr>
+          <tr>
+            <td>Rosalia</td>
+            <td>Reggeatton Spanish Pop</td>
+            <td>Spain</td>
+          </tr>
+          <tr>
+            <td>Disclousure</td>
+            <td>Dance Music</td>
+            <td>England</td>
+          </tr>
+          <tr>
+            <td>El Mato a un Policia Motorizado</td>
+            <td>Rock</td>
+            <td>Argentina</td>
+          </tr>
+          <tr>
+            <td>Los Amigos Invisibles</td>
+            <td>Caribbean Funk</td>
+            <td>Venezuela</td>
+          </tr>
+          <tr>
+            <td>Wu Tang Clan</td>
+            <td>Hip Hop</td>
+            <td>USA</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <footer>
+      <!-- site logo -->
+      <img src="some-slogo" alt="site logo" />
+      <!-- navigation links -->
+      <nav>
+        <ul>
+          <li><a href="link-1">Home</a></li>
+          <li><a href="link-2">About Us</a></li>
+          <li><a href="link-3">Team</a></li>
+        </ul>
+      </nav>
+      <!-- button with a primary action -->
+      <a href="link-4">login button</a>
+    </footer>
+  </body>
+</html>
