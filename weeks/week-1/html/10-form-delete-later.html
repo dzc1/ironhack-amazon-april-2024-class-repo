@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label for="first-name">Enter first name here:</label>
+      <input type="text" name="first-name" id="first-name" placeholder="John" />
+
+      <!-- // ------- -->
+      <!-- // ------- -->
+      <!-- // ------- -->
+      <!-- // ------- -->
+
+      <label for="last-name"
+        >Enter last name here:
+        <input
+          type="text"
+          name="last-name"
+          id="last-name"
+          placeholder="Smith"
+        />
+      </label>
+    </form>
+
+    <!-- SELECT FORM -->
+    <form>
+      <label for="bands">Choose a band:</label>
+      <select id="bands">
+        <option value="led-zeppelin">Led Zeppellin</option>
+        <option value="the-doors">The Doors</option>
+        <option value="jimmi-hendrix-experience">
+          The Jimmi Hendrix Experience
+        </option>
+      </select>
+    </form>
+
+    <!-- Text Area Form -->
+    <form>
+      <label for="bio">Enter a short bio</label>
+      <textarea id="bio" cols="30" rows="10"></textarea>
+      <button>Send - Reactive</button>
+      <input type="button" value="Send" />
+      <input type="submit" value="Submit - Reactive" />
+    </form>
+
+    <!-- TEXT TO TEST ATTRIBUTES -->
+    <form>
+      <label for="test">Enter something</label>
+      <input type="text" id="...." value="Diego" />
+      <input type="text" id="test" value="Diego" readonly />
+      <input type="text" id="test" value="Diego" disabled />
+      <input type="text" id="test" value="Diego" size="40" />
+      <input type="email" id="test" multiple />
+      <input type="text" id="...." placeholder="enter" required autofocus />
+      <input type="text" name="test" id="" autocomplete />
+      <button>send</button>
+    </form>
+  </body>
+</html>

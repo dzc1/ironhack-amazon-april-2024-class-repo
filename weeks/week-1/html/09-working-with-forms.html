@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <style>
+      * {
+        font-family: Roboto, sans-serif;
+        font-size: 14px;
+      }
+      @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700");
+
+      .formInputContainer {
+        display: flex;
+        flex-direction: column;
+        margin: 1.5rem 0rem;
+      }
+      .formInputContainer label {
+        margin-bottom: 1rem;
+      }
+      .formInputContainer input,
+      select {
+        padding: 0.5rem;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+      /* Forms Elements Form CSS */
+      #form-elements form {
+        width: 100%;
+      }
+      #form-elements select,
+      input,
+      button,
+      textarea {
+        padding: 0rem;
+        margin-top: 0.2rem;
+      }
+      #form-elements tr td:nth-child(2n) {
+        width: 40%;
+      }
+      #form-elements tr td:nth-child(4n) {
+        padding: 1rem;
+      }
+      /* Input Types Form Css */
+      #input-types tr td:nth-child(2n) {
+        width: 40%;
+      }
+      #input-types tr td:nth-child(3n) {
+        width: 30%;
+      }
+      #input-types input {
+        width: 50%;
+        margin-top: 0.5rem;
+      }
+      #input-types input[type="checkbox"] {
+        width: 10%;
+        margin-top: 0.5rem;
+      }
+      #input-types input[type="radio"] {
+        width: 10%;
+        margin-top: 0.5rem;
+      }
+      #input-types input[type="color"] {
+        width: 20%;
+        margin-top: 0.5rem;
+      }
+
+      /* Band Information Form */
+      #bandInformationForm {
+        border: 1px solid black;
+        padding: 1rem;
+      }
+
+      #bandInformationForm h4,
+      p {
+        text-align: center;
+      }
+
+      #bandInformationForm input[type="submit"] {
+        width: 100%;
+        padding: 0.5rem;
+      }
+
+      /* Ecommerce Form */
+      #ecommerceForm {
+        border: 1px solid black;
+        padding: 1rem;
+      }
+      #ecommerceForm h4,
+      p {
+        text-align: center;
+      }
+      #ecommerceForm .shoeType {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      #ecommerceForm #shoeType {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      #ecommerceForm img {
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+        object-position: center;
+      }
+      #ecommerceForm > section {
+        border: black solid 1px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+      }
+      #ecommerceForm .formInputContainerShipping {
+        display: flex;
+        justify-content: space-between;
+      }
+      #ecommerceForm .formInputContainerShipping > div {
+        display: flex;
+        flex-direction: column;
+      }
+      #ecommerceForm .formInputContainerShipping input {
+        padding: 0.5rem;
+      }
+      #ecommerceForm input[type="submit"] {
+        width: 100%;
+        padding: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Forms</h1>
+
+    <p>
+      An HTML form is used to collect user input. This info is then sent to the
+      backend to be treated accordingly, wether is a simple message, a question
+      or something more complex like a glovo order, an amazon purchase, a
+      spofify login or registration, the way we interact with apps or websites
+      throguh forms helps us communicate data. Many use cases are imperative to
+      using forms. think about it, they are pretty common on our every day
+      online experiences.
+    </p>
+
+    <!-- Form Elements -->
+    <h2>Form Elements Syntax</h2>
+    <table id="form-elements">
+      <tr>
+        <th>Element Name</th>
+        <th>Description</th>
+        <th>Syntax</th>
+        <th>Example</th>
+      </tr>
+      <tr>
+        <td>Form</td>
+        <td>
+          The form element is used to create an HTML form for user input. The
+          form element is a container for different types of input elements,
+          such as: text fields, checkboxes, radio buttons, submit buttons, etc.
+        </td>
+        <td>< form > < / form ></td>
+        <td>
+          <form id="exampleForm">
+            <label for="name">First name:</label><br />
+            <input
+              type="text"
+              id="formName"
+              name="name"
+              placeholder="Enter name Here"
+            /><br />
+            <label for="lastName">Last name:</label><br />
+            <input
+              type="text"
+              id="formlastName"
+              name="lastName"
+              placeholder="Enter last name here"
+            /><br /><br />
+            <input type="submit" value="Submit" />
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>Label</td>
+        <td>
+          Defines a label for the input that will be associated with (clickable)
+          in nature and it will highlight the input matched.
+        </td>
+        <td>< label > < / label ></td>
+        <td><label for="fname">First name:</label><br /></td>
+      </tr>
+      <tr>
+        <td>Select</td>
+        <td>
+          Defines a drop-down . This element works along another element inside
+          called "option" which represents an option for the user to select from
+          the dropdown.
+        </td>
+        <td>< select > < / select ></td>
+        <td>
+          <label for="bands">Choose a band:</label><br />
+          <select id="bands" name="bands">
+            <option value="ledZeppellin">Led Zeppellin</option>
+            <option value="theDoors">The Doors</option>
+            <option value="theBeatles">The Beatles</option>
+            <option value="fleetwoodMac">Fleetwood Mac</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Input</td>
+        <td>
+          One of the most used form elements, it can be used to recieve user
+          inputs or data through different ways. Some simple are text, email,
+          phone number and password to more complex like images, radios,
+          checkboxes, ranges ...
+        </td>
+        <td>
+          < input type = " we will put what input type we will be working with
+          here " >
+        </td>
+        <td>
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" />
+        </td>
+      </tr>
+      <tr>
+        <td>Text Area</td>
+        <td>
+          Defines a multi-line input field(bigger input fields for more writing
+          usually). The rows attribute specifies the visible number of lines in
+          a text area. The cols attribute specifies the visible width of a text
+          area.
+        </td>
+        <td>< textarea > < / textarea ></td>
+        <td>
+          <textarea name="message" rows="10" cols="30">
+           knock knock, knocking on heaven's doors.....
+          </textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>Button</td>
+        <td>Defines a clickable button.</td>
+        <td>< button > your text here < / button ></td>
+        <td>
+          <button
+            type="button"
+            onclick="alert('Wu Tang Clan is for the children!')"
+          >
+            Click Me!
+          </button>
+        </td>
+      </tr>
+    </table>
+    <!-- Form Attributes -->
+    <h2>Form Attributes</h2>
+    <table id="form-attributes">
+      <tr>
+        <th>Attribute Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>The <b>action</b> attribute</td>
+        <td>
+          Defines the action to be performed when the form is submitted.
+          Usually, the form data is sent to a file on the server when the user
+          clicks on the submit button.
+        </td>
+      </tr>
+      <tr>
+        <td>The <b>target</b> attribute</td>
+        <td>
+          The target attribute specifies where to display the response that is
+          received after submitting the form. The target attribute can have one
+          of the following values:
+          <ul>
+            <li>_blank: The response is displayed in a new window or tab</li>
+            <li>_self: The response is displayed in the current window</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>The <b>method</b> attribute</td>
+        <td>
+          It specifies the HTTP method to be used when submitting the form data.
+          Don't worry we will get into <b>http</b> methods later on the class.
+        </td>
+      </tr>
+    </table>
+    <!-- Input Types -->
+    <h2>Input Types</h2>
+    <table id="input-types">
+      <tr>
+        <th>Element Name</th>
+        <th>Description</th>
+        <th>Syntax</th>
+        <th>Example</th>
+      </tr>
+      <tr>
+        <td>Text</td>
+        <td>Defines a single-line text input field</td>
+        <td>< input type = " text " ></td>
+        <td>
+          <form>
+            <label for="name">Name:</label><br />
+            <input type="text" id="name" name="name" />
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>Number</td>
+        <td>
+          Defines a numeric input field. You can also set restrictions on what
+          numbers are accepted. The following example displays a numeric input
+          field, where you can enter a value from 1 to 5:
+        </td>
+        <td>< input type = " number " ></td>
+        <td>
+          <form>
+            <label for="quantity">Quantity (between 1 and 5):</label><br />
+            <input
+              type="number"
+              id="quantity"
+              name="quantity"
+              min="1"
+              max="5"
+              placeholder="1"
+            />
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td>
+          Used for input fields that should contain an e-mail address. Depending
+          on browser support, the e-mail address can be automatically validated
+          when submitted.
+        </td>
+        <td>< input type = " email " ></td>
+        <td>
+          <form>
+            <label for="email">Enter your email:</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="diego@diego.com"
+            />
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>Telephone</td>
+        <td>Used for input fields that should contain a telephone number.</td>
+        <td>< input type = " tel " ></td>
+        <td>
+          <form>
+            <label for="phone">Enter your phone number:</label><br />
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+              placeholder="123-12-123"
+            />
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>Date</td>
+        <td>
+          Used for input fields that should contain a date. You can also use the
+          min and max attributes to add restrictions to dates:
+        </td>
+        <td>< input type = " date " ></td>
+        <td>
+          <form>
+            <label for="birthday">Birthday:</label><br />
+            <input type="date" id="birthday" name="birthday" />
+          </form>
+          <form>
+            <label for="datemax">Enter a date before 2000-01-01:</label><br />
+            <input
+              type="date"
+              id="datemax"
+              name="datemax"
+              max="1999-12-31"
+            /><br /><br />
+            <label for="datemin">Enter a date after 2000-01-01:</label><br />
+            <input type="date" id="datemin" name="datemin" min="2000-01-02" />
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>Button</td>
+        <td>
+          Defines a button that we can attach an event handler such as a
+          on-click to fire an event.
+        </td>
+        <td>< input type = " button " ></td>
+        <td>
+          <input
+            type="button"
+            onclick="alert('Wu Tang Clan is for the children!')"
+            value="Click Me!"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>Checkbox</td>
+        <td>
+          Defines a checkbox. Checkboxes let users select between zero or more
+          options of a limited number of choices.
+        </td>
+        <td>< input type = " checkbox " ></td>
+        <td>
+          <form>
+            <input type="checkbox" id="genre1" name="genre1" value="rock" />
+            <label for="genre1">Rock </label><br />
+            <input type="checkbox" id="genre2" name="genre2" value="hip-hop" />
+            <label for="genre2">Hip Hop</label><br />
+            <input
+              type="checkbox"
+              id="genre3"
+              name="genre3"
+              value="electronic"
+            />
+            <label for="genre3">Electronic</label>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>Radio</td>
+        <td>
+          Defines a radio button. Radio buttons let users select only one option
+          of a limited number of choices.
+        </td>
+        <td>< input type = " radio " ></td>
+        <td>
+          <form>
+            <input type="radio" id="html" name="fav_genre" value="rock" />
+            <label for="rock">Rock</label><br />
+            <input type="radio" id="hip-hop" name="fav_genre" value="hip-hop" />
+            <label for="hip-hop">Hip Hop</label><br />
+            <input
+              type="radio"
+              id="electronic"
+              name="fav_genre"
+              value="electronic"
+            />
+            <label for="electronic">Electronic</label>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>Submit</td>
+        <td>
+          Defines a button for submitting form data to a form-handler. The
+          form-handler is typically a server page with a script for processing
+          input data. The form-handler is specified in the form's action
+          attribute or we can attach a function through a click event to the
+          form and handle it through javascript.
+        </td>
+        <td>< input type = " submit " ></td>
+        <td>
+          <form onsubmit="alert('Form Submitted')">
+            <label for="fname">First name:</label><br />
+            <input type="text" id="fname" name="fname" value="Diego" /><br />
+            <label for="lname">Last name:</label><br />
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              value="Zito"
+            /><br /><br />
+            <input type="submit" value="Submit" />
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>Reset</td>
+        <td>
+          Defines a reset button that will reset all form values to their
+          default values.
+        </td>
+        <td>< input type = " reset " ></td>
+        <td>
+          <form onsubmit="alert('Form Submitted')">
+            <label for="fname">First name:</label><br />
+            <input type="text" id="fname" name="fname" value="" /><br />
+            <label for="lname">Last name:</label><br />
+            <input type="text" id="lname" name="lname" value="" /><br /><br />
+            <input type="submit" value="Submit" />
+            <input type="reset" />
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>Password</td>
+        <td>Defines a password field.</td>
+        <td>< input type = " password " ></td>
+        <td>
+          <form>
+            <label for="pwd">Password:</label><br />
+            <input type="password" id="pwd" name="pwd" />
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>Color</td>
+        <td>
+          Used for input fields that should contain a color. Depending on
+          browser support, a color picker can show up in the input field.
+        </td>
+        <td>< input type = " color " ></td>
+        <td>
+          <form>
+            <label for="favcolor">Select your favorite color:</label><br />
+            <input type="color" id="favcolor" name="favcolor" />
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>Image</td>
+        <td>Defines an image as a submit button.</td>
+        <td>< input type = " image " ></td>
+        <td>
+          <form>
+            <input
+              type="image"
+              src="https://media.giphy.com/media/Dh5q0sShxgp13DwrvG/giphy.gif"
+              alt="Submit"
+              width="50"
+              height="200"
+            />
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>File</td>
+        <td>
+          Defines a file-select field and a "Browse" button for file uploads.
+        </td>
+        <td>< input type = " file " ></td>
+        <td>
+          <form>
+            <label for="myfile">Select a file:</label><br />
+            <input type="file" id="myfile" name="myfile" />
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>Month</td>
+        <td>Allows the user to select a month and year.</td>
+        <td>< input type = " month " ></td>
+        <td>
+          <form>
+            <label for="bdaymonth">Birthday (month and year):</label> <br />
+            <input type="month" id="bdaymonth" name="bdaymonth" />
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>Range</td>
+        <td>
+          Defines a control for entering a number whose exact value is not
+          important (like a slider control). Default range is 0 to 100. However,
+          you can set restrictions on what numbers are accepted with the min,
+          max, and step attributes.
+        </td>
+        <td>< input type = " range " min = " 0 " max = " 50 " step = " 5 "></td>
+        <td>
+          <form>
+            <label for="vol">Volume (between 0 and 50):</label> <br />
+            <input
+              type="range"
+              name="rangeInput"
+              min="0"
+              max="50"
+              step="5"
+              onchange="updateTextInput(this.value);"
+            /><input type="text" id="textInput" value="" />
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>Url</td>
+        <td>
+          Defines a control for entering a number whose exact value is not
+          important (like a slider control). Default range is 0 to 100. However,
+          you can set restrictions on what numbers are accepted with the min,
+          max, and step attributes
+        </td>
+        <td>< input type = " url " ></td>
+        <td>
+          <form>
+            <label for="homepage">Add your homepage:</label><br />
+            <input type="url" id="homepage" name="homepage" />
+            <input type="submit" value="submit" />
+          </form>
+        </td>
+      </tr>
+    </table>
+    <!-- Input Attributes -->
+    <h2>Input Attributes</h2>
+    <table id="input-attributes">
+      <tr>
+        <th>Attribute Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>The <b>value</b> attribute</td>
+        <td>
+          The input value attribute specifies an initial value for an input
+          field
+        </td>
+      </tr>
+      <tr>
+        <td>The <b>readonly</b> attribute</td>
+        <td>
+          The input readonly attribute specifies that an input field is
+          read-only. A read-only input field cannot be modified (however, a user
+          can tab to it, highlight it, and copy the text from it). The value of
+          a read-only input field will be sent when submitting the form!
+        </td>
+      </tr>
+      <tr>
+        <td>The <b>disabled</b> attribute</td>
+        <td>
+          The input disabled attribute specifies that an input field should be
+          disabled. A disabled input field is unusable and un-clickable. The
+          value of a disabled input field will not be sent when submitting the
+          form!
+        </td>
+      </tr>
+      <tr>
+        <td>The <b>size</b> attribute</td>
+        <td>
+          The input size attribute specifies the visible width, in characters,
+          of an input field. The default value for size is 20. <br />
+          <b>Note:</b> The size attribute works with the following input types:
+          text, search, tel, url, email, and password.
+        </td>
+      </tr>
+      <tr>
+        <td>The <b>maxlength</b> attribute</td>
+        <td>
+          The input maxlength attribute specifies the maximum number of
+          characters allowed in an input field. <br />
+          <b>Note:</b> When a maxlength is set, the input field will not accept
+          more than the specified number of characters. However, this attribute
+          does not provide any feedback. So, if you want to alert the user, you
+          must write JavaScript code.
+        </td>
+      </tr>
+      <tr>
+        <td>The <b>min</b> and <b>max</b> attributes</td>
+        <td>
+          The input min and max attributes specify the minimum and maximum
+          values for an input field. The min and max attributes work with the
+          following input types: number, range, date, datetime-local, month,
+          time and week.
+          <br />
+          <b>Tip:</b>Use the max and min attributes together to create a range
+          of legal values.
+        </td>
+      </tr>
+      <tr>
+        <td>The <b>multiple</b> attribute</td>
+        <td>
+          The input multiple attribute specifies that the user is allowed to
+          enter more than one value in an input field. The multiple attribute
+          works with the following input types: email, and file.
+
+          <br />
+          <b>Tip:</b>Use the max and min attributes together to create a range
+          of legal values.
+        </td>
+      </tr>
+      <tr>
+        <td>The <b>placeholder</b> attribute</td>
+        <td>
+          The input placeholder attribute specifies a short hint that describes
+          the expected value of an input field (a sample value or a short
+          description of the expected format). The short hint is displayed in
+          the input field before the user enters a value. The placeholder
+          attribute works with the following input types: text, search, url,
+          tel, email, and password.
+        </td>
+      </tr>
+      <tr>
+        <td>The <b>required</b> attribute</td>
+        <td>
+          The input required attribute specifies that an input field must be
+          filled out before submitting the form. The required attribute works
+          with the following input types: text, search, url, tel, email,
+          password, date pickers, number, checkbox, radio, and file.
+        </td>
+      </tr>
+      <tr>
+        <td>The <b>step</b> attribute</td>
+        <td>
+          The input step attribute specifies the legal number intervals for an
+          input field. Example: if step="3", legal numbers could be -3, 0, 3, 6,
+          etc. The step attribute works with the following input types: number,
+          range, date, datetime-local, month, time and week.
+          <br />
+          <b>Tip:</b>This attribute can be used together with the max and min
+          attributes to create a range of legal values.
+        </td>
+      </tr>
+      <tr>
+        <td>The <b>autofocus</b> attribute</td>
+        <td>
+          The input autofocus attribute specifies that an input field should
+          automatically get focus when the page loads.
+        </td>
+      </tr>
+      <tr>
+        <td>The <b>height</b> and <b>width</b> attributes</td>
+        <td>
+          The input height and width attributes specify the height and width of
+          an image element.
+          <br />
+          <b>Tip:</b>Always specify both the height and width attributes for
+          images. If height and width are set, the space required for the image
+          is reserved when the page is loaded. Without these attributes, the
+          browser does not know the size of the image, and cannot reserve the
+          appropriate space to it. The effect will be that the page layout will
+          change during loading (while the images load).
+        </td>
+      </tr>
+      <tr>
+        <td>The <b>autocomplete</b> attribute</td>
+        <td>
+          The input autocomplete attribute specifies whether a form or an input
+          field should have autocomplete on or off. Autocomplete allows the
+          browser to predict the value. When a user starts to type in a field,
+          the browser should display options to fill in the field, based on
+          earlier typed values.The autocomplete attribute works with form and
+          the following input types: text, search, url, tel, email, password,
+          datepickers, range, and color.
+        </td>
+      </tr>
+    </table>
+
+    <!-- Form Example #1 -->
+    <h2>Form Example #1</h2>
+    <form id="bandInformationForm">
+      <h4>Band Registration Form</h4>
+      <p>Register your band for our next ironhack show</p>
+      <!-- Band Name -->
+      <div class="formInputContainer">
+        <label class="formLabel" for="bandName">Band Name</label>
+        <input type="text" id="bandName" placeholder="Enter band name here" />
+      </div>
+      <!-- Band Member Total Amount -->
+      <div class="formInputContainer">
+        <label class="formLabel" for="bandMemberAmount"
+          >Amount of Band Members</label
+        >
+        <input
+          type="number"
+          id="bandMemberAmount"
+          min="0"
+          max="20"
+          placeholder="0"
+        />
+      </div>
+      <!-- Band Email Information -->
+      <div class="formInputContainer">
+        <label class="formLabel" for="bandEmail">Band Contact Email</label>
+        <input
+          type="text"
+          id="bandEmail"
+          placeholder="Enter your band  email here"
+        />
+      </div>
+      <!-- Band Genre -->
+      <div class="formInputContainer">
+        <label for="bandGenre">Genre</label>
+        <select name="bandGenre" id="bandGenre">
+          <option value="">Select a genre</option>
+          <option value="hipHop">Hip Hop</option>
+          <option value="rock">Rock</option>
+          <option value="electronic">Electronic</option>
+          <option value="reggeatton">Reggeatton</option>
+        </select>
+      </div>
+      <!-- Set Times -->
+      <div class="formInputContainer">
+        <h3>Set Times</h3>
+        <div class="formRadio">
+          <input
+            type="radio"
+            name="setTimes"
+            id="1song"
+            value="1song"
+            checked
+          />
+          <label for="1song">One Song</label>
+        </div>
+        <div class="formRadio">
+          <input type="radio" name="setTimes" id="2songs" value="2songs" />
+          <label for="2songs">Two Songs</label>
+        </div>
+        <div class="formRadio">
+          <input type="radio" name="setTimes" id="3songs" value="3songs" />
+          <label for="3songs">Three Songs</label>
+        </div>
+      </div>
+      <input type="submit" />
+    </form>
+
+    <!-- Form Example #2 -->
+    <h2>Form Example #2</h2>
+    <h4>Ecommerce Form</h4>
+    <form id="ecommerceForm">
+      <h4>Ecommerce Form</h4>
+      <p>Lets Buy Some Vans</p>
+      <section>
+        <h5>Product Selection</h5>
+        <!--Shoe Type -->
+        <div class="formInputContainer">
+          <h3>Select a shoe</h3>
+          <div class="shoeType">
+            <div class="formRadio">
+              <input
+                type="radio"
+                name="shoeType"
+                id="vans-black"
+                value="vans-black"
+                checked
+              />
+              <label id="shoeType" for="vans-black">
+                <p>Vans Black</p>
+                <img
+                  src="./assets/imgs/forms/ecommerceForm/vans-black.webp"
+                  alt=""
+                />
+              </label>
+            </div>
+            <div class="formRadio">
+              <input
+                type="radio"
+                name="shoeType"
+                id="vans-white"
+                value="vans-white"
+              />
+              <label id="shoeType" for="vans-white">
+                <p>Vans White</p>
+                <img
+                  src="./assets/imgs/forms/ecommerceForm/vans-white.webp"
+                  alt=""
+                />
+              </label>
+            </div>
+            <div class="formRadio">
+              <input
+                type="radio"
+                name="shoeType"
+                id="vans-gray"
+                value="vans-gray"
+              />
+              <label id="shoeType" for="vans-gray">
+                <p>Vans Gray</p>
+                <img
+                  src="./assets/imgs/forms/ecommerceForm/vans-gray.webp"
+                  alt=""
+                />
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- Shoe Size -->
+        <div class="formInputContainer">
+          <label for="shoeSize">Shoe Size - Our sizes range from 5 to 12</label>
+          <br />
+          <input
+            type="range"
+            name="shoeSize"
+            min="5"
+            max="12"
+            step=".5"
+            value="5"
+            id="shoeInputSize"
+            onchange="shoeSizeInput(this.value);"
+          /><input type="text" id="shoeSize" value="" placeholder="5" />
+        </div>
+      </section>
+      <section>
+        <h5>Customer Information</h5>
+        <!-- Band Name -->
+        <div class="formInputContainer">
+          <label class="formLabel" for="customerName"
+            >Enter your name and last name</label
+          >
+          <input
+            type="text"
+            id="customerName"
+            placeholder="Enter name and last here"
+          />
+        </div>
+        <div class="formInputContainer">
+          <label class="formLabel" for="customerEmail">Enter your Email</label>
+          <input
+            type="email"
+            id="customerEmail"
+            placeholder="your-name@your-email-address.com"
+          />
+        </div>
+        <div class="formInputContainer">
+          <label class="formLabel" for="customerDob"
+            >Enter your Date of Birthday</label
+          >
+          <input type="date" id="customerDob" />
+        </div>
+      </section>
+      <section>
+        <h5>Shipping Information</h5>
+        <!-- Customer Address  -->
+        <div class="formInputContainer">
+          <label class="formLabel" for="customerAddress">Enter Address</label>
+          <input
+            type="text"
+            id="customerAddress"
+            placeholder="Enter name and last here"
+          />
+        </div>
+        <!-- Customer City, State, Country  -->
+        <div class="formInputContainerShipping">
+          <div>
+            <label class="formLabel" for="customerCity">City</label>
+            <input type="text" id="customerCity" placeholder="City" />
+          </div>
+          <div>
+            <label class="formLabel" for="customerState">State</label>
+            <input type="text" id="customerState" placeholder="State" />
+          </div>
+          <div>
+            <label class="formLabel" for="customerCountry">Country</label>
+            <input
+              type="text"
+              id="customerCountry"
+              placeholder="Three letter country code"
+              pattern="[A-Za-z]{3}"
+            />
+          </div>
+        </div>
+        <!-- Shipping type -->
+        <div class="formInputContainer">
+          <label for="shippingType">Shipping Type</label>
+          <select name="shippingType" id="shippingType">
+            <option value="">Select a shipping Type</option>
+            <option value="regular">Regular - €0.00</option>
+            <option value="express">Express - €5.99</option>
+            <option value="nextDay">Next Day - - €10.99</option>
+          </select>
+        </div>
+        <!-- Customer Additional Notes  -->
+        <div class="formInputContainer">
+          <label class="formLabel" for="customerNotes">Shipping Notes</label>
+          <textarea
+            name="customerNotes"
+            id="customerNotes"
+            cols="30"
+            rows="10"
+            placeholder="Enter Shipping notes if needed..."
+          ></textarea>
+        </div>
+      </section>
+      <input type="submit" />
+    </form>
+
+    <script>
+      //Example Form
+      exampleForm.onsubmit = (e) => {
+        e.preventDefault();
+        let name = document.querySelector("#formName").value;
+        let lastName = document.querySelector("#formlastName").value;
+        console.log(`Hello ${name} ${lastName}`);
+        alert(`Hello ${name} ${lastName} `);
+      };
+
+      // Display number value on the input field type "RANGE"
+      const updateTextInput = (val) => {
+        document.getElementById("textInput").value = val;
+      };
+
+      // Band Information Form
+      bandInformationForm.onsubmit = (e) => {
+        e.preventDefault();
+
+        let bandName = document.querySelector("#bandName").value;
+        let bandMembers = document.querySelector("#bandMemberAmount").value;
+        let email = document.querySelector("#bandEmail").value;
+        let bandGenre = document.querySelector("#bandGenre").value;
+        let setTimeRadio = Array.from(
+          document.getElementsByName("setTimes")
+        ).find((time) => time.checked).value;
+
+        if (bandName === "" || setTimeRadio.value === null) {
+          alert("Please Submit a valid form");
+        } else {
+          alert(`
+        !!SUCCESS!!
+        We have registered your band to our event, we will send you an email shortly with more details of the event!.
+        Rock on!
+        Band Name: ${bandName}
+        Band Members: ${bandMembers}
+        Band Email: ${email}
+        Musical Genre: ${bandGenre}
+        Amount of Songs: ${setTimeRadio}
+        `);
+        }
+      };
+
+      // Display shoe size outside of form submit function
+      const shoeSizeInput = (val) => {
+        document.getElementById("shoeSize").value = val;
+      };
+
+      // Ecommerce Form
+      ecommerceForm.onsubmit = (e) => {
+        e.preventDefault();
+        // SHoe Type Block
+        let shoeType = Array.from(document.getElementsByName("shoeType")).find(
+          (shoe) => shoe.checked
+        ).value;
+        let shoeSize = document.querySelector("#shoeInputSize").value;
+        // Customer Info Block
+        let customerName = document.querySelector("#customerName").value;
+        let customerEmail = document.querySelector("#customerEmail").value;
+        let customerDob = document.querySelector("#customerDob").value;
+        // Shipping Information Block
+        let customerAddress = document.querySelector("#customerAddress").value;
+        let customerCity = document.querySelector("#customerCity").value;
+        let customerState = document.querySelector("#customerState").value;
+        let customerCountry = document.querySelector("#customerCountry").value;
+        let shippingType = document.querySelector("#shippingType").value;
+        let customerNotes = document.querySelector("#customerNotes").value;
+        alert(
+          `
+          !!Success!!
+          Your order has been placed, please review your order in this simple alert box:
+          Shoe Selection
+          - Shoe: ${shoeType}
+          - Shoe Size: ${shoeSize}
+          Customer Information
+          - Name and Last Name: ${customerName}
+          - Email: ${customerEmail}
+          - Birthday: ${customerDob}
+          - Shipping Information: 
+          - Address:${customerAddress}
+          - City: ${customerCity}
+          - State: ${customerState}
+          - Country: ${customerCountry}
+          - Shipping Type:${shippingType}
+          - Shipping Notes:${customerNotes}
+          `
+        );
+      };
+    </script>
+  </body>
+</html>
