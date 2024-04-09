@@ -1,0 +1,35 @@
+h1 {
+  /* color name */
+  color: red;
+}
+h2 {
+  /* RGB value */
+  /* Red Green Blue */
+  color: rgb(210, 0, 255);
+}
+h3 {
+  /* hex values */
+  color: #4b3b3b;
+  /* https://www.color-hex.com/ */
+  /* https://htmlcolorcodes.com/ */
+  /* https://coolors.co/ */
+}
+h4 {
+  /* hex values */
+  color: #4b3b3b;
+  /* Ranges from 0 - 1 
+  0 = full opacity 
+  1 = Visible */
+  opacity: 0.5;
+  /* https://www.color-hex.com/ */
+  /* https://htmlcolorcodes.com/ */
+  /* https://coolors.co/ */
+  font-size: 33px;
+}
+h5 {
+  /* RGB value */
+  /* Red Green Blue */
+  /* Let's add Opacity as its 4th value */
+  color: rgb(210, 0, 255, 0.2);
+  font-size: 33px;
+}

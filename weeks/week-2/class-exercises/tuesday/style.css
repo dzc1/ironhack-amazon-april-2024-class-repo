@@ -1,0 +1,23 @@
+li {
+  list-style: none;
+}
+
+/* Elvins Approach */
+.elvin-one {
+  font-size: 69px;
+  background-color: brown;
+}
+.elvin-two {
+  font-size: 40px;
+  background-color: red;
+}
+.elvin-three {
+  font-size: 50px;
+  background-color: blue;
+}
+
+.joseph > li {
+  font-size: 60px;
+  color: limegreen;
+  font-size: 144px;
+}

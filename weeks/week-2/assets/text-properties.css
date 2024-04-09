@@ -1,0 +1,16 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+#welcome .example-1 {
+  text-align: center;
+  /* font-variant: small-caps; */
+  text-decoration: underline blue;
+  text-transform: capitalize;
+  text-overflow: clip;
+}
+
+.shadow {
+}
