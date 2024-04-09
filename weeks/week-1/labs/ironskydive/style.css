@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700");
+
+/* Root definition of color vars */
+
+* {
+  margin: 0;
+}
+
+:root {
+  /* Colors */
+  --blue: #1e90ff;
+  --darkBlue: #33587d;
+  --textColor: #fafafa;
+}
+
+/* General Styling */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  /* line-height: 3.5em; */
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 4.2em;
+  text-align: center;
+  line-height: 1em;
+}
+h4 {
+  font-size: 1.5em;
+  letter-spacing: 0.4px;
+  line-height: 1em;
+}
+h5 {
+  font-size: 1.2em;
+  line-height: 1em;
+}
+
+/* ------ */
+/* Nav Bar Styles */
+.nav-bar {
+  background: var(--darkBlue);
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+}
+
+.nav-bar ul {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 0rem 4rem;
+}
+
+.nav-bar ul > li {
+  list-style-type: none;
+}
+
+.nav-bar ul > li > a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+.nav-bar ul > li > a:hover {
+  color: red;
+}
+
+/* ----- */
+/* ----- */
+/* Header Styling */
+
+header {
+  background-image: url("https://adventure-driven-vacations.com/wp-content/uploads/2017/02/sunset-skydiving-zadar.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+header h1,
+h2 {
+  color: white;
+}
+
+header h2 {
+  text-shadow: white 8px -8px 9px;
+}
+
+header .ih-founders {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: start;
+  text-align: left;
+  width: 50%;
+  margin-top: 4rem;
+  margin-left: 4rem;
+}
+
+/* ----- */
+/* ----- */
+/* Section 01 - General Info */
+
+#informacion-general {
+  background-color: var(--darkBlue);
+  height: 500px;
+  width: 100%;
+  display: flex;
+  color: white;
+}
+
+#informacion-general article {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#informacion-general article > p {
+  margin: 1rem 0rem 2rem 0rem;
+  width: 50%;
+  font-weight: 300;
+}
+
+#informacion-general article > a {
+  color: white;
+  text-decoration: none;
+  background: var(--blue);
+  padding: 1rem;
+  border-radius: 16px;
+}
+
+/* ----- */
+/* ----- */
+/* Section 02 - Estructura */
+
+#estructura {
+  padding: 4rem 0;
+}
+
+#estructura h2 {
+  color: black;
+}
+
+#estructura > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#estructura article {
+  border: 1px solid var(--darkBlue);
+  /* width: 50%; */
+  border-radius: 8px;
+  padding: 2rem;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; */
+  box-shadow: rgba(0, 0, 0, 0.211) 3px 3px 3px;
+  margin-bottom: 2rem;
+}
+
+#estructura article > h3 {
+  font-size: 2.5rem;
+  width: 100%;
+  margin: 0 0 1rem 0;
+}
+
+#estructura article > p {
+  text-align: center;
+}
+
+.top,
+.bottom {
+  padding: 3rem;
+  margin-bottom: 2rem;
+}
+
+/* ----- */
+/* ----- */
+/* Section 03 - Equipo */
+
+#equipo {
+  background: var(--darkBlue);
+  padding: 4rem;
+  color: white;
+}
+
+#equipo > div:nth-child(1) > h3,
+p {
+  text-align: center;
+}
+#equipo > div:nth-child(1) > p {
+  margin: 1rem 0 2rem 0;
+}
+.imagen {
+  width: 50%;
+  margin-top: 1rem;
+}
+
+.team {
+  display: flex;
+  margin-top: 3rem;
+}
+#equipo article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#equipo hr {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* ----- */
+/* ----- */
+/* Section 04 - Horario & Form */
+
+#horario {
+  padding: 4rem 0;
+}
+
+#horario h3 {
+  font-size: 2.5rem;
+}
+#horario h3:nth-child(even) {
+  margin: 2rem 0rem;
+}
+
+#horario .horario-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#horario table,
+form {
+  /* border: 1px solid red; */
+  width: 80%;
+}
+#horario table td,
+th {
+  border: 1px solid black;
+  padding: 0.5rem 0;
+}
+td {
+  text-align: center;
+}
+
+.email,
+.participants,
+.date,
+.time {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.email,
+.participants,
+.date,
+.time > label {
+  margin-bottom: 1.5rem;
+}
+
+input {
+  height: 40px;
+  border-radius: 8px;
+}
+input[type="submit"] {
+  margin: 0 auto;
+  background: red;
+}
