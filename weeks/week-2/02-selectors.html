@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning CSS Selectors</title>
+    <link rel="stylesheet" href="./assets/css-selectors.css" />
+  </head>
+  <body>
+    <section id="explanation">
+      <div class="block-01">
+        <h1>CSS Selectors</h1>
+        <p>
+          CSS selectors target and select the HTML elements you want to style.
+        </p>
+        <p>
+          Specifically, CSS selectors allow you to select multiple elements at
+          once.
+        </p>
+        <p>
+          They are useful when you want to apply the same styles to more than
+          one HTML element, because you won't repeat yourself by writing the
+          same lines of code for different elements.
+        </p>
+        <p>
+          CSS selectors are also useful when you want to make a change: you just
+          make the change in one place, which saves you a lot of time.
+        </p>
+      </div>
+      <div class="block-02">
+        <h2>Simple CSS Selectors</h2>
+        <p>
+          Selectors allow you to target specific parts of your document for
+          styling purposes.
+        </p>
+        <p>Simple selectors directly select one or more elements:</p>
+        <ul>
+          <li>Using the universal selector, *.</li>
+          <li>Based on the name/type of the element.</li>
+          <li>Based on the value of the element's class.</li>
+          <li>Based on the value of the element's ID.</li>
+        </ul>
+        <p>
+          By learning how the most simple selectors work, you can understand how
+          to use the more complex ones.
+        </p>
+        <p>
+          The simple selectors will most often be the ones you will use the most
+          and the ones you will be the most familiar with if you have some
+          experience writing CSS code.
+        </p>
+      </div>
+      <!-- LESSON 2 AFTER THIS LINE -->
+      <div class="block-03">
+        <h2>Grouping CSS Selector</h2>
+        <p>
+          With the grouping selector, you can select and style more than one
+          element at once.
+        </p>
+        <p>
+          To use the grouping selector, use a comma, , to group and separate the
+          different elements you want to select.
+        </p>
+      </div>
+      <div class="block-04">
+        <h2>CSS Combinators</h2>
+        <p>
+          Combinators allow you to combine two elements based on the
+          relationship between the elements and their location in the document.
+        </p>
+        <p>
+          Essentially, you can combine two simple selectors so that the
+          relationship between those CSS selectors is explained. Combinators are
+          a type of selector that specifies and describes the relationship
+          between the two selectors.
+        </p>
+        <p>There are four types of combinators:</p>
+        <ul>
+          <li>The descendant combinator.</li>
+          <li>The child combinator.</li>
+          <li>The general sibling combinator.</li>
+          <li>The adjacent sibling combinator</li>
+        </ul>
+      </div>
+      <div class="block-05">
+        <h2>Pseudo-Class Selectors</h2>
+        <p>
+          Pseudo-class selectors select elements that are in a specific state.
+        </p>
+        <p>
+          Pseudo-class selectors start with two colons, :, followed by a keyword
+          reflecting the state of the specified element.
+        </p>
+        <p>Some examples of the state the element can be in are:</p>
+        <ul>
+          <li>The element is being hovered over by the mouse pointer.</li>
+          <li>The element is the first of its type.</li>
+          <li>The link has been visited before from that specific browser.</li>
+          <li>
+            The link has not been visited before from that specific browser.
+          </li>
+          <li>The checkbox/radio button has been checked.</li>
+        </ul>
+      </div>
+      <div class="block-06">
+        <h2>Pseudo-Class Selectors for Position</h2>
+        <p>
+          Position pseudo-class selectors select elements that are in a specific
+          state.
+        </p>
+        <p>Some examples of position pseudo classes are:</p>
+        <ul>
+          <li>first-child</li>
+          <li>last-child</li>
+          <li>nth-child()</li>
+          <li>first-of-type</li>
+          <li>last-of-type</li>
+        </ul>
+      </div>
+    </section>
+    <section id="examples">
+      <div id="welcome">
+        <h2 class="primary-heading">Welcome</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          corrupti corporis vel, labore doloribus non nobis animi est neque
+          magnam.
+        </p>
+      </div>
+      <div id="hello">
+        <h3 class="goodbye">I love pizza</h3>
+        <p class="hello">I love sushi</p>
+        <p id="holiday">I love cereal</p>
+      </div>
+      <div id="about">
+        <h2>About</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse magnam
+          odio velit sint cum! Illo quaerat similique aperiam veritatis alias!
+        </p>
+      </div>
+      <hr />
+      <div id="descending-combinator">
+        <p>Example 001</p>
+        <h2>Example 003</h2>
+        <h2>more h2</h2>
+        <h2>another h2</h2>
+        <div>
+          <p>Example 002</p>
+        </div>
+      </div>
+      <hr />
+      <div id="sibling-combinator">
+        <div class="sibling">
+          <p>I am paragraph inside a div</p>
+        </div>
+        <p>I am a paragraph outside a div</p>
+        <h3>I am a level three heading</h3>
+        <p>I am a paragraph outside a div</p>
+      </div>
+      <hr />
+      <div id="adjacent-sibling-combinator">
+        <div class="adjacent">
+          <p>I am paragraph inside a div</p>
+        </div>
+        <p>I am a paragraph outside a div</p>
+        <h3>I am a level three heading</h3>
+        <p>I am a paragraph outside a div</p>
+      </div>
+      <hr />
+      <div id="pseudo-classes">
+        <!-- LINKS -->
+        <a href="https://wutangclan.com/" target="_blank">WU TANG LAND</a>
+        <hr />
+        <!-- INPUTS -->
+        <input type="text" />
+        <input type="email" placeholder="diego@diego.com" required />
+        <div class="">
+          <label for="diego">Check</label>
+          <input type="checkbox" name="diego" id="diego" />
+          <input type="text" name="disabled" id="disabled" disabled />
+        </div>
+      </div>
+      <hr />
+      <div id="pocision-pseudo-classes">
+        <div class="first-child-example">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus,
+            unde blanditiis sed maxime architecto alias quae. Amet tempore,
+            neque numquam vero ullam laudantium incidunt sequi vel in minima,
+            hic laboriosam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus,
+            unde blanditiis sed maxime architecto alias quae. Amet tempore,
+            neque numquam vero ullam laudantium incidunt sequi vel in minima,
+            hic laboriosam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus,
+            unde blanditiis sed maxime architecto alias quae. Amet tempore,
+            neque numquam vero ullam laudantium incidunt sequi vel in minima,
+            hic laboriosam.
+          </p>
+        </div>
+        <hr />
+        <div class="last-child-example">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus,
+            unde blanditiis sed maxime architecto alias quae. Amet tempore,
+            neque numquam vero ullam laudantium incidunt sequi vel in minima,
+            hic laboriosam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus,
+            unde blanditiis sed maxime architecto alias quae. Amet tempore,
+            neque numquam vero ullam laudantium incidunt sequi vel in minima,
+            hic laboriosam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus,
+            unde blanditiis sed maxime architecto alias quae. Amet tempore,
+            neque numquam vero ullam laudantium incidunt sequi vel in minima,
+            hic laboriosam.
+          </p>
+        </div>
+        <hr />
+        <div class="nth-child-example">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus,
+            unde blanditiis sed maxime architecto alias quae. Amet tempore,
+            neque numquam vero ullam laudantium incidunt sequi vel in minima,
+            hic laboriosam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus,
+            unde blanditiis sed maxime architecto alias quae. Amet tempore,
+            neque numquam vero ullam laudantium incidunt sequi vel in minima,
+            hic laboriosam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus,
+            unde blanditiis sed maxime architecto alias quae. Amet tempore,
+            neque numquam vero ullam laudantium incidunt sequi vel in minima,
+            hic laboriosam.
+          </p>
+        </div>
+        <hr />
+        <div class="nth-child-example-2">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus,
+            unde blanditiis sed maxime architecto alias quae. Amet tempore,
+            neque numquam vero ullam laudantium incidunt sequi vel in minima,
+            hic laboriosam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus,
+            unde blanditiis sed maxime architecto alias quae. Amet tempore,
+            neque numquam vero ullam laudantium incidunt sequi vel in minima,
+            hic laboriosam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus,
+            unde blanditiis sed maxime architecto alias quae. Amet tempore,
+            neque numquam vero ullam laudantium incidunt sequi vel in minima,
+            hic laboriosam.
+          </p>
+        </div>
+        <hr />
+        <div class="first-of-type">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+            magni tenetur a dignissimos adipisci assumenda? Libero mollitia
+            similique molestias voluptates, reprehenderit dolorum accusantium
+            quos autem? Odit eius accusamus velit est!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+            magni tenetur a dignissimos adipisci assumenda? Libero mollitia
+            similique molestias voluptates, reprehenderit dolorum accusantium
+            quos autem? Odit eius accusamus velit est!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+            magni tenetur a dignissimos adipisci assumenda? Libero mollitia
+            similique molestias voluptates, reprehenderit dolorum accusantium
+            quos autem? Odit eius accusamus velit est!
+          </p>
+        </div>
+        <hr />
+        <div class="last-of-type">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+            magni tenetur a dignissimos adipisci assumenda? Libero mollitia
+            similique molestias voluptates, reprehenderit dolorum accusantium
+            quos autem? Odit eius accusamus velit est!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+            magni tenetur a dignissimos adipisci assumenda? Libero mollitia
+            similique molestias voluptates, reprehenderit dolorum accusantium
+            quos autem? Odit eius accusamus velit est!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+            magni tenetur a dignissimos adipisci assumenda? Libero mollitia
+            similique molestias voluptates, reprehenderit dolorum accusantium
+            quos autem? Odit eius accusamus velit est!
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div id="attribute-values">
+        <label for="birthday">Whats your age?</label>
+        <input type="number" name="birthday" id="birthday" />
+        <label for="diego">Enter your name</label>
+        <input type="text" name="diego" id="diego" />
+      </div>
+    </section>
+  </body>
+</html>

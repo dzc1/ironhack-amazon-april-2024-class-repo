@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Implenting a CSS File</title>
+    <!-- Adding a style tag to the head of the document -->
+    <!-- Internal CSS Approach 
+     This approach is a huge no-no! 
+     why ? 
+    Because as more CSS properties are added, the file increases in size and its hard to read, hard to scale and hard to share -->
+    <style>
+      h1 {
+        color: red;
+      }
+    </style>
+    <!-- Linking an eternal document with css properties  -->
+    <!-- rel = relationship -->
+    <!-- href= hyperTextReference  -->
+    <!-- ALWAYS GO FOR THIS APPROACH -->
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <h1>Hello World</h1>
+  </body>
+</html>

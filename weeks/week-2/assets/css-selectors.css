@@ -1,0 +1,86 @@
+/* body {
+  font-size: 32px;
+} */
+
+/* CSS UNIVERSAL SELECTOR
+      The universal selector, also known as the wildcard, selects everything, all elements of the document.
+      You can use the universal selector to reset the browser's default padding and margin to zero at the top of the file before you add any other styles */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* CSS TYPE SELECTOR */
+/* The CSS type selector selects all HTML elements of the specified type. */
+/* To use it, mention the name of the HTML element. */
+/* For example, if you want to apply a style to each of the H1s in the HTML document, you should specify the h1 element: */
+
+body {
+  font-size: 32px;
+}
+
+h1 {
+  text-decoration: underline;
+  color: blue;
+}
+
+/* CSS CLASS SELECTOR */
+/* The class selector matches and selects HTML elements based on the value of their class. Specifically, it selects all elements in the document with that specific class name. */
+/* With the class selector, you can select multiple elements at once and apply the same style to them without having to copy and paste the same styles for each one separately. */
+/* Classes are reusable, making them a good choice for practicing DRY development. DRY is a programming principle and stands for "Don't Repeat Yourself." As the name suggests, the goal is to avoid writing repetitive code whenever possible. */
+.primary-heading {
+  color: green;
+}
+
+/* CSS ID Selector */
+/* The ID selector selects an HTML element based on the value of its ID attribute. */
+/* Note that the ID of an element must be unique within a document, meaning there should only be one HTML element with that given ID value. You cannot use the same ID value on a different element other than that. */
+/* It's worth mentioning that it's better to try to limit the use of this selector and opt to use the class selector instead. Applying styles using the ID selector is not ideal because the styles are not reusable. */
+#welcome {
+  background-color: blue;
+}
+
+#about {
+  color: white;
+}
+
+/* LESSON 2 after this line */
+
+/* GROUPING CSS SELECTORS */
+/* With the grouping selector, you can select and style more than one element at once. */
+/* To use the grouping selector, use a comma, , to group and separate the different elements you want to select. */
+#welcome,
+#about {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.goodbye,
+.hello,
+#holiday {
+  font-size: 50px;
+  color: aqua;
+}
+
+/* Descendant combinator */
+/* As the name suggests, the descendant combinator selects only descendants of the specified element. */
+/* Essentially, you first mention the parent element, leave a space, and then mention the descendant of the first element, which is the child element of the parent. */
+#descending-combinator h2 {
+  color: fuchsia;
+  font-size: 36px;
+}
+
+/* Child combinator */
+/* The child combinator, also known as the direct descendant, selects only the direct children of the parent element. */
+/* To use the child combinator, specify the parent element and then add the > character followed by the direct children of the parent element you want to select. */
+#descending-combinator > p {
+  color: blue;
+  font-size: 16px;
+}
+
+#descending-combinator > div > p {
+  color: brown;
+  font-size: 44px;
+}
