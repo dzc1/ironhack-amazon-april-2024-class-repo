@@ -54,3 +54,10 @@
   grid-area: footer;
   text-align: center;
 }
+
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
