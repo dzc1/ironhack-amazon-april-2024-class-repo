@@ -1,0 +1,52 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+}
+
+button {
+  font-size: 40px;
+}
+
+a,
+button {
+  margin: 10px 0;
+}
+
+/* Targeting the a tag */
+a {
+  color: forestgreen;
+  text-decoration: none;
+  display: block;
+}
+
+/* WELCOME TO YOUR FIRST PSEUDO SELECTOR */
+/* We would like to change the color of the text on the "HOVER state"  */
+a:hover {
+  color: orange;
+}
+
+/* We would like to change the color of the text once the user has clicked the a tag! */
+a:active {
+  color: red;
+}
+
+button,
+.button {
+  background-color: #4c6ca0;
+  color: #fafafa;
+  border: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: cursor;
+}
+
+.button {
+  width: 80px;
+  text-align: center;
+}
+
+ul {
+  /* type */
+  list-style: none;
+}

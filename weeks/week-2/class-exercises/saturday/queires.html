@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* all screens bellow 450 = backgroundColor + text that display your name
+      all screen between 450 + 750 == diff backgroundColor + only a text that display yourage
+      all screens between 750 + 890 === diff backgroundColor+ only a text with your favorite movie ! */
+
+      /* Steven's Approach */
+      /* @media only screen and (max-width: 450px) {
+        body {
+          background: red;
+        }
+        .name {
+          text-align: center;
+          font-size: 40px;
+          color: white;
+        }
+        .age {
+          display: none;
+        }
+        .favMovie {
+          display: none;
+        }
+      }
+
+      @media (min-width: 451px) and (max-width: 750px) {
+        body {
+          background: blue;
+        }
+        .name {
+          display: none;
+        }
+        .age {
+          text-align: center;
+          font-size: 40px;
+          color: white;
+        }
+        .favMovie {
+          display: none;
+        }
+      }
+
+      @media (min-width: 751px) and (max-width: 890px) {
+        body {
+          background: rgb(17, 255, 49);
+        }
+        .name {
+          display: none;
+        }
+        .age {
+          display: none;
+        }
+        .favMovie {
+          text-align: center;
+          font-size: 40px;
+          color: black;
+        }
+      } */
+
+      /* Joseph's Approach */
+      body {
+        margin: 0;
+        padding: 0;
+        font-size: 32px;
+        background-color: red;
+        color: white;
+      }
+
+      @media screen and (max-width: 450px) {
+        #name,
+        body {
+          background-color: blue;
+        }
+        #age,
+        #favMovie {
+          display: none;
+        }
+      }
+      @media screen and (min-width: 450px) and (max-width: 750px) {
+        #name,
+        #favMovie {
+          display: none;
+        }
+        body,
+        #age {
+          background-color: orange;
+        }
+      }
+
+      @media (min-width: 750px) and (max-width: 890px) {
+        #name,
+        #age {
+          display: none;
+        }
+        body,
+        #favMovie {
+          background-color: darkblue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Steven's Approach -->
+    <!-- <div class="name">Steven</div>
+    <div class="age">26</div>
+    <div class="favMovie">Interstellar</div> -->
+
+    <!-- Joseph's Approach -->
+    <h1 class="classwork">
+      <p id="name">Joseph</p>
+      <p id="age">40</p>
+      <p id="favMovie">The Matrix</p>
+    </h1>
+  </body>
+</html>

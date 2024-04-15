@@ -1,0 +1,86 @@
+body {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: gray;
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+}
+
+h1 {
+  display: none;
+}
+
+a {
+  color: white;
+}
+a:hover {
+  color: blue;
+}
+
+/* 1st approach */
+/* Just target all viewportas below the size of 550px */
+/* Easiest */
+
+@media only screen and (max-width: 550px) {
+  #widescreen {
+    color: red;
+  }
+}
+
+/* 2nd Approach */
+/* Using two conditionns min and max width */
+@media (min-width: 551px) and (max-width: 700px) {
+}
+
+/* 3rd Approach */
+/* Everything above 540px */
+@media (min-width: 540px) {
+}
+/* Everything below 540px */
+@media (max-width: 540px) {
+}
+
+/* Lamndscape + combinator */
+/* @media (orientation: landscape) {
+  body {
+    background: fuchsia;
+  }
+} */
+
+/* Testing */
+@media only screen and (max-width: 500px) {
+  body {
+    background: red;
+  }
+  #smartphone h1 {
+    display: block;
+  }
+}
+
+/* Tablet */
+@media (min-width: 501px) and (max-width: 768px) {
+  body {
+    background: blue;
+  }
+  #tablet h1 {
+    display: block;
+  }
+
+  a:hover {
+    color: black;
+  }
+}
+
+/* wideScreen */
+@media (min-width: 1201px) {
+  body {
+    background: orange;
+  }
+  #widescreen h1 {
+    display: block;
+  }
+  p {
+    color: black;
+  }
+}

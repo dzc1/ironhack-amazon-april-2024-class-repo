@@ -1,0 +1,68 @@
+/* understanding-flex
+display: flex; */
+
+/*
+        align-content:
+                        flex-start
+                        flex-end
+                        center
+                        space-between
+                        space-around
+                        stretch
+         */
+/* align-items:
+                    stretch
+                    center
+                    flex-start
+                    flex-end
+                    baseline
+                    initial
+                    inherit;
+        */
+/*
+        justify-content:
+                        flex-start
+                        flex-end
+                        center
+                        space-between
+                        space-around
+                        space-evenly
+         */
+
+body {
+  /* web safe fonts */
+  /* font-family: Arial, Helvetica, sans-serif; */
+  /* Google Font */
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1em;
+}
+.small-img {
+  width: 30%;
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+li > p:nth-child(1) {
+  text-decoration: underline;
+}
+
+#class-example {
+  height: 400px;
+  width: 100%;
+  background: red;
+  display: flex;
+  /* Flex direction */
+  flex-direction: column;
+  /* Justify Content */
+}
+#class-example div:nth-child(odd) {
+  background: blue;
+  width: 20%;
+}
+#class-example div:nth-child(even) {
+  background: green;
+  width: 20%;
+}

@@ -1,0 +1,35 @@
+/* Top Level entry element tag that perovides visibility of html is Body */
+body {
+  font-size: 32px;
+}
+
+/* To start with, we set 16px as the font size on the <html> element. */
+html {
+  font-size: 20px;
+}
+
+/* To start with, we set 16px as the font size on the <*> element. */
+
+/* Testing Aboslute Uits */
+.pixels {
+  font-size: 24px;
+}
+
+.points {
+  font-size: 24pt;
+}
+
+.centimeters {
+  font-size: 1.5cm;
+}
+
+/* Testing Relative Units */
+/* EM */
+.relative-to-font-size {
+  font-size: 2em;
+}
+
+/* REM */
+.relative-to-root-element {
+  font-size: 1rem;
+}

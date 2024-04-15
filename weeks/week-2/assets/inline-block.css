@@ -1,0 +1,18 @@
+/* li's are block level; elements */
+li {
+  display: inline;
+}
+
+/* img's are inoinne by defautl! */
+img {
+  display: block;
+}
+
+.box {
+  display: inline-block;
+  width: 30%;
+  border: 1px solid #100f0f;
+  color: white;
+  background: #100f0f;
+  padding: 10px;
+}

@@ -2,13 +2,16 @@
   font-size: 32px;
 } */
 
+/* RULE OF THUMB
+WORK WITH WHAT FEELS MORE COMFORTABLE TO YOU! */
+
 /* CSS UNIVERSAL SELECTOR
       The universal selector, also known as the wildcard, selects everything, all elements of the document.
       You can use the universal selector to reset the browser's default padding and margin to zero at the top of the file before you add any other styles */
 
 * {
   padding: 0;
-  margin: 0;
+  margin: 10px auto;
 }
 
 /* CSS TYPE SELECTOR */
@@ -83,4 +86,140 @@ h1 {
 #descending-combinator > div > p {
   color: brown;
   font-size: 44px;
+}
+
+/* General sibling combinator */
+/* The general sibling combinator selects siblings. */
+/* You can specify the first element and a second one that comes after the first. */
+/* To use the general sibling combinator, specify the first element and then use the ~ character followed by the second element that should come after the first. */
+.sibling ~ p {
+  color: red;
+}
+
+/* Adjacent sibling combinator */
+/* The adjacent sibling combinator is more specific than the general sibling combinator. */
+/* This selector only matches immediate siblings. Immediate siblings are those that come right after the first element. */
+/* To use the adjacent sibling combinator, specify the first element and then add the + character followed by the element you want to select and that comes immediately after the first element. */
+.adjacent + p {
+  color: purple;
+}
+
+/* PSEUDO SELECTORS  */
+
+a {
+  display: block;
+}
+
+/* LINKS */
+/* The :link selector applies the style when the element has not been visited before: */
+a:link {
+  color: green;
+}
+
+/* The :visited selector is applied when the element has been visited previously in the current browser: */
+/* a:visited {
+  color: fuchsia;
+} */
+
+/* The :hover selector is applied when the mouse pointer moves over an element: */
+a:hover {
+  color: blue;
+  text-decoration: line-through;
+}
+/* The :focus selector is applied when a user has tabbed onto an element: */
+a:focus {
+  color: red;
+}
+/* The :active selector is applied when the element is selected after being clicked and after holding down a mouse button: */
+a:active {
+  color: greenyellow;
+}
+
+/* PSEUDO CLASS SELECTORS FOR INPUTS */
+input {
+  display: block;
+  margin: 1rem 0;
+  width: 100%;
+  padding: 1em;
+}
+
+/* The :focus selector you've seen before for links is also used for inputs: */
+#pseudo-classes input:focus {
+  background-color: yellow;
+  border: none;
+}
+/* The :required selector selects inputs that are required. Required inputs have the required attribute. */
+#pseudo-classes input:required {
+  background-color: blue;
+}
+/* The :checked selector selects checkboxes or radio buttons that have been checked: */
+#pseudo-classes input:checked {
+  accent-color: red;
+  border: none;
+  /* outline: 1px solid blue; */
+}
+/* The :disabled selector selects inputs that are disabled. Disabled inputs have the disabled attribute. Many browsers style disabled inputs with a default gray color: */
+#pseudo-classes input:disabled {
+  background-color: gray;
+}
+
+/* Attibute Value
+Target a specific input type using this approach */
+/* [] === are known as square brackets/open brackets */
+#attribute-values input[type="text"] {
+  color: red;
+  font-size: 40px;
+}
+#attribute-values input[type="number"] {
+  color: green;
+  font-size: 40px;
+}
+
+#attribute-values input[type="number"]:hover {
+  color: red;
+  font-size: 40px;
+}
+
+/* POSITION PSEUDO CLASSES */
+/* The first-child selector, :first-child, selects the first element, which will be the first child within the parent container. */
+.first-child-example p:first-child {
+  color: red;
+}
+/* The last-child selector, :last-child, selects the last element, which will be the last child within the parent container. */
+.last-child-example p:last-child {
+  color: red;
+}
+/* The :nth-child() selector selects a child element within a container based on its position in a group of siblings. */
+/* It takes an integer as an argument and selects an element based on the given value */
+.nth-child-example p:nth-child(2) {
+  color: red;
+}
+/* The :nth-child() selector is useful when you want to select elements based on an expression, such as selecting even or odd elements */
+.nth-child-example-2 > ul > li:nth-child(odd) {
+  background: blue;
+  color: white;
+}
+.nth-child-example-2 > ul > li:nth-child(even) {
+  background: red;
+  color: white;
+}
+
+/* The :first-of-type selector selects elements that are the first of that specific type in the parent container. */
+.first-of-type p:first-of-type {
+  color: blue;
+}
+
+/* The :last-of-type selector selects elements that are the last of that specific type in the parent container. */
+.last-of-type p:last-of-type {
+  color: green;
+}
+
+.nth-type-example > ul > p:nth-of-type(even) {
+  background: red;
+  color: white;
+}
+
+.nth-type-example > ul > p:nth-of-type(odd) {
+  background: blue;
+  color: white;
 }

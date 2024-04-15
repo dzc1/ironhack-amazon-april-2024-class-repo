@@ -245,6 +245,17 @@ p {
   margin: 0 auto;
 }
 
+.img {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  display: inline-block;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXhFxlc4-kymb1AGDGYrNWI4UKDovCC29yHHO7JjAPCQ&s");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 /* ----- */
 /* ----- */
 /* Section 04 - Horario & Form */
