@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS VARIABLES</title>
+    <link rel="stylesheet" href="./assets/css-variables.css" />
+  </head>
+  <body>
+    <div id="explanation">
+      <h1>CSS Variables</h1>
+      <p>The var() function is used to insert the value of a CSS variable.</p>
+      <p>
+        CSS variables have access to the DOM, which means you can create
+        variables with local or global scope, change variables with JavaScript,
+        and change variables based on media queries.
+      </p>
+      <p>
+        A good way to use CSS variables is when it comes to the colors of your
+        design. Instead of copying and pasting the same colors over and over,
+        you can place them in variables.
+      </p>
+      <h1>How var() works</h1>
+      <p>First: CSS variables can have global or local scope.</p>
+      <p>
+        Global variables can be accessed/used throughout the document, while
+        local variables can only be used within the selector where they are
+        declared.
+      </p>
+      <p>
+        To create a variable with global scope, declare it within the :root
+        selector. The :root selector matches the root element of the document.
+      </p>
+      <p>
+        To create a variable with local scope, declare it within the selector
+        that will use it.
+      </p>
+      <p>
+        There is a naming convention called "BEM" that is based on using a
+        special nomenclature to generate reusable and scalable components.
+        <a href="https://getbem.com/">Get Bem</a>
+      </p>
+    </div>
+    <div id="example">
+      <h1>Example</h1>
+      <div class="container">
+        <h2>Lorem Ipsum</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper
+          diam at erat pulvinar, at pulvinar felis blandit.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper
+          diam at erat pulvinar, at pulvinar felis blandit.
+        </p>
+        <p>
+          <button>Yes</button>
+          <button>No</button>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

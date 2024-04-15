@@ -1,0 +1,178 @@
+/* One way to animate your properties is through CSS Keyframes. */
+
+/* Diff between transitions and keyframes?  */
+/* Unlike transitions, keyframes do not rely on user action for the property to react. Keyframes execute without any user action. */
+
+/* Each animation needs to be defined with the @keyframes rule which is then called with the animation property, like this: */
+/* -SYNTAX- */
+
+/* .element {
+        animation: pulse 5s infinite;
+      }
+      animation is the css animation property
+      pulse is the name we give
+      5s is the duration in seconds of the animation
+      infinite is the number of times this animation executes
+
+      @keyframes pulse {
+        0% {
+          background-color: #001f3f;
+        }
+        100% {
+          background-color: #ff4136;
+        }
+      } */
+
+/* Each @keyframes rule defines what should happen at specific moments during the animation. For example, 0% is the beginning of the animation and 100% is the end. 
+      
+      These keyframes can be controlled by the animation shorthand property, or its 8 sub-properties, to give more control over how those keyframes should be manipulated. */
+
+/* SUBPROPERTIES */
+/* animation-name: declares the name of the @keyframes rule to manipulate.
+      https://developer.mozilla.org/en-US/docs/Web/CSS/animation-name
+
+      animation-duration: the time it takes for an animation to complete one cycle.
+      https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration
+
+      animation-timing-function: sets predefined acceleration curves like ease or linear.
+      https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function
+
+      animation-delay: the time between the element being loaded and the start of the animation sequence. Seconds (example: 1s) or milliseconds (example: 100ms)
+      https://developer.mozilla.org/en-US/docs/Web/CSS/animation-delay
+
+      animation-direction: sets the direction of the animation after the cycle. Its default value is reset at each cycle. It sets whether an animation should play forwards, backwards, or alternate between playing the sequence forwards and backwards
+      https://developer.mozilla.org/en-US/docs/Web/CSS/animation-direction
+
+      animation-iteration-count: the number of times the animation should be performed.
+      https://developer.mozilla.org/en-US/docs/Web/CSS/animation-iteration-count
+
+      animation-fill-mode: sets which values are applied before/after the animation.
+      https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode
+      
+      animation-play-state: pauses/plays the animation. 
+      https://developer.mozilla.org/en-US/docs/Web/CSS/animation-play-state
+      */
+
+/* Read this:
+      https://css-tricks.com/almanac/properties/a/animation/ */
+
+/* list of properties that can be animated:
+      https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties */
+body {
+  background: #333;
+}
+
+.box {
+  background: white;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  /* Animation Properties */
+  animation-name: animate1;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+  animation-play-state: running;
+  animation-iteration-count: 4;
+}
+
+.box2 {
+  background: white;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  /* Animation Shorthand */
+  animation: animate2 infinite ease-in-out 4s forwards alternate running;
+}
+
+.box3 {
+  background: white;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  /* Animation Shorthand */
+  animation: animate3 5s ease-in-out forwards alternate running infinite 1s;
+}
+
+/* -------- */
+/* Animation 1 */
+/* -------- */
+@keyframes animate1 {
+  from {
+    top: 0;
+  }
+  to {
+    top: 200px;
+    background: red;
+    width: 600px;
+  }
+}
+
+/* -------- */
+/* Animation 2 */
+/* -------- */
+@keyframes animate2 {
+  0% {
+    left: 0px;
+    top: 0px;
+    background: white;
+    border-radius: 0 0 0 0;
+  }
+  25% {
+    left: 300px;
+    top: 0px;
+    background: red;
+    border-radius: 50% 0 0 0;
+  }
+  50% {
+    left: 300px;
+    top: 300px;
+    background: green;
+    border-radius: 50% 50% 0 0;
+  }
+  75% {
+    left: 0px;
+    top: 300px;
+    background: blue;
+    border-radius: 50% 50% 50% 0;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+    background: gray;
+    border-radius: 50% 50% 50% 50%;
+  }
+}
+
+/* -------- */
+/* Animation 2 */
+/* -------- */
+@keyframes animate3 {
+  0%,
+  100% {
+    left: 0px;
+    top: 0px;
+    background: white;
+    border-radius: 0 0 0 0;
+  }
+  25% {
+    left: 300px;
+    top: 0px;
+    background: red;
+    border-radius: 50% 0 0 0;
+  }
+  50% {
+    left: 300px;
+    top: 300px;
+    background: green;
+    border-radius: 50% 50% 0 0;
+  }
+  75% {
+    left: 0px;
+    top: 300px;
+    background: blue;
+    border-radius: 50% 50% 50% 0;
+  }
+}

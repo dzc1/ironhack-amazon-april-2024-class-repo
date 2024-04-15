@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Grid Basics</title>
+    <link rel="stylesheet" href="./assets/grid.css" />
+  </head>
+  <body>
+    <!-- Explanation -->
+    <section id="explanation">
+      <h1>Grid</h1>
+      <h2>Background</h2>
+      <p>
+        CSS Grid is a two-dimensional layout system based on grids that,
+        compared to any past web layout system, completely changes the way we
+        design user interfaces. CSS has always been used to layout our web
+        pages, but it has never done a good job. First, we used tables, then
+        floats, positioning, and inline-block, but all these methods were
+        essentially hacks and left out a lot of important functionality
+        (vertical centering, for example). Flexbox is also a great layout tool,
+        but its one-dimensional flow has different use cases - and they actually
+        work great together! Grid is the first CSS module created specifically
+        to solve the layout problems we've all been hacking around while making
+        websites all this time.
+      </p>
+
+      <h2>
+        Before diving into code, it's important to understand the terminology.
+        Since the terms involved in this case are somewhat similar from a
+        conceptual standpoint, it's easy to confuse them if their meanings
+        defined by the Grid specification aren't memorized first. But don't
+        worry, there aren't many.
+      </h2>
+
+      <div id="terminology">
+        <!-- Grid Container -->
+        <div>
+          <h2>Grid Container</h2>
+          <p>
+            The element on which display: grid is applied. It's the direct
+            parent of all grid items. In this example, the container is the grid
+            container.
+          </p>
+          <div class="container">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+          </div>
+        </div>
+        <!-- Grid Item -->
+        <div>
+          <h2>Grid Item</h2>
+          <p>
+            The children (direct descendants) of the grid container. In this
+            case, the grid elements are part of it, but sub-elements are not.
+          </p>
+          <div class="container">
+            <div class="item"></div>
+            <div class="item">
+              <p class="sub-item"></p>
+            </div>
+            <div class="item"></div>
+          </div>
+        </div>
+        <!-- Grid Line -->
+        <div>
+          <h2>Grid Line</h2>
+          <p>
+            These are the dividing lines that make up the grid structure. They
+            can be vertical ("column grid lines") or horizontal ("row grid
+            lines") and reside on both sides of a row or column. In this case,
+            the yellow line is an example of a column grid line.
+          </p>
+          <div class="img-container">
+            <img
+              class="small-img"
+              src="./assets/grid-imgs/terms-grid-line.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- Grid Cell -->
+        <div>
+          <h2>Grid Cell</h2>
+          <p>
+            The space between two adjacent row grid lines and two adjacent
+            column grid lines. It's a single "unit" of the grid. Here's the grid
+            cell between row grid lines 1 and 2, and column grid lines 2 and 3.
+          </p>
+          <div class="img-container">
+            <img
+              class="small-img"
+              src="./assets/grid-imgs/terms-grid-cell.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- Grid Track -->
+        <div>
+          <h2>Grid Track</h2>
+          <p>
+            The space between two adjacent grid lines. You can think of them as
+            the columns or rows of the grid. Here's the grid track between the
+            second and third row grid lines.
+          </p>
+          <div class="img-container">
+            <img
+              class="small-img"
+              src="./assets/grid-imgs/terms-grid-track.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- Grid Area -->
+        <div>
+          <h2>Grid Area</h2>
+          <p>
+            The total space surrounded by four grid lines. A grid area can be
+            composed of any number of grid cells. Here's the grid area between
+            row grid lines 1 and 3, and column grid lines 1 and 3.
+          </p>
+          <div class="img-container">
+            <img
+              class="small-img"
+              src="./assets/grid-imgs/terms-grid-area.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div id="grid-container">
+        <h3>Properties for the parent element - (grid container)</h3>
+        <ul>
+          <!-- display -->
+          <li>
+            <p>display</p>
+            <p>
+              Defines the element as a grid container and establishes a new grid
+              formatting context for its contents.
+            </p>
+            <p>Properties</p>
+            <ul>
+              <li>grid - generates a block-level grid</li>
+              <li>inline-grid - generates an inline-level grid</li>
+            </ul>
+          </li>
+          <!-- grid-template-columns & grid-template-rows -->
+          <li>
+            <p>grid-template-columns & grid-template-rows</p>
+            <p>
+              Defines the columns and rows of the grid with a space-separated
+              list of values. The values represent the track size, and the space
+              between them represents the grid line.
+            </p>
+            <ul>
+              <p>Values</p>
+              <li>
+                <p>Track size</p>
+                <p>
+                  Can be a length, a percentage, or a fraction of the free space
+                  of the grid using the fr unit. <br />
+                  (fr = fraction.)
+                </p>
+              </li>
+              <li>
+                <p>Line name</p>
+                <p>An arbitrary name of your choice.</p>
+              </li>
+            </ul>
+            <!-- UNCOMMENT TO SHOW CODE EXAMPLES FROM BELOW -->
+            <div class="container-example-fractions-2"></div>
+            <!-- container-example-simple-grid -->
+            <p>
+              Grid lines are automatically assigned positive numbers from these
+              assignments (with -1 being an alternative for the last row). Let's
+              look at the CSS example with the class
+              container-example-simple-grid.
+            </p>
+            <!-- container-example-image -->
+            <p>
+              But you can choose to explicitly name the lines. Note the bracket
+              syntax for line names. Let's look at the CSS example with the
+              class container-example-image.
+            </p>
+            <!-- container-example-more-than-one-name -->
+            <p>
+              Note that a line can have more than one name. For example, here
+              the second line will have two names: row1-end and row2-start.
+              Let's look at the CSS example with the class
+              container-example-more-than-one-name.
+            </p>
+            <!-- container-example-repeat-notation -->
+            <p>
+              If your definition contains parts that repeat, you can use the
+              repeat() notation to streamline things. Let's look at the CSS
+              example with the class container-example-repeat-notation.
+            </p>
+            <!-- container-example-without-repeat-notation -->
+            <p>
+              This example with the class container-example-repeat-notation is
+              equivalent to the example with the class
+              container-example-without-repeat-notation.
+            </p>
+            <!-- container-example-fractions -->
+            <p>
+              The fr unit allows you to set the size of a track as a fraction of
+              the free space of the grid container. For example
+              (container-example-fractions), this will set each item to
+              one-third of the width of the grid container. Let's look at the
+              CSS example with the class container-example-fractions.
+            </p>
+            <!-- container-example-fractions-2 -->
+            <p>
+              Free space is calculated after any non-flexible items. In this
+              example, the total amount of free space available for fr units
+              doesn't include the 50px.
+            </p>
+          </li>
+          <!-- grid-template-areas -->
+          <li>
+            <p>grid-template-areas</p>
+            <p>
+              Defines a grid template by referencing grid area names specified
+              with the grid-area property. Repeating the name of a grid area
+              causes the content to span those cells. A period signifies an
+              empty cell. The syntax itself provides a visualization of the grid
+              structure.
+            </p>
+            <ul>
+              <p>Values</p>
+              <li>
+                <p>Grid area name</p>
+                <p>Name of a grid area specified with grid-area</p>
+              </li>
+              <li>
+                <p>None</p>
+                <p>No grid areas defined</p>
+              </li>
+            </ul>
+            <!-- UNCOMMENT TO SHOW CODE EXAMPLES FROM BELOW -->
+            <div class="container-example-grid-template-areas">
+              <div class="item-a"></div>
+              <div class="item-b"></div>
+              <div class="item-c"></div>
+              <div class="item-d"></div>
+            </div>
+            <!-- container-example-grid-template-areas  -->
+            <p>
+              This example with the class container-example-grid-template-areas
+              will create a grid four columns wide by three rows high. The
+              entire top row will be composed of the header area. The middle row
+              will consist of two main areas and a sidebar area. The last row is
+              the entire footer area.
+            </p>
+            <p>
+              Each row in your declaration must have the same number of cells.
+            </p>
+            <p>
+              You can use any number of adjacent periods to declare a single
+              empty cell. As long as the periods don't have spaces between them,
+              they represent a single cell.
+            </p>
+            <p>
+              Note that you're not naming lines with this syntax, only areas.
+              When using this syntax, the lines at the edges of the areas are
+              automatically named. If your grid area name is foo, the name of
+              the starting row line and starting column line of the area will be
+              foo-start, and the name of its ending row line and ending column
+              line will be foo-end. This means that some lines may have multiple
+              names, like the leftmost edge line in the previous example, which
+              will have three names: header-start, main-start, and footer-start.
+            </p>
+          </li>
+          <!-- grid-template -->
+          <li>
+            <p>grid-template</p>
+            <p>
+              A way to abbreviate setting the grid template rows
+              (grid-template-rows), grid template columns
+              (grid-template-columns), and grid template areas
+              (grid-template-area) of the grid in a single declaration.
+            </p>
+            <ul>
+              <p>Values</p>
+              <li>
+                <p>None</p>
+                <p>Sets all three properties to their initial values</p>
+              </li>
+              <li>
+                <p>grid-template-rows / grid-template-columns</p>
+                <p>
+                  Sets the specified values of grid-template-columns and
+                  grid-template-rows, respectively, and sets the value of
+                  grid-template-areas to none
+                </p>
+              </li>
+            </ul>
+            <!-- UNCOMMENT TO SHOW CODE EXAMPLES FROM BELOW -->
+            <h1>Gap example here</h1>
+            <div class="container-example-gap-breakdown"></div>
+          </li>
+          <!-- column-gap row-gap grid-column-gap grid-row-gap -->
+          <li>
+            <p>column-gap row-gap grid-column-gap grid-row-gap</p>
+            <p>
+              Specifies the size of the grid lines. You can think of it as
+              setting the width of the gutters between the columns/rows.
+            </p>
+            <ul>
+              <p>Values</p>
+              <li>
+                <p>Line size</p>
+                <p>Length value</p>
+              </li>
+            </ul>
+            <p>
+              Let's look at the example with the class
+              container-example-gap-breakdown
+            </p>
+            <div class="container-example-gap-breakdown"></div>
+          </li>
+        </ul>
+      </div>
+      <div id="grid-items">
+        <h3>Properties for the child elements - (grid items)</h3>
+        <ul>
+          <li>
+            <p>grid-column-start grid-column-end grid-row-start grid-row-end</p>
+            <p>
+              Determines the location of a grid item by referencing specific
+              grid lines. grid-column-start/grid-row-start is the line where the
+              item starts, and grid-column-end/grid-row-end is the line where
+              the item ends.
+            </p>
+            <p>
+              If a grid column end/grid row end is not declared, the item will
+              span 1 track by default.
+            </p>
+            <p>
+              Items can overlap each other. You can use the z-index to control
+              their stacking order.
+            </p>
+            <ul>
+              <p>Values</p>
+              <li>
+                <p>Line</p>
+                <p>
+                  Can be a number to refer to a numbered grid line, or a name to
+                  refer to a named grid line.
+                </p>
+              </li>
+              <li>
+                <p>Span - number</p>
+                <p>The item will span the indicated number of grid lines.</p>
+              </li>
+              <li>
+                <p>Span - name</p>
+                <p>
+                  The item will extend until reaching the next line with the
+                  indicated name.
+                </p>
+              </li>
+              <li>
+                <p>auto</p>
+                <p>
+                  Indicates auto-placement, an automatic span, or a default span
+                  of one.
+                </p>
+              </li>
+            </ul>
+            <!-- UNCOMMENT TO SHOW CODE EXAMPLES FROM BELOW -->
+            <!-- container-example-grid-items -->
+            <h1>Grid Items Example - 1</h1>
+            <div class="container-example-grid-items">
+              <div class="item-a"></div>
+            </div>
+            <!-- container-example-grid-items-1 -->
+            <h1>Grid Items Example - 2</h1>
+            <div class="container-example-grid-items-1">
+              <div class="item-b"></div>
+            </div>
+          </li>
+          <li>
+            <p>grid-column grid-row</p>
+            <p>
+              Abbreviation for grid-column-start + grid-column-end, and
+              grid-row-start + grid-row-end, respectively.
+            </p>
+            <ul>
+              <li>start-line / end-line</li>
+              <p>
+                Each of them accepts the same values as the handwritten version,
+                including span
+              </p>
+            </ul>
+            <!-- container-example-grid-items-1 -->
+            <div class="container-example-grid-items-1">
+              <div class="item-b"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>

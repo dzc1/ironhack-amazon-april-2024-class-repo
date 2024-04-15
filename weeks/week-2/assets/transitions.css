@@ -1,0 +1,69 @@
+/* One way to animate your properties is through CSS Transitions. */
+
+/* A transition occurs when a CSS property changes from one value to another over a period of time. */
+
+/* There are four transition properties in CSS: transition-property, transition-duration, transition-timing-function, transition-delay. */
+
+/* Although we can use a shorthand for these 4 called transition */
+
+/* .selector {
+        transition: property duration transition-timing-function delay;
+      } */
+
+/* SUBPROPERTIES */
+/* transition-property refers to the CSS property you want to transition. It's easier to use the "all" keyword to target all properties within the selector */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/transition-property */
+
+/* transition-duration refers to the duration of the transition. How long do you want the transition to last? This value is written in seconds with the s suffix (like 3s). It's required in the transition shorthand. */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration */
+
+/* transition-timing-function refers to how the transition occurs. */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function */
+
+/* transition-delay refers to how long you want to wait before starting the transition. This value is written in seconds with the s suffix (like 3s). transition-delay is optional in the transition shorthand. */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay */
+
+/* READ THIS = "https://css-tricks.com/almanac/properties/t/transition/" */
+
+/* list of properties that can be animated:
+      https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties */
+
+body {
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* transition: background 500ms ease-in-out 100ms; */
+}
+
+/* body:hover {
+        background: #c1bdbd;
+      } */
+
+.box {
+  background: white;
+  width: 100px;
+  height: 100px;
+
+  /* Transition Properties */
+  /* transition-property: all;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 200ms; */
+
+  /* Transition shorthand */
+  transition: all 1s ease-in-out 200ms;
+
+  /* Using multiple transitions */
+  /* Separate the specific element with its transition subproperties using a "," */
+  /* transition: background 1s ease-in-out 5s, width 500ms ease-in 2s; */
+}
+/* WHEN WORKING WITH TRANSITION-DELAY IN SHORTHAND, ALWAYS PUT IT AT THE END PLEASE */
+.box:hover {
+  background: red;
+  border-radius: 50%;
+  /* height: 300px; */
+  width: 300px;
+  /* transition: all 1s ease-in-out 200ms; */
+}
