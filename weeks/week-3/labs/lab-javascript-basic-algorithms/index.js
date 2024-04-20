@@ -129,20 +129,23 @@ console.log(reservedName);
 
 // Iteration 3.1 - Using a for...of loop
 let driverName = ""; // Initialize an empty string to hold the modified name
-for (const char of hacker1) {
+for (let amountOfWordsInsideName of hacker1) {
   // Loop through each character of hacker1's name
-  driverName += char.toUpperCase() + " "; // Convert each character to uppercase and add a space
+  driverName += amountOfWordsInsideName.toUpperCase() + " "; // Convert each character to uppercase and add a space
 }
 console.log("Using a for of loop");
 console.log(driverName);
 
 // Iteration 3.1 - Using a forEach loop
+// Belkow is  the syntax Empty Arrow Anonymous Function!
+// () => { }
+//forEach(() => {});
 hacker1.split("").forEach((char) => {
   // Split hacker1's name into an array of characters and loop through each character
-  driverName += char.toUpperCase() + " "; // Convert each character to uppercase and add a space
+  char.toUpperCase() + " "; // Convert each character to uppercase and add a space
 });
 console.log("Using a for each loop");
-console.log(driverName.trim()); // Trim to remove the extra space at the end
+console.log(driverName); // Trim to remove the extra space at the end
 
 // -------
 // 3.2 Print all the characters of the navigator's name in reverse order, i.e., "nhoJ".

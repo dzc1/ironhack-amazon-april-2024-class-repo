@@ -198,9 +198,32 @@ console.log(`Student Grade is ${studentGrade}`);
 // Create a function that takes three arguments: a string name, a number age, and an object livesIn. Note that the livesIn object will be an object containing two keys: livesInCity and livesInTown. Both will have a boolean value, one true and the other false.
 // Create an arrow function that returns a string like "Diego is 30 years old and lives in the city". Based on the key that is true in the livesIn argument, we will return either lives in the city or lives in a town.
 
+function functionOne(name, age, livesIn) {
+  if (livesIn.livesInCity)
+    return `${name} has ${age} years old and he/she lives in the city `;
+  else return `${name} has ${age} yearsz old and he/she lives in a town`;
+}
+let callingFunc = functionOne("Nenad", 25, {
+  livesInCity: true,
+  livesInTown: false,
+});
+console.log(callingFunc);
 // Exercise #2
 // Create a function called calculateCircleArea that takes the radius of a circle as an argument and returns its area. Use Math.PI for the value of pi.
+function calculateCircleArea(radius) {
+  return 2 * Math.PI * radius;
+}
+console.log(calculateCircleArea(4));
 
 // Exercise #3
 // Create a function called mergeArrays that takes two arrays as arguments and returns a new array that merges both arrays.
 // HINT USE THE SPREAD OPERATOR
+function mergeArrays(arrayOne, arrayTwo) {
+  return [...arrayOne, ...arrayTwo];
+}
+console.log(mergeArrays(southAmericanCities, europeanCities));
+
+function mergArraysConcat(arrayOne, arrayTwo) {
+  return arrayOne.concat(arrayTwo);
+}
+console.log(mergArraysConcat(southAmericanCities, europeanCities));
