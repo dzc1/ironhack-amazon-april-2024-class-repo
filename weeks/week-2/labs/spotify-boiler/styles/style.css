@@ -46,6 +46,7 @@ body {
 .javascript-example {
   position: fixed;
   z-index: 1;
+  /* Ghe z index allows  */
   /* z-index: 9999; */
   /* estos dos z-index son lo mismo */
   width: 100%;
