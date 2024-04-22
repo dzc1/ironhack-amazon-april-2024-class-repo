@@ -1,0 +1,26 @@
+{
+  "movies": [
+    { "title": "Inception", "director": "Christopher Nolan", "year": 2010 },
+    {
+      "title": "The Shawshank Redemption",
+      "director": "Frank Darabont",
+      "year": 1994
+    },
+    {
+      "title": "The Godfather",
+      "director": "Francis Ford Coppola",
+      "year": 1972
+    },
+    { "title": "Pulp Fiction", "director": "Quentin Tarantino", "year": 1994 },
+    {
+      "title": "The Dark Knight",
+      "director": "Christopher Nolan",
+      "year": 2008
+    },
+    {
+      "title": "The Dark Knight Twooooo",
+      "director": "Christopher Nolan",
+      "year": 2008
+    }
+  ]
+}
