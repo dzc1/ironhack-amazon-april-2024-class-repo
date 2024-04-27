@@ -1,198 +1,128 @@
 // Iteration #1: Find the maximum
-function maxOfTwoNumbers(num1, num2) {
-  // Version #1
-  if (num1 == num2) {
-    return num1;
-  } else if (num1 > num2) {
-    console.log(`In this case the bigger number is number 1 which is: ${num1}`);
-    return num1;
-  } else {
-    console.log(`In this case the bigger number is number 2 which is: ${num2}`);
-    return num2;
+/// Implement the function maxOfTwoNumbers that takes two numbers as arguments and returns the bigger number.
+function maxOfTwoNumbers(numOne, numTwo) {
+  //Version 01 - To have all tests passing!
+  // If - else - conditionals
+
+  // should return greater of two arguments - if the first argument greater
+  if (numOne > numTwo) {
+    console.log(`${numOne} is greater than ${numTwo}`);
+    return numOne;
   }
-  // Version #2
-  // return Math.max(num1, num2);
+  //should return greater of two arguments - if the second argument greater
+  else if (numOne < numTwo) {
+    console.log(`${numTwo} is greater than ${numOne}`);
+    return numTwo;
+  }
+  // should return either arguments - if both arguments are equal
+  else {
+    console.log(`${numTwo} is the same as ${numOne}`);
+    return numOne;
+  }
 }
-console.log("Iteration #1 - Max of two numbers:");
-maxOfTwoNumbers(8, 10);
-console.log("-------------------");
+
+maxOfTwoNumbers(4, 8);
 
 // Iteration #2: Find longest word
+// Implement the function findLongestWord that takes as an argument an array of words and returns the longest one. If there are 2 with the same length, it should return the first occurrence.
+
+// use this array!
 const words = [
   "mystery",
   "brother",
   "aviator",
-  "crocodila ddslkdaskasksajlkm",
   "crocodile",
   "pearl",
   "orchard",
   "crackpot",
 ];
-console.log("Iteration #2 - Find Longest Word:");
-// V1 - D
-function findLongestWord(words) {
-  if (words.length === 0) return null;
 
+function findLongestWord(array) {
+  // should return null when called with an empty array
+  // Whenever you have only 1 thing to return from that function/body of conditional
+  // IMPLIED RETURN,  SO NO NEED FOR THE CURLY BRACKET!
+  //f (array.length === 0) return null;
+
+  // should return null when called with an empty array
+  // Let's use the NOT operator '!'
+  if (!array.length) return null;
+
+  // should return the word when called with a single-word array
+  // should return the first occurrence of the word when longest have multiple occurrences
+  // should return the longest occurrence when it has multiple words
   let longestWord = "";
 
-  for (let i = 0; i < words.length; i++) {
-    if (longestWord.length < words[i].length) {
-      longestWord = words[i];
+  // () - 3 thingsx, initital variable, condition, we point to the initial variable and go up or down
+  // We will go up!
+  for (let i = 0; i < array.length; i++) {
+    if (longestWord.length < array[i].length) {
+      longestWord = array[i];
     }
   }
   return longestWord;
 }
-console.log("-------------------");
-console.log(`The longest word in this array is: "${findLongestWord(words)}"`);
-// V2 - K
-function findLongestWordK(words) {
-  let wordLength;
 
-  if (!words.length) {
-    return null;
-  } else if (words.length === 1) {
-    return words.toString();
-  } else {
-    let temporal = words.sort((a, b) => (a.length > b.length ? -1 : 1));
-    wordLength = temporal[0];
-  }
-  return wordLength;
-}
-console.log("-------------------");
-console.log(`The longest word in this array is: "${findLongestWord(words)}"`);
-
-// V3 - O - Reduce Method
-function findLongestWord3(words) {
-  if (words.length == 0) return null;
-  else
-    return words.reduce((prev, curr) =>
-      prev.length >= curr.length ? prev : curr
-    );
-}
-console.log("-------------------");
-console.log(`The longest word in this array is: "${findLongestWord3(words)}"`);
-
-console.log(`- Iteration 3 - "`);
 // Iteration #3: Calculate the sum
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
+function sumNumbers(sumArray) {
+  let totalSum = 0;
+  // For each - method
+  // given thsat we have an implied return inside the for Each, let's remove the curlyBrackets!
+  sumArray.forEach((number) => (totalSum += number));
 
-console.log("Version 001");
-function sumNumbers(numbers) {
-  // declare variable to store the sum total
-  let sum = 0;
-  // Iterate based on the parameter we're pointing to - coincidentally also named 'numbers'
-  for (let i = 0; i < numbers.length; i++) {
-    sum += numbers[i];
-  }
-  // return :)
-  return sum;
+  // Return totalSunm
+  console.log(totalSum);
+  return totalSum;
 }
-console.log(
-  `For LOOP - The sum of all these numbers is: "${sumNumbers(numbers)}"`
-);
 
-console.log("Version 002");
-function sumNumbers2(numbers) {
-  if (numbers.length == 0) {
-    return 0;
-  } else {
-    const total = numbers.reduce((total, current) => total + current);
-    return total;
-  }
-}
-console.log(
-  `REDUCE V1 - The sum of all these numbers is: "${sumNumbers2(numbers)}"`
-);
-
-console.log("Version 003");
-function sumNumbers3(sumArray) {
-  let suma = 0;
-  sumArray.forEach((element) => {
-    suma += element;
-  });
-  return suma;
-}
-console.log(
-  `FOR EACH - The sum of all these numbers is: "${sumNumbers3(numbers)}"`
-);
-
-console.log("-------------------");
-console.log(`- Iteration 3.2 - "`);
 // Iteration #3.1 Bonus:
 const mixedArr = [6, 12, "miami", 1, true, "barca", "200", "lisboa", 8, 10];
 function sum(array) {
-  let mixedSum = 0;
-
+  let mixedTotalSum = 0;
   for (let i = 0; i < array.length; i++) {
+    // Here if we get a string, we will split that string and add each position of thespliitedStirng into the mixedTotalSum !
     if (typeof array[i] === "string") {
-      str = array[i].split("");
-      for (let i = 0; i < str.length; i++) {
-        mixedSum += str[i].length;
+      let string = array[i].split("");
+      // we will be addsing each position of the string as a numeric value to the mixedTotalSum
+      for (let i = 0; i < string.length; i++) {
+        mixedTotalSum += string[i].length;
       }
-    } else if (array[i] === true) {
-      mixedSum += 1;
-    } else if (typeof array[i] === "object" || typeof array[i] === "array") {
-      throw new Error("no no...");
+    } // for booleans we will create a else-if condition, thatn will cehck the boolean data and if is true we will add +1 to the count
+    else if (array[i] === true) {
+      mixedTotalSum += 1;
+    } // conndiiton if we get an obnject or array inside, what do we do ? , in those cases we will generate an error and not take into account for the sum!
+    else if (typeof array[i] === "object" || typeof array[i] === "array") {
+      throw new Error(
+        "no no, we will not count any arrays or objects into consideration....."
+      );
     } else {
-      mixedSum += array[i];
+      // addding each inidivual possition of the array to the count!
+      mixedTotalSum += array[i];
     }
   }
-  return mixedSum;
+  console.log(mixedTotalSum);
+  return mixedTotalSum;
 }
-console.log(`Version 001 - The sum of this mixed array is: ${sum(mixedArr)}`);
-
-console.log("Version 002");
-function sum2(mixedArr) {
-  if (mixedArr.length === 0) return 0;
-
-  let result = 0;
-  for (let i = 0; i < mixedArr.length; i++) {
-    const element = mixedArr[i];
-
-    if (typeof element === "string") {
-      result += element.length;
-    } else if (element === true) {
-      result += 1;
-    } else if (typeof element === "object") {
-      throw new Error("no no....");
-    } else {
-      result += mixedArr[i];
-    }
-  }
-  return result;
-}
-console.log(`Version 002 - The sum of this mixed array is: ${sum2(mixedArr)}`);
+sum(mixedArr);
+// should return: 57
 
 // Iteration #4: Calculate the average
 // Level 1: Array of numbers
-const numbersAvg = [2.4, 6.6, 9.6, 10.9, 7, 4.4, 1.55, 9];
-console.log("Version 001");
-// function averageNumbers(numbersAvg) {
-//   return (sumNumbers(numbersAvg) / numbersAvg.length).toFixed(2);
-// }
-function averageNumbers(numbersAvg) {
-  if (numbersAvg.length === 0) return null;
+const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
+function averageNumbers(numbersAvg) {
+  // return null if empty
+  if (!numbersAvg.length) return null;
+  // Use this to store operation
   let total = 0;
   for (let i = 0; i < numbersAvg.length; i++) {
     total += numbersAvg[i];
   }
-
   return total / numbersAvg.length;
 }
-console.log(`The average of this array is: ${averageNumbers(numbersAvg)}`);
-console.log("Version 002");
-function averageNumbers2(numbersAvg) {
-  if (numbersAvg.length === 0) return null;
-  if (numbersAvg.length === 1) return numbersAvg[0];
 
-  let total = 0;
-  for (let i = 0; i < numbersAvg.length; i++) {
-    total += numbersAvg[i];
-  }
-  return (total / numbersAvg.length).toFixed(2);
-}
-console.log(`The average of this array is: ${averageNumbers2(numbersAvg)}`);
+averageNumbers(numbersAvg);
+
 // Level 2: Array of strings
 const wordsArr = [
   "seat",
@@ -206,38 +136,42 @@ const wordsArr = [
   "fuel",
   "palace",
 ];
-// V1 - NORMAL
+
+// Implement the function named averageWordLength that receives as a single argument an array of words and returns the average length of the words:
 function averageWordLength(wordsArr) {
-  if (wordsArr.length === 0) return null;
+  // should return null if receives an empty array when called
+  if (!wordsArr.length) return null;
+  // should return the average of a one-element array
   let total = 0;
   for (let i = 0; i < wordsArr.length; i++) {
     total += wordsArr[i].length;
   }
-  return total / wordsArr.length;
+  // should return the average of a the array
+  let totalAverage = total / wordsArr.length;
+  console.log(totalAverage);
+  return totalAverage;
 }
-console.log(`- Iteration #4.2: Array of strings - "`);
-console.log(
-  `The average word length in this array is: ${averageWordLength(wordsArr)}`
-);
-// V2 - A - SIMPLIFIED TERNARIES & ARROW
-const averageWordLength2 = (wordsArr) =>
-  !wordsArr.length ? null : wordsArr.join("").length / wordsArr.length;
-console.log(
-  `TERNARY - ARROW - The average word length in this array is: ${averageWordLength2(
-    wordsArr
-  )}`
-);
-// Bonus - Iteration #4.1
-console.log("-------------------");
-console.log(`- Iteration 4.1 - "`);
-const mixedArr2 = [6, 12, "miami", 1, true, "barca", "200", "lisboa", 8, 10];
-function avg(array) {
-  return sum(array) / array.length;
+averageWordLength(wordsArr);
+
+// Bonus - Iteration #4.3
+const mixedArrTwo = [6, 12, "miami", 1, true, "barca", "200", "lisboa", 8, 10];
+function avg(mixedArray) {
+  if (!mixedArr.length) {
+    return null;
+  } else {
+    console.log(sum(mixedArray) / mixedArray.length);
+    sum(mixedArray) / mixedArray.length;
+  }
 }
-console.log(`The average of this mixed array is: ${avg(mixedArr2)}`);
-console.log(`- Iteration 4.1 - V2  "`);
-const avg2 = (arr) => (!arr.length ? null : sum(arr) / arr.length);
-console.log(`The average of this mixed array is: ${avg2(mixedArr2)}`);
+avg(mixedArrTwo);
+
+const averageTwo = (mixedArr) => {
+  let test = !mixedArr.length ? null : sum(mixedArr) / mixedArr.length;
+  console.log(test);
+  return test;
+};
+!mixedArr.length ? null : sum(mixedArr) / mixedArr.length;
+averageTwo(mixedArrTwo);
 
 // Iteration #5: Unique arrays
 const wordsUnique = [
@@ -248,13 +182,39 @@ const wordsUnique = [
   "bring",
   "sharp",
   "playground",
+  "playground",
+  "playground",
+  "playground",
+  "playground",
+  "playground",
+  "playground",
+  "playground",
+  "playground",
+  "playground",
   "poison",
   "communion",
   "simple",
   "bring",
 ];
+console.table(wordsUnique);
 
-function uniquifyArray() {}
+function uniquifyArray(array) {
+  // should return null if receives an empty array when called
+  if (!array.length) return null;
+  // should return the correct uniqified array when an array of the same elements passed as argument
+  // should return the same array when no element is repeated
+  // should return the uniquified array
+  let uniqueArray = [];
+  array.forEach((word) => {
+    if (!uniqueArray.includes(word)) {
+      uniqueArray.push(word);
+    }
+  });
+  // Return new array with the words that are not duplicated
+  console.table(uniqueArray);
+  return uniqueArray;
+}
+uniquifyArray(wordsUnique);
 
 // Iteration #6: Find elements
 const wordsFind = [
@@ -268,24 +228,15 @@ const wordsFind = [
   "disobedience",
 ];
 
-function doesWordExist() {}
+// Let's create a simple array search.
 
-// Iteration #7: Count repetition
-const wordsCount = [
-  "machine",
-  "matter",
-  "subset",
-  "trouble",
-  "starting",
-  "matter",
-  "eating",
-  "matter",
-  "truth",
-  "disobedience",
-  "matter",
-];
-
-function howManyTimes() {}
+// Declare a function named doesWordExist that will take in an array of words as one argument and a word to search for as the other. Return true if the word exists in the array; otherwise, return false.
+function doesWordExist(array, word) {
+  if (!array.length) return null;
+  console.log(array.includes(word));
+  return array.includes(word);
+}
+doesWordExist(wordsFind, "truth");
 
 // Iteration #8: Bonus
 const matrix = [
