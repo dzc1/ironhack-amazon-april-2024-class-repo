@@ -53,6 +53,33 @@ console.log(createElement.classList);
 createElement.classList.remove("other-class");
 console.log(createElement.classList);
 
+// Toggle a class using a mix of classList + togggle method
+// How to toggle a class
+
+// The classList.toggle() method is commonly used in most social media platforms like Twitter. It allows you to "like" a post with a button and "unlike" with that same button whenever you want.
+
+// So JavaScript checks if our button has the CSS class.
+
+// If it has the class and you click the button, it removes it. If it doesn't have the class and you click the button, it adds it.
+
+const toggleFunction = () => {
+  console.log("I have been clicked");
+  let boxDisplay = document.querySelector(".box-display");
+  let currentText = boxDisplay.innerText;
+  boxDisplay.classList.toggle("toggle-test");
+  // check if the text matches our current text and then let's change it
+  if (currentText === "remove test") {
+    boxDisplay.innerText = "Changed text and color";
+  } else {
+    boxDisplay.innerText = "remove test";
+  }
+};
+
+// ----
+// ----
+// ----
+// ----
+
 // How to insert an element before another
 // If you noticed in the console log above, the appended div tag was automatically added at the bottom.
 

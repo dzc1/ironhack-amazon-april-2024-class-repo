@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browser Events</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+  </head>
+  <body class="bg-gradient-to-r from-gray-100 to-blue-100">
+    <section class="py-2">
+      <div class="p-4">
+        <h1 class="text-center text-xl font-bold  cursor-pointer hover:text-blue-500">What are browser events?</h1>
+        <div class="m-4 flex justify-center">
+          <button class="ruben-example p-4 bg-blue-500 text-center">Scroll using js - smooth</button>
+        <a href="#alexisGS"><button class="p-4 bg-red-500 text-center">Scroll using ID element through a tag</button>
+        </a>
+        
+        </div>
+        <p>An event refers to an action within the program.</p>
+        <p>Let's focus on events in the context of the browser.</p>
+        <p>
+          Essentially, an event is an indicator that shows you certain actions
+          have occurred so that the user can respond or take action based on the event
+          :)
+        </p>
+      </div>
+    </section>
+    <section class="py-2">
+      <div class="p-4">
+        <div class="py-2">
+          <h2 class="text-xl font-bold text-center">Mouse Events</h2>
+          <ul>
+            <li>click</li>
+            <li>dblclick</li>
+            <li>mousemove</li>
+            <li>mouseover</li>
+            <li>mousewheel</li>
+            <li>mouseout</li>
+            <li>mousedown</li>
+            <li>mouseup</li>
+          </ul>
+        </div>
+        <div class="py-2">
+          <h2 class="text-xl font-bold text-center">Touch Events</h2>
+          <ul>
+            <li>touchstart</li>
+            <li>touchmove</li>
+            <li>touchend</li>
+            <li>touchcancel</li>
+          </ul>
+        </div>
+        <div class="py-2">
+          <h2 class="text-xl font-bold text-center">Keyboard Events</h2>
+          <ul>
+            <li>keydown</li>
+            <li>keypress</li>
+            <li>keyup</li>
+          </ul>
+        </div>
+        <div class="py-2">
+            
+            <h2 class="text-xl font-bold text-center">Form Events</h2>
+            
+          <ul>
+            <li>focus</li>
+            <li>blur</li>
+            <li>change</li>
+            <li>submit</li>
+          </ul>
+        </div>
+        <div class="py-2">
+          <h2 class="text-xl font-bold text-center">Window Events</h2>
+          <ul>
+            <li>scroll</li>
+            <li>resize</li>
+            <li>hashchange</li>
+            <li>load</li>
+            <li>unload</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="py-2">
+      <div>
+          <h1 class="font-bold py-2">Event Handlers</h1>
+        <p>
+          As we've said before, we monitor events so that when
+          we receive any notification that an event has occurred, the program
+          can respond accordingly.
+        </p>
+        <p>
+          This action theoretically works based on functions that colloquially
+          we call eventHandlers which also refer to eventListeners. If
+          an event occurs and the eventHandler is invoked, we can say that the
+          event is registered.
+        </p>
+
+        <div class="py-2">
+          <p class="font-bold">Let's add a button and add a click handler</p>
+          <button id="btn" class="font-heading px-5 py-3 w-auto uppercase text-white text-xs font-semibold  bg-gray-900 rounded-md">
+            Click Me - using regular function
+          </button>
+          <button id="btn-event-listener-anonimous" class="font-heading px-5 py-3 w-auto uppercase text-white text-xs font-semibold  bg-gray-900 rounded-md my-8">
+            Click Me - using anonymous function inside eventListener - THE FAMOUS CALLBACK 
+          </button>
+          <p class="text-cursive">
+            Example: if we have a button with an id of "btn", the eventHandler is
+            invoked with an alert in the browser that we pass the text "Button
+            has been clicked". We are assigning an "onClick" property to the
+            function which would be the eventHandler.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="py-22">
+      <h1 class="font-bold">Assigning Event Handlers</h1>
+      <p>
+        we have several ways to assign eventHandlers to our html elements
+      </p>
+
+      <p>
+        In theory, the easiest way to add them is inline as we have seen
+        in the previous example but it is the least recommended
+      </p>
+      <!-- BIG NO NO -->
+      <button class="font-heading px-5 py-3 w-auto uppercase text-white text-xs font-semibold  bg-gray-900 rounded-md" 
+      onclick="alert('Hello world!')">
+      Click Me 1
+    </button>
+    <!-- BIG NO NO -->
+      <button 
+      onClick="(() => alert('Hello World!'))()">
+      Click Me 2
+    </button>
+
+
+    <!-- BIG NO NO -->
+      <button class="font-heading px-5 py-3 w-auto uppercase text-white text-xs font-semibold  bg-gray-900 rounded-md" 
+      ONCLICK="(() => alert('Hello World!'))()">
+      Click Me 3</button>
+
+      <!-- YOU CAN DO THIS , THIS IS ACTUALLY REALLY GOOD! -->
+      <button class="font-heading px-5 py-3 w-auto uppercase text-white text-xs font-semibold  bg-gray-900 rounded-md" 
+      onclick="hello()">
+      Click Me 4 - using a function that lives in the script tag - SEGMENTED</button>
+
+      <p>
+        Note that it is not common to find HTML event attributes like
+        onClick, onChange, or onSubmit because html attributes are not case
+        sensitive. Basically it is syntactically correct to use "onclick",
+        "onClick" or "ONCLICK".
+      </p>
+
+      <div>
+          <h1 class="font-bold">Using a function in a script tag</h1>
+
+
+          <button class="font-heading px-5 py-3 w-auto uppercase text-white text-xs font-semibold  bg-gray-900 rounded-md"
+          onclick="onClickHandler2()">
+          Click me - Using a function inside of script tag
+          </button>
+
+      </div>
+      <div>
+        <h1 class="font-bold">Using a direct event</h1>
+
+
+        <button class="font-heading px-5 py-3 w-auto uppercase text-white text-xs font-semibold  bg-gray-900 rounded-md"
+        id="buttonThree">
+        Click me - event handling
+      </button>
+
+
+      </div>
+      <div>
+        <h1 class="font-bold">Using an eventListener</h1>
+        <button class="font-heading px-5 py-3 w-auto uppercase text-white text-xs font-semibold  bg-gray-900 rounded-md"
+        id="button3">
+        Click me - Arrow Function with event handling
+      </button>
+      </div>
+      <div>
+        <h1 class="font-bold">Using an eventListener and passing a parameter/argument</h1>
+        <p>It is important to understand that the function we call function(e) in our JS code, is what we call a callback, we will see this later.</p>
+        <p class="mb-8">The <strong>(e)</strong> in that function is an object that refers to the event itself. Within that object you have access to many useful properties and functions, such as the button or mouse key that was pressed, or information about the target of the event: the DOM node that was clicked.</p>
+
+
+        <button class="font-heading px-5 py-3 w-auto uppercase text-white text-xs font-semibold  bg-gray-900 rounded-md"
+        id="buttonFour">
+        Click me - Param in Events
+      </button>
+
+      <img class="w-1/4 h-1/4 p-8" src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/UEFA_Champions_League.svg/1200px-UEFA_Champions_League.svg.png" alt="UEFA LOGO" id="uefa">
+
+      </div>
+      <h1 class="font-bold">Adding eventListeners to multiple things</h1>
+      <p>This might seem like a lot of code if you're attaching many eventListeners to many elements. There are a few ways to make this more efficient. We've learned that we can get a list of nodes of all elements that match a specific selector with querySelectorAll('selector'). To add a listener to each one of them we simply need to iterate through the entire list like this:</p>
+    
+       <div class="px-20 py-2 mx-auto multiple" id="16"><div class="mx-auto p-4 bg-gray-900 rounded-md text-white uppercase cursor-pointer">Click Me 1</div></div>
+       <div class="px-20 py-2 mx-auto multiple" id="2"><div class="mx-auto p-4 bg-gray-900 rounded-md text-white uppercase cursor-pointer">Click Me 2</div></div>
+       <div class="px-20 py-2 mx-auto multiple" id="4"><div class="mx-auto p-4 bg-gray-900 rounded-md text-white uppercase cursor-pointer">Click Me 3</div></div>     
+       
+
+       <h1 class="font-bold text-xl">Short Version</h1>
+       
+       <div class="px-20 py-2 mx-auto" id="shortened"><div class="mx-auto p-4 bg-gray-900 rounded-md text-white uppercase">Click Me</div></div>
+
+       <div class="px-20 py-2 mx-auto">
+        <h1 class="font-bold">Double Click</h1>
+
+
+        <p class="font-bold mychange">I love Hip Hop</p>
+
+
+        <div id="doubleclick" class="mx-auto p-4 bg-gray-900 rounded-md text-white uppercase cursor-pointer">Click Me - doubleclick</div>
+      </div>
+
+      <div class="px-20 py-2 mx-auto">
+        <h1 class="font-bold">onKeyDown</h1>
+        <p class="font-bold mychange">A function is triggered when the user presses a key in the input field</p>
+        <input type="text" class="keyDown-class">
+      </div>
+      
+
+       <div class="flex itmes-center justify-center p-8">
+        <button class="scroll-to-top p-4 bg-blue-600 text-center text-white">Click me to scroll to top</button>
+       </div>
+       <div class="flex itmes-center justify-center p-8">
+        <button id="alexisGS" class="p-4 bg-blue-600 text-center text-white">STATIC ELEMENT</button>
+       </div>
+
+
+    </div>
+    </section>
+    <script src="./2-dom.js"></script>
+    
+  </body>
+</html>
