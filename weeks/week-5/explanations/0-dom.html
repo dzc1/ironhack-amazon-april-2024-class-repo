@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Master</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+      }
+      a {
+        display: block;
+        margin: 1rem 0;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+      }
+      section {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      #dom-manipulation img {
+        width: 70%;
+        height: 50%;
+      }
+
+      #dom-manipulation h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      a,
+      div {
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="dom-manipulation" class="test">
+      <h1>DOM MANIPULATION</h1>
+      <img
+        src="https://www.freecodecamp.org/news/content/images/2021/01/images.png"
+        alt=""
+      />
+      <div id="examples">
+        <div id="id-example">
+          <h1 id="wutang">Amazon Class</h1>
+        </div>
+        <div id="classname-example">
+          <div class="wuTang">CREAM</div>
+          <div class="wuTang">A Better Tomorrow</div>
+          <div class="wuTang">Tearz</div>
+          <div class="wuTang">Protect yo neck</div>
+          <div class="wuTang">Bring Da Ruckus</div>
+          <h1 class="wuTang">Gritz</h1>
+          <p class="rock">Rolling Stones</p>
+        </div>
+        <hr />
+        <div id="tagName-example">
+          <h5>Joey Badass</h5>
+          <h5>J Cole</h5>
+          <h5>RUFUS</h5>
+          <h5 class="myLove">NAS</h5>
+        </div>
+        <hr />
+        <div id="query-selector">
+          <div class="hipHop">
+            <h2 class="myLove">I love hip hop</h2>
+          </div>
+          <div>
+            <h1 class="hipHop">Wos</h1>
+          </div>
+          <h4>Yoga is amazingly hard</h4>
+          <p id="latin">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Reiciendis, itaque pariatur iure quidem officia molestiae quasi ea
+            quas excepturi. Corrupti dolore neque quam suscipit necessitatibus
+            odio ut quos sapiente id.
+          </p>
+        </div>
+        <hr />
+        <div id="i-am-a-even-cooler-sibling-because-i-came-first"></div>
+        <div id="traverse-document">
+          <div id="firstchild">i am a first child</div>
+          <p id="second-child">i am the second child</p>
+          <h4>I love hip Hop</h4>
+          <h3>Wu Tang Clan, is for the children</h3>
+          <p>My name is Aragorn, son Arathorn II and Gilraen.</p>
+        </div>
+        <div id="i-am-a-cool-sibling"></div>
+      </div>
+    </section>
+
+    <!-- Comment -->
+    <h5>Music is amazing!</h5>
+    <script src="./0-dom.js"></script>
+  </body>
+</html>

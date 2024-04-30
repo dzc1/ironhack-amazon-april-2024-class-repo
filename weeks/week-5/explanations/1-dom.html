@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Manipulation 2</title>
+    <style>
+      body {
+        background-color: #037171;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      a,
+      div {
+        font-size: 48px;
+      }
+
+      .button {
+        background-color: black;
+        width: 200px;
+        border: none;
+        font-size: 2rem;
+        padding: 0.5rem;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .box-display {
+        width: 200px;
+        height: 200px;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .remove-test {
+        background: #c1e736;
+      }
+      .remove-test2 {
+        background: #5c6eac;
+      }
+
+      button {
+        padding: 1rem;
+        font-size: 48px;
+        border-radius: 16px;
+      }
+
+      .example-1 {
+        color: red;
+      }
+
+      .toggle-test {
+        background: red;
+      }
+
+      .javascript {
+        color: red;
+        padding: 1em;
+        background: rgb(27, 27, 165);
+      }
+    </style>
+  </head>
+  <body class="">
+    <div id="parent">
+      <!-- <p>I love javascript more than PHP</p> -->
+      <div id="firstchild">I love pizza</div>
+      <p id="secondchild">I like to watch fireship on youtube</p>
+      <p class="secondChild">I like to watch fireship on youtube</p>
+      <h4>I love playing guitar</h4>
+      <h1 class="removeMe">C.R.E.A.M</h1>
+      <p>I am the last one on this list....</p>
+    </div>
+
+    <button onclick="toggleFunction()" id="master">Click me</button>
+    <div class="box-display remove-test">remove test</div>
+
+    <script src="./1-dom.js"></script>
+  </body>
+</html>
