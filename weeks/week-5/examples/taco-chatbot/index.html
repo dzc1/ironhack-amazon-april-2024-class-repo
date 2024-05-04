@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TacoBot</title>
+    <!-- Google Fonts Import - font used: Montserrat - weights used: 100-900 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Connection -->
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <h1>Let's get some tacos</h1>
+    <!-- Chatbot Wrapper -->
+    <main>
+      <!-- Chat -->
+      <section id="chat" class="chat"></section>
+
+      <!-- User Input div -->
+      <div class="input-wrapper" id="input-wrapper">
+        <input type="text" id="input" />
+        <button id="send" class="send-btn">Send</button>
+      </div>
+    </main>
+
+    <button id="restart">Restart bot</button>
+
+    <script src="./assets/script.js" defer></script>
+  </body>
+</html>

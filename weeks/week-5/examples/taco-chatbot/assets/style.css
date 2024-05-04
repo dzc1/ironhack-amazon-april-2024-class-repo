@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background-image: url("./imgs/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 34px;
+  color: #2da364;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 34px;
+  color: #2da364;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  margin: 0;
+}
+
+input {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  background: #f9f7f3;
+  color: #2da364;
+  padding: 16px;
+  font-size: 16px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  line-height: 26px;
+  flex: 1;
+}
+
+/* Target the placeholder text */
+input::placeholder {
+  color: #2da3648a; /* Change the placeholder text color here */
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+select {
+  border: none;
+  border-radius: 4px;
+  color: #2da364;
+  font-size: 16px;
+  font-weight: 3400;
+  height: 60px;
+  font-family: "Montserrat";
+  background: #f9f7f3;
+  width: 100%;
+  padding: 0 20px;
+  cursor: pointer;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+main {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  height: 600px;
+  border-radius: 30px;
+  background: #ffffff8c;
+  padding: 20px 24px;
+  padding-top: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  overflow: scroll;
+  flex-direction: column;
+  padding-bottom: 16px;
+}
+
+.bot-msg {
+  display: flex;
+  margin: 16px 8px 0 0;
+  flex-shrink: 0;
+}
+
+.user-msg {
+  display: flex;
+  justify-content: flex-end;
+  margin: 16px 0 0 8px;
+  flex-shrink: 0;
+}
+
+.bot-msg img,
+.user-msg img {
+  width: 20px;
+  height: 20px;
+}
+
+.avatar-container {
+  width: 40px; /* Twice the desired radius for circular shape */
+  height: 40px; /* Twice the desired radius for circular shape */
+  border-radius: 50%; /* Makes it circular */
+  overflow: hidden; /* Clips the content to the rounded shape */
+  background-color: #2da364; /* Background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 20px; /* Size of the image */
+  height: 20px; /* Size of the image */
+}
+
+.bubble {
+  background: #f9f7f3;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 16px 24px;
+  color: #2da364;
+  max-width: 40%;
+}
+
+.bot-bubble {
+  border-radius: 0px 26px 26px 26px;
+  margin-left: 8px;
+}
+
+.user-bubble {
+  border-radius: 26px 0 26px 26px;
+  margin-right: 8px;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: #2da364;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 40px;
+  margin-right: 4px;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+  transition: all 0.2s ease;
+}

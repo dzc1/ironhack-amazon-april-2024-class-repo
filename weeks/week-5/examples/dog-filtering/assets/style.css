@@ -1,0 +1,46 @@
+h1 {
+  font-family: Georgia;
+}
+
+p {
+  font-size: 20px;
+}
+
+.card {
+  width: 300px;
+  display: inline-block;
+  vertical-align: text-top;
+  background: #48af63;
+  border: 2px solid #48af63;
+  margin: 1em 0em;
+}
+
+.card-fav {
+  width: 300px;
+  display: inline-block;
+  vertical-align: text-top;
+  background: #406db0;
+  border: 2px solid #406db0;
+  margin: 1em 0em;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+}
+
+.card p {
+  font-family: Arial;
+}
+
+.cta-center {
+  display: flex;
+  justify-content: center;
+  margin: 1em 0;
+}
+
+.ternary {
+  width: 300px;
+  display: block;
+  margin-bottom: 2rem;
+}

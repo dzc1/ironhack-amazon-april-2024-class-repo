@@ -44,7 +44,7 @@ function onSubmit(eventParam) {
     // setTimeout always works in MILLISECONDS!
     setTimeout(() => msg.remove(), 2000);
   }
-  // Poxsitive case
+  // Positive case
   // user submits succesfully form with info
   else {
     console.log("successfull");
