@@ -124,3 +124,8 @@ window.addEventListener("load", () => {
     createBtn.addEventListener("click", createProduct);
   }
 });
+
+let diego = ["coder", 32, "foodie lover"];
+for (let x of diego) {
+  console.log(x);
+}
