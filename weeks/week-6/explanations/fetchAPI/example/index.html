@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch API</title>
+    <!-- Bootstrap Inyection -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <style>
+      .jsonInfo {
+        padding: 1rem;
+      }
+      #output {
+        margin: 1rem 0;
+        padding: 2rem;
+      }
+
+      img {
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Fetch Api Class - May 11, 2024</h1>
+    <button id="getText">Get Text</button>
+    <button id="getJson">Get Json</button>
+    <button id="getExternalApi">Get Info from API</button>
+    <!-- <button id="postProduct">POST Product</button>
+    <button id="putProduct">PUT Product</button>
+    <button id="patchProduct">PATCH Product</button>
+    <button id="deleteProduct">DELETE Product</button> -->
+
+    <hr />
+
+    <div id="output" class="row"></div>
+
+    <!-- Testing product card - delete later -->
+    <!-- <div class="col col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="" alt="Product Image" />
+        <div class="card-body">
+          <h5 class="card-title">Product title</h5>
+          <p class="card-text font-weight-light">
+            Price <span class="font-weight-bold">actual text...</span>
+          </p>
+          <p class="card-text font-weight-light">
+            Desc <span class="font-weight-bold">actual text...</span>
+          </p>
+          <p class="card-text font-weight-light">
+            Cat <span class="font-weight-bold">actual text...</span>
+          </p>
+          <p class="card-text font-weight-light">
+            Rating <span class="font-weight-bold">actual text...</span>
+          </p>
+        </div>
+      </div>
+    </div> -->
+
+    <script src="./js/fetching-text-info.js" defer></script>
+    <script src="./js/fetching-json-info-internal.js" defer></script>
+    <script src="./js/fetching-json-info-external-resource.js" defer></script>
+  </body>
+</html>

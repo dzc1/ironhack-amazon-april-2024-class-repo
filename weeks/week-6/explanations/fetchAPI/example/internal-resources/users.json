@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Rick Sanchez",
+    "profession": "Amazing granddfather and even better scientist",
+    "id": 1
+  },
+  {
+    "name": "Morty Smith",
+    "profession": "Comig of age teeager and great  side kick in intergalactic adventures",
+    "id": 2
+  },
+  {
+    "name": "Summer Smith",
+    "profession": "A great sisster and a sassy teenager",
+    "id": 3
+  },
+  {
+    "name": "Birdperson",
+    "profession": "Rick's friend and he is also an FBI Agent",
+    "id": 4
+  }
+]
