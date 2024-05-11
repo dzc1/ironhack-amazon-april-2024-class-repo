@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Google Font Integration -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Connection -->
+    <link rel="stylesheet" href="./assets/style.css" />
+    <!-- JS Connection -->
+    <!-- By adding the 'deffer' attr into the script element opening tag, we make sure that this script/js-file gets loaded at the end of the parsing of this html document, so it waits until the html elements are loaded into the website and then it loads/runs the logic innside the js file -->
+    <script src="./assets/script.js" defer></script>
+  </head>
+  <body>
+    <h1>TheSaurus API Project</h1>
+    <article>
+      <h2 id="word">The actual word...</h2>
+      <h3 id="type">Word type...</h3>
+      <!-- <p id="explanation">explanation...</p> -->
+      <ul id="explanation">
+        in here it will 1 or more ewxplaations via li element
+      </ul>
+      <hr />
+      <p>Synonyms</p>
+      <ul id="synonym"></ul>
+    </article>
+  </body>
+</html>

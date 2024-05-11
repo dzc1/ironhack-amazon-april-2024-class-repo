@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Generator - Class</title>
+    <!-- Google Font Integration -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Connection -->
+    <link rel="stylesheet" href="./assets/style.css" />
+    <!-- JS Connection -->
+    <!-- By adding the 'deffer' attr into the script element opening tag, we make sure that this script/js-file gets loaded at the end of the parsing of this html document, so it waits until the html elements are loaded into the website and then it loads/runs the logic innside the js file -->
+    <script src="./assets/script.js" defer></script>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Image Generator</h1>
+      <!-- This div will be toggled once the API is called and the img + author's name will be displayed -->
+      <div
+        class="image-container hide-class-created-that-willbe-triggered-via-js"
+      >
+        <h3>Image by: <span class="author"></span></h3>
+        <div>
+          <img class="img" />
+        </div>
+      </div>
+      <!-- Add button to trigger the fetching of the image -->
+      <button>Show me an image!</button>
+    </div>
+  </body>
+</html>
