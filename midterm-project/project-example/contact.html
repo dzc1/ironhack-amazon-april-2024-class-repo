@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <!-- CSS Inyection -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <!-- Google Font's Inyection -->
+    <!-- Google Fonts -  is done Through CSS inyection -->
+
+    <!-- TO add the script tag + defer attribute to load script file after the html is parsed on the webpage -->
+    <script src="./assets/js/contact.js" defer></script>
+    <script src="./assets/js/loader-animation.js" defer></script>
+  </head>
+  <body>
+    <!-- ----- -->
+    <!-- ----- -->
+    <!-- ----- -->
+    <!-- Splash Loader Code Start -->
+    <div class="splash">
+      <div class="circle2">
+        <div class="outer-circle"></div>
+        <div class="inner-circle"></div>
+        <div class="box box-top-left"></div>
+        <div class="box box-bottom-left"></div>
+        <div class="box box-bottom-right"></div>
+        <div class="box box-top-right"></div>
+      </div>
+    </div>
+    <!-- Splash Loader Code End -->
+    <!-- ----- -->
+    <!-- ----- -->
+    <!-- ----- -->
+    <!-- NavBar Element -->
+    <div id="navbar">
+      <nav>
+        <!-- Client Logo -->
+        <div class="logo">
+          <a href="./index.html">
+            <img
+              src="./assets/images/logos/circle.svg"
+              alt="Circle Agency Logo"
+            />
+          </a>
+        </div>
+        <!-- Nav Links -->
+        <div class="nav-links">
+          <a href="">Home</a>
+          <a href="">Projects</a>
+          <a href="">Services</a>
+          <a href="">About</a>
+        </div>
+        <!-- Contact Us Blue Btn -->
+        <div id="top-contact-btn" class="btn-blue">
+          <a class="btn-blue" href="./contact.html">Contact Us</a>
+        </div>
+      </nav>
+    </div>
+    <!-- Contzct Us Section -->
+    <section id="contact-main">
+      <div class="txt-title">
+        <h1>Contact Us</h1>
+        <div id="contact-form" class="form-container">
+          <form id="form-message">
+            <!-- Name  -->
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name" required />
+            <!-- Email + Phone Cont -->
+            <div class="email-phone">
+              <!-- Email  -->
+              <div>
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <!-- Phone  -->
+              <div>
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone" required />
+              </div>
+            </div>
+            <!-- Text Area Cont -->
+            <!-- Body Of Message  -->
+            <label for="message">Write Your Message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Enter your message here......"
+            ></textarea>
+            <button type="submit" class="btn-submit">Submit Form</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+      <!-- Logo -->
+      <div class="bottom-logo">
+        <div class="bottom-img-logo">
+          <img
+            src="./assets/images/logos/circle.svg"
+            alt="Circle Agency Logo"
+          />
+        </div>
+        <div class="address">
+          <p>
+            2972 Westheimer Rd. Santa Ana, <br />
+            Illinois 85486
+          </p>
+        </div>
+      </div>
+      <!-- NavLinks -->
+      <!-- This is achieved easier by using grid in css ;) -->
+      <div class="grid-links">
+        <a href="">Team</a>
+        <a href="">Services</a>
+        <a href="">About Us</a>
+        <a href="">Press</a>
+        <a href="">Projects</a>
+        <a href="">Privay Policy</a>
+      </div>
+    </footer>
+  </body>
+</html>
