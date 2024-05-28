@@ -91,15 +91,11 @@ import HelloWorld from './components/HelloWorld.vue'
 
 This folder is where you store your Vue components. Components are reusable pieces of the UI that can be used across different parts of your application.
 
-Example:
-
-plaintext
-
-Copy code
-
-`src/
-|-- components/
-    |-- HelloWorld.vue`
+```javascript
+//src/
+// components/
+//    HelloWorld.vue
+```
 
 ### `assets` Folder
 
