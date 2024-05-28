@@ -58,7 +58,7 @@ Vite is designed to provide a superior development experience with its fast serv
 
 ### How to Build a Project Using `npm create vite@latest`
 
-Below you can find a written step-by-step guide of this video.
+#### Below you can find a written step-by-step guide of this video. - CLICK ON VIDEO TO WATCH
 
 [![Watch the video](./gifs/terminal-vite.png)](https://www.youtube.com/watch?v=H60xbgXkGJA)
 
