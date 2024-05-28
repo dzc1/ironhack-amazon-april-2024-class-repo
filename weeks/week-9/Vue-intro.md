@@ -28,3 +28,14 @@ Why should you consider using Vue.js?
 - Performance: Optimized for performance with a small footprint and efficient rendering.
 
 #### 3\. How do we use Vue.js?
+
+There are 2 ways of using this framework.
+
+- The Options API (Vue.js V.2.0)
+- The Composition API (Vue.js V.3.0)
+
+In this class we will focus on the composition API. Due to being the latest version and ease of use.
+
+### 4\. Common Examples
+
+[Made With Vue.js](https://madewithvuejs.com/)

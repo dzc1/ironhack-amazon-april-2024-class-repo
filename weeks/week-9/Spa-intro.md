@@ -49,6 +49,62 @@ Example: Gmail, Google Maps, Facebook, and Twitter are well-known examples of SP
 
     - Modern SPAs can implement server-side rendering (SSR) or pre-rendering techniques to address SEO concerns, making them more search-engine friendly.
 
+### List of examples
+
+1.  Gmail
+
+    - Google's email service provides a highly interactive user experience with real-time updates, seamless navigation between emails, and dynamic content loading.
+
+2.  Google Maps
+
+    - Users can search for locations, get directions, and view map data without refreshing the page, providing a smooth and responsive experience.
+
+3.  Facebook
+
+    - The social media platform allows users to navigate between their news feed, messages, notifications, and profiles without full page reloads.
+
+4.  Twitter
+
+    - Users can view and interact with tweets, navigate through profiles, and check notifications without page reloads, ensuring a fast and engaging experience.
+
+5.  Netflix
+
+    - The streaming service provides an interactive interface where users can browse, search, and watch content without full page reloads, enhancing the user experience.
+
+6.  Trello
+
+    - This project management tool offers a dynamic interface where users can create, update, and manage tasks in real-time without refreshing the page.
+
+7.  Airbnb
+
+    - The accommodation booking platform allows users to search for listings, view details, and make bookings with a responsive and interactive interface.
+
+8.  Spotify Web Player
+
+    - Spotify's web player lets users browse and play music, create playlists, and manage their library seamlessly, providing a smooth user experience.
+
+9.  Pinterest
+
+    - The visual discovery engine allows users to browse, save, and share images without full page reloads, creating a fluid browsing experience.
+
+10. Dropbox
+
+    - The cloud storage service offers a dynamic interface where users can upload, download, and manage files seamlessly.
+
+11. Asana
+
+    - A web-based project management tool that provides a highly interactive user interface for managing tasks and projects in real-time.
+
+12. Medium
+
+    - The online publishing platform offers a seamless reading and writing experience, allowing users to navigate between articles and create content without full page reloads.
+
+13. Slack
+
+    - The collaboration tool provides real-time messaging and updates, allowing users to switch between channels and conversations without refreshing the page.
+
+These examples demonstrate the power and versatility of SPAs in delivering a smooth, responsive, and interactive user experience across various types of web applications.
+
 ### Common Examples
 
 [Made With Vue.js](https://madewithvuejs.com/)
