@@ -61,7 +61,7 @@ Vite is designed to provide a superior development experience with its fast serv
 Below you can find a written step-by-step guide of this video.
 
 ![gif](./gifs/vite-vue.gif)
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://youtu.be/vt5fpE0bzSY)
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.youtube.com/watch?v=H60xbgXkGJA)
 
 #### Step-by-Step Guide
 
