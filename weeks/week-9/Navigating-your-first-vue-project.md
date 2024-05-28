@@ -48,7 +48,7 @@ import App from "./App.vue";
 createApp(App).mount("#app");
 ```
 
-### `App.vue`
+### `App.vue` File
 
 This is the root component of your application. All other components will be nested inside this one. It usually contains the main layout and structure of your app.
 
@@ -101,79 +101,9 @@ This folder is where you store your Vue components. Components are reusable piec
 
 This folder is for your project's static assets such as images, fonts, or any other files that need to be processed by the build tool.
 
-## Common Additional Files
+### `style.css` File
 
-### `README.md`
-
-This is the main documentation file for your project. It typically includes an overview of the project, installation instructions, and usage guidelines.
-
-### `.gitignore`
-
-This file specifies which files and folders should be ignored by Git. Common entries include `node_modules`, `dist`, and environment files.
-
-### `dist`
-
-This folder is generated when you build your project for production. It contains the compiled code that can be deployed to a web server.
-
-## Summary
-
-- `package.json`: Manages project metadata and dependencies.
-- `vite.config.js`: Configures VITE.
-- `node_modules`: Contains installed dependencies.
-- `public`: Contains static assets.
-- `src`: Contains the source code for your application.
-  - `main.js`: Entry point of the app.
-  - `App.vue`: Root component.
-  - `components`: Folder for Vue components.
-  - `assets`: Folder for static assets.
-- `README.md`: Main documentation.
-- `.gitignore`: Specifies files to be ignored by Git.
-- `dist`: Folder for production build output.
-
-Understanding the purpose of these files and folders will help you navigate and manage your Vue.js project effectively. Happy coding!### `App.vue`
-
-This is the root component of your application. All other components will be nested inside this one. It usually contains the main layout and structure of your app.
-
-Basic Structure:
-
-vue
-
-Copy code
-
-`<template>
-
-  <div id="app">
-    <router-view></router-view>
-  </div>
-</template>
-
-<script>
-export default {
-  name: 'App'
-};
-</script>
-
-<style>
-/* Global styles */
-</style>`
-
-### `components` Folder
-
-This folder is where you store your Vue components. Components are reusable pieces of the UI that can be used across different parts of your application.
-
-Example:
-
-plaintext
-
-Copy code
-
-`src/
-|-- components/
-    |-- HelloWorld.vue`
-
-### `assets` Folder
-
-This folder is for your project's static assets such as images, fonts, or any other files that need to be processed by the build tool.
+This file contains CSS style properties which then are imported into the `main.js` file.
 
 ## Common Additional Files
 
@@ -189,6 +119,8 @@ This file specifies which files and folders should be ignored by Git. Common ent
 
 This folder is generated when you build your project for production. It contains the compiled code that can be deployed to a web server.
 
+**THIS FOLDER WILL NEVER BE VISIBLE LOCALLY, IT WILL BEEPLOYED AUTOMATICALLY USING VERCEL/NETLIFY**
+
 ## Summary
 
 - `package.json`: Manages project metadata and dependencies.
@@ -200,8 +132,11 @@ This folder is generated when you build your project for production. It contains
   - `App.vue`: Root component.
   - `components`: Folder for Vue components.
   - `assets`: Folder for static assets.
+  - `style.css`: CSS stylesheet.
 - `README.md`: Main documentation.
 - `.gitignore`: Specifies files to be ignored by Git.
 - `dist`: Folder for production build output.
 
-Understanding the purpose of these files and folders will help you navigate and manage your Vue.js project effectively. Happy coding!
+Understanding the purpose of these files and folders will help you navigate and manage your Vue.js project effectively.
+
+Happy coding!
