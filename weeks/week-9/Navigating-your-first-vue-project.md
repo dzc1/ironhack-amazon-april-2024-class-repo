@@ -24,7 +24,7 @@ This is the configuration file for VITE. It allows you to customize the VITE bui
 
 This folder contains all the dependencies listed in `package.json`. It's managed by npm or yarn and should not be edited manually.
 
-DO NOT TOUCH!
+**DO NOT TOUCH!**
 
 ### `public`
 
