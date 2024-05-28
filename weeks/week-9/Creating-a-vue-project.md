@@ -79,7 +79,7 @@ Vite is designed to provide a superior development experience with its fast serv
 
    - You will be prompted to enter the name of your project. Type the desired project name and press Enter. For example:
      ```bash
-     ✔ Project name: … my-vite-project
+     ✔ Project name: my-first-vue-project
      ```
 
 4. **Select a Framework**
@@ -100,7 +100,7 @@ Vite is designed to provide a superior development experience with its fast serv
 
    - Change into your project directory using the `cd` command:
      ```bash
-     cd my-vite-project
+     cd my-first-vue-project
      ```
 
 7. **Install Dependencies**
