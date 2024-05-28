@@ -11,3 +11,6 @@
 <!-- Build out a little biography of yourself. Data: Age DOB Location of Birth
 Current Location Favorite Foods - Favorite Movies - Object (key for action, 1
 for drama, 1 comdey) -->
+
+<!-- This data has to be stored in REACTIVE Variables, either using (ref, or
+reactive) -->
