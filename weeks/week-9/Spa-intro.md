@@ -21,8 +21,6 @@ Example: Gmail, Google Maps, Facebook, and Twitter are well-known examples of SP
 
 ### Why use a Single-Page Application (SPA)?
 
-Why:
-
 1.  Enhanced User Experience:
 
     - Fast and Responsive: SPAs provide a smoother and faster user experience by eliminating the need for full page reloads. Only the necessary parts of the page are updated, resulting in quicker interactions.
@@ -50,3 +48,7 @@ Why:
 6.  SEO and Social Sharing:
 
     - Modern SPAs can implement server-side rendering (SSR) or pre-rendering techniques to address SEO concerns, making them more search-engine friendly.
+
+### Common Examples
+
+[Made With Vue.js](https://madewithvuejs.com/)
