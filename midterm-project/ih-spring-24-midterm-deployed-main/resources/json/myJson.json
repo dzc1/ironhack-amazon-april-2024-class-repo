@@ -1,0 +1,44 @@
+{
+  "personA": {
+    "name": "John",
+    "surname": "Doe",
+    "email": "person-a@person.com",
+    "img": "https://img.freepik.com/premium-photo/concept-people-with-young-man-yellow-background_185193-82016.jpg?w=2000",
+    "city": "Barcelona",
+    "hobbies": "architecture, sports and flowers",
+    "bio": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. "
+  },
+  "personB": {
+    "name": "Olivia",
+    "surname": "Doe",
+    "email": "person-b@person.com",
+    "img": "https://img.freepik.com/free-photo/headshot-beautiful-dark-skinned-curly-has-pleased-expression-rejoices-success-enjoys-spare-time-wears-casual-t-shirt-isolated-yellow-wall-people-positive-emotions-feelings-concept_273609-27729.jpg",
+    "city": "Málaga",
+    "hobbies": "rpg, surf and books",
+    "bio": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. "
+  },
+  "musicA": {
+    "band": "Nobuo Uematsu",
+    "song": "Aerith Theme",
+    "url": "https://www.youtube.com/watch?v=HbXaVhuBMJ0&ab_channel=WarnerMusicSpain",
+    "duration": "5:49 minutes",
+    "genre": "Videogame OST",
+    "iframe": " <iframe class='youtube' src='https://www.youtube.com/embed/WVJdv-s9QWg' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+  },
+  "musicB": {
+    "band": "Robe",
+    "song": "Ininteligible",
+    "url": "https://www.youtube.com/watch?v=LuSf-Eadb2s&ab_channel=Robe",
+    "duration": "7:55 minutes",
+    "genre": "Rock",
+    "iframe": "<iframe class='youtube'src='https://www.youtube.com/embed/LuSf-Eadb2s' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+  },
+  "musicC": {
+    "band": "Destripando la historia",
+    "song": "Odin",
+    "url": "https://www.youtube.com/watch?v=GKnQGP67Xd0&ab_channel=PascuyRodri",
+    "duration": "3:02 minutes",
+    "genre": "Power Metal",
+    "iframe": "<iframe class='youtube' src='https://www.youtube.com/embed/GKnQGP67Xd0' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+  }
+}

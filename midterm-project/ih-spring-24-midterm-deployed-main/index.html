@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circle Agency</title>
+    <link rel="stylesheet" href="resources/styles/style.css" />
+    <link rel="stylesheet" href="./resources/styles/sticky.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="splash">
+      <div class="circle2">
+        <div class="outer-circle"></div>
+        <div class="inner-circle"></div>
+        <div class="box box-top-left"></div>
+        <div class="box box-bottom-left"></div>
+        <div class="box box-bottom-right"></div>
+        <div class="box box-top-right"></div>
+      </div>
+    </div>
+
+    <div id="navbar">
+      <nav>
+        <div class="logo">
+          <a href="./index.html">
+            <img
+              src="./resources/images/logos/circle.svg"
+              alt="Circle Agency Logo"
+            />
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="./project-simple.html">Project Page - Simple</a>
+          <a class="projectLink">Projects</a>
+          <a class="serviceLink">Services</a>
+          <!-- <a href="./aboutUs.html">About</a> -->
+        </div>
+        <div id="top-contact-btn" class="btn-blue">
+          <a class="btn-blue" href="contact-us.html">Contact Us</a>
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="./project-simple.html" >Project Page - Simple</a></li>
+          <li><a href="#services">Services</a></li>
+          <!-- <li><a href="./aboutUs.html">About</a></li> -->
+        </ul>
+      </nav>
+    </div>
+    <div class="skewContainer">
+      <section id="main">
+        <div class="txt-block">
+          <h1>Empower Your Business With Stunning Design!</h1>
+          <p>
+            Circle is a digital design and development studio. <br />
+            We design and develop astonishing websites and mobile apps.
+          </p>
+          <div class="btns-top-container">
+            <a class="link" href="#">See our work</a>
+            <a class="btn-blue" href="contact-us.html">Get in touch</a>
+          </div>
+        </div>
+        <div id="img-block">
+          <img
+            id="main-img"
+            src="./resources/images/hero-section//hero-image.png"
+            alt="Credit Card Image"
+          />
+          <img
+            id="credit-card-img"
+            src="./resources/images/hero-section/card-1.png"
+            alt="Credit Card Image"
+          />
+          <img
+            id="project-accepted-img"
+            src="./resources/images/hero-section/card-2.png"
+            alt="Project Accepted Image"
+          />
+        </div>
+      </section>
+      <section id="brands" class="client">
+        <!-- <div>
+          <img src="./resources/images/logos/airbnb-logo.svg" alt="Airbnb Logo" />
+        </div>
+        <div>
+          <img src="./resources/images/logos/google-logo.svg" alt="Google Logo" />
+        </div>
+        <div>
+          <img
+            src="./resources/images/logos/microsoft-logo.svg"
+            alt="Microsoft Logo"
+          />
+        </div>
+        <div>
+          <img src="./resources/images/logos/fedex-logo.svg" alt="FedEx Logo" />
+        </div>
+        <div id="amazon">
+          <img src="./resources/images/logos/amazon-logo.svg" alt="Amazon Logo" />
+        </div> -->
+        <div class="marquee-content">
+          <a href="https://www.airbnb.com" target="_blank" class="first"
+            ><img
+              loading="lazy"
+              src="resources/images/logos/airbnb-logo.svg"
+              alt="logo airbnb"
+              class="img-client"
+          /></a>
+          <a href="https://www.google.com" target="_blank"
+            ><img
+              loading="lazy"
+              src="resources/images/logos/google-logo.svg"
+              alt="logo google"
+              class="img-client"
+          /></a>
+          <a href="https://www.microsoft.com" target="_blank"
+            ><img
+              loading="lazy"
+              src="resources/images/logos/microsoft-logo.svg"
+              alt="logo microsoft"
+              class="img-client"
+          /></a>
+          <a href="https://www.fedex.com" target="_blank"
+            ><img
+              loading="lazy"
+              src="resources/images/logos/fedex-logo.svg"
+              alt="logo fedex"
+              class="img-client"
+          /></a>
+          <a href="https://www.amazon.com" target="_blank" id="hide2"
+            ><img
+              loading="lazy"
+              src="resources/images/logos/amazon-logo.svg"
+              alt="logo amazon"
+              class="img-client"
+          /></a>
+          <a href="https://www.nike.com" target="_blank" id="hide2"
+            ><img
+              loading="lazy"
+              src="resources/images/logos/Logo_NIKE.svg"
+              alt="logo nike"
+              class="img-client"
+          /></a>
+          <a href="https://www.adidas.com" target="_blank" id="hide"
+            ><img
+              loading="lazy"
+              src="resources/images/logos/Adidas_Logo.svg"
+              alt="logo adidas"
+              class="img-client"
+          /></a>
+          <a href="https://www.airbnb.com" target="_blank" id="hide"
+            ><img
+              loading="lazy"
+              src="resources/images/logos/airbnb-logo.svg"
+              alt="logo airbnb"
+              class="img-client"
+          /></a>
+          <a href="https://www.google.com" target="_blank" id="hide"
+            ><img
+              loading="lazy"
+              src="resources/images/logos/google-logo.svg"
+              alt="logo google"
+              class="img-client"
+          /></a>
+          <a href="https://www.microsoft.com" target="_blank" id="hide"
+            ><img
+              loading="lazy"
+              src="resources/images/logos/microsoft-logo.svg"
+              alt="logo microsoft"
+              class="img-client"
+          /></a>
+          <a href="https://www.fedex.com" target="_blank" id="hide"
+            ><img
+              loading="lazy"
+              src="resources/images/logos/fedex-logo.svg"
+              alt="logo fedex"
+              class="img-client"
+          /></a>
+          <a href="https://www.amazon.com" target="_blank" id="hide"
+            ><img
+              loading="lazy"
+              src="resources/images/logos/amazon-logo.svg"
+              alt="logo amazon"
+              class="img-client"
+          /></a>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="title"><h2>Recent Projects</h2></div>
+        <div class="projects-container">
+          <!-- <div class="project">
+                  <img src="./resources/images/projects-section/1.jpg" alt="">
+                  <h3>Simplify</h3>
+                  <p>UI Design & App Development</p>
+                  <a href="#">Learn More</a>
+              </div>
+              <div class="project">
+                  <img src="./resources/images/projects-section/2.jpg" alt="">
+                  <h3>Dashcoin</h3>
+                  <p>Web Development</p>
+                  <a href="#">Learn More</a>
+              </div>
+              <div class="project">
+                  <img src="./resources/images/projects-section/3.jpg" alt="">
+                  <h3>Vectorify</h3>
+                  <p>User Experience Design</p>
+                  <a href="#">Learn More</a>
+              </div> -->
+        </div>
+      </section>
+      <section id="reviews">
+        <h2>Hear What Our Clients Have to Say</h2>
+        <p>
+          "Circle helped us through every stage of our startup.<br />We really
+          enjoyed working with you."
+        </p>
+        <div class="autor-testimonial">
+          <img
+            src="./resources/images/testimonial-section/profile.png"
+            alt="Kristin Watson picture"
+          />
+          <div>
+            <h4>Kristin Watson</h4>
+            <h5>Booking.com</h5>
+          </div>
+        </div>
+        <img
+          src="./resources/images/testimonial-section/memoji-1.png"
+          alt=""
+          class="memoji-1"
+        />
+        <img
+          src="./resources/images/testimonial-section/memoji-2.png"
+          alt=""
+          class="memoji-2"
+        />
+        <img
+          src="./resources/images/testimonial-section/memoji-3.png"
+          alt=""
+          class="memoji-3"
+        />
+        <img
+          src="./resources/images/testimonial-section/memoji-4.png"
+          alt=""
+          class="memoji-4"
+        />
+      </section>
+      <section id="services">
+        <div class="title"><h2>Our Services</h2></div>
+        <div class="services-container">
+          <div class="service">
+            <div id="service-img-1"></div>
+            <h3>User Interface Design</h3>
+            <p>
+              Circle provides you with a stunning user interface design that is
+              accessible to everyone.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div class="service">
+            <div id="service-img-2"></div>
+            <h3>User Experience Design</h3>
+            <p>
+              Circle always focuses on delivering the best user experience to
+              your customers.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div class="service">
+            <div id="service-img-3"></div>
+            <h3>Application Development</h3>
+            <p>
+              We develop high-quality mobile and web applications using the
+              latest technology stack.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </section>
+      <section id="questions">
+        <div class="title-subscribe"><h2>Do you have any questions?</h2></div>
+        <p>Let us help you!</p>
+        <div class="email-subscribe">
+          <input id="email-input" type="text" placeholder="Enter your email" />
+          <a id="email-sub-btn" href="#">Subscribe</a>
+        </div>
+      </section>
+      <footer>
+        <div class="bottom-logo">
+          <div class="bottom-img-logo">
+            <img
+              src="./resources/images/logos/circle.svg"
+              alt="Circle Agency Logo"
+            />
+          </div>
+          <div class="address">
+            <p>2972 Westheimer Rd. Santa Ana,<br />Illinois 85486</p>
+          </div>
+        </div>
+        <div class="grid-links">
+          <a href="#"><div>Team</div></a>
+          <a href="#"><div>Services</div></a>
+          <a href="#"><div>About Us</div></a>
+          <a href="#"><div>Press</div></a>
+          <a href="#"><div>Projects</div></a>
+          <a href="#"><div>Privacy Policy</div></a>
+        </div>
+      </footer>
+    </div>
+    <div class="show">
+      <h3>Scroll to top  &#8593</h3>
+    </div>
+    <script src="resources/js/index.js"></script>
+    <script src="resources/js/splash.js"></script>
+    <!-- <script src="resources/js/skew.js"></script> -->
+    <script src="./resources/js/windowScroll.js"></script>
+    <script src="./resources/js/rightClick.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./resources/styles/style.css" />
+    <title>About Us</title>
+  </head>
+
+  <body>
+    <div class="splash">
+      <div class="circle2">
+        <div class="outer-circle"></div>
+        <div class="inner-circle"></div>
+        <div class="box box-top-left"></div>
+        <div class="box box-bottom-left"></div>
+        <div class="box box-bottom-right"></div>
+        <div class="box box-top-right"></div>
+      </div>
+    </div>
+    <div id="navbar">
+      <nav>
+        <div class="logo">
+          <a href="./index.html">
+            <img
+              src="./resources/images/logos/circle.svg"
+              alt="Circle Agency Logo"
+            />
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#projects">Projects</a>
+          <a href="./index.html#services">Services</a>
+          <a href="./aboutUs.html">About</a>
+        </div>
+        <div id="top-contact-btn" class="btn-blue">
+          <a class="btn-blue" href="contact-us.html">Contact Us</a>
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <ul class="menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html#projects">Projects</a></li>
+          <li><a href="./index.html#services">Services</a></li>
+          <li><a href="./aboutUs.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="skewContainer about-us-container">
+      <h1 class="about-us-title">About us</h1>
+      <section class="about-us">
+        <div class="flip">
+          <div class="front" id="john-img">
+            <h1 class="text-shadow" id="john-name"></h1>
+          </div>
+          <div class="back">
+            <h2 id="john-city"></h2>
+            <p id="john-hobbies"></p>
+            <p class="bio" id="john-bio"></p>
+          </div>
+        </div>
+        <div class="flip">
+          <div
+            class="front"
+            style="
+              background-image: url(https://img.freepik.com/free-photo/headshot-beautiful-dark-skinned-curly-has-pleased-expression-rejoices-success-enjoys-spare-time-wears-casual-t-shirt-isolated-yellow-wall-people-positive-emotions-feelings-concept_273609-27729.jpg);
+            "
+          >
+            <h1 class="text-shadow">Olivia Doe</h1>
+          </div>
+          <div class="back">
+            <h2>Málaga</h2>
+            <p>Hobbies: rpg, surf and books</p>
+            <p class="bio">
+              Biography: Lorem ipsum dolor, sit amet consectetur adipisicing
+              elit. Animi, quaerat tenetur distinctio labore at harum. Nisi
+              nihil dolor maxime omnis eius ex, delectus commodi, id praesentium
+              ratione optio harum quia.
+            </p>
+          </div>
+        </div>
+      </section>
+      <h2 class="music-title">Our favourite songs!</h2>
+      <section class="music" id="music">
+        <article class="music-piece" id="music-1"></article>
+        <article class="music-piece" id="music-2"></article>
+        <article class="music-piece" id="music-3"></article>
+      </section>
+      <h2 class="music-title">The best podcast we can show you</h2>
+      <section class="music">
+        <article class="podcast">
+          <iframe
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/episode/7ASG4c5iiTfSa1g40dz0Og?utm_source=generator"
+            width="100%"
+            height="352"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </article>
+      </section>
+    </div>
+    <footer>
+      <div class="bottom-logo">
+        <div class="bottom-img-logo">
+          <img
+            src="./resources/images/logos/circle.svg"
+            alt="Circle Agency Logo"
+          />
+        </div>
+        <div class="address">
+          <p>2972 Westheimer Rd. Santa Ana,<br />Illinois 85486</p>
+        </div>
+      </div>
+      <div class="grid-links">
+        <a href="#"><div>Team</div></a>
+        <a href="#"><div>Services</div></a>
+        <a href="#"><div>About Us</div></a>
+        <a href="#"><div>Press</div></a>
+        <a href="#"><div>Projects</div></a>
+        <a href="#"><div>Privacy Policy</div></a>
+      </div>
+    </footer>
+  </body>
+  <script src="./resources/js/about.js"></script>
+  <script src="resources/js/splash.js"></script>
+  <script src="./resources/js/rightClick.js"></script>
+</html>

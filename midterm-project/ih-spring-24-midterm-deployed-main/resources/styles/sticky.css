@@ -1,0 +1,18 @@
+.show {
+  display: none;
+}
+
+.sticky {
+  display: block;
+  position: sticky;
+  z-index: 999;
+  bottom: 0;
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.sticky:hover {
+  cursor: pointer;
+}

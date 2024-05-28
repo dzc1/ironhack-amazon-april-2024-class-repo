@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circle Agency</title>
+    <link rel="stylesheet" href="resources/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="alert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';"
+        >&times;</span
+      >
+      <strong>Thank you!</strong> Your Message Have Been Sent.
+    </div>
+
+    <div class="alert-wrong">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';"
+        >&times;</span
+      >
+      <strong>Ups.. :(</strong> Something Went Wrong.
+    </div>
+
+    <div class="splash">
+      <div class="circle2">
+        <div class="outer-circle"></div>
+        <div class="inner-circle"></div>
+        <div class="box box-top-left"></div>
+        <div class="box box-bottom-left"></div>
+        <div class="box box-bottom-right"></div>
+        <div class="box box-top-right"></div>
+      </div>
+    </div>
+
+    <div id="navbar">
+      <nav>
+        <div class="logo">
+          <a href="./index.html">
+            <img
+              src="./resources/images/logos/circle.svg"
+              alt="Circle Agency Logo"
+            />
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="/">Home</a>
+          <a href="/#projects">Projects</a>
+          <a href="/#services">Services</a>
+          <a href="./aboutUs.html">About</a>
+        </div>
+        <div id="top-contact-btn" class="btn-blue">
+          <a class="btn-blue" href="contact-us.html">Contact Us</a>
+        </div>
+
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <ul class="menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/#projects">Projects</a></li>
+          <li><a href="/#services">Services</a></li>
+          <li><a href="./aboutUs.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="skewContainer">
+      <section id="contact-main">
+        <div class="txt-title">
+          <h1>Contact Us</h1>
+          <div id="contact-form" class="form-container">
+            <form id="form-message" action="">
+              <label for="name">Full Name *</label>
+              <input
+                id="name"
+                type="text"
+                placeholder="Enter your full name"
+                required
+              />
+              <div class="email-phone">
+                <div>
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="Enter your email"
+                  />
+                </div>
+                <div>
+                  <label for="phone">Phone</label>
+                  <input
+                    id="phone"
+                    type="text"
+                    placeholder="Enter your phone"
+                  />
+                </div>
+              </div>
+              <label for="message">Message *</label>
+              <textarea
+                placeholder="Write your message here..."
+                maxlength="5000"
+                id="message"
+                required=""
+              ></textarea>
+              <button type="submit" class="btn-submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="bottom-logo">
+          <div class="bottom-img-logo">
+            <img
+              src="./resources/images/logos/circle.svg"
+              alt="Circle Agency Logo"
+            />
+          </div>
+          <div class="address">
+            <p>2972 Westheimer Rd. Santa Ana,<br />Illinois 85486</p>
+          </div>
+        </div>
+        <div class="grid-links">
+          <a href="#"><div>Team</div></a>
+          <a href="#"><div>Services</div></a>
+          <a href="#"><div>About Us</div></a>
+          <a href="#"><div>Press</div></a>
+          <a href="#"><div>Projects</div></a>
+          <a href="#"><div>Privacy Policy</div></a>
+        </div>
+      </footer>
+    </div>
+    <script src="resources/js/contact.js"></script>
+    <!-- <script src="resources/js/skew.js"></script> -->
+    <script src="resources/js/splash.js"></script>
+    <script src="./resources/js/rightClick.js"></script>
+  </body>
+</html>

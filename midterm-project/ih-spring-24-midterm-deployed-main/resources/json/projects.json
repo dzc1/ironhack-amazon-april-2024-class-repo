@@ -1,0 +1,25 @@
+[
+  {
+    "projectA": {
+      "id": 1,
+      "title": "Simplify",
+      "subtitle": "UI Design & App Development",
+      "img": "./resources/images/projects-section/1.jpg",
+      "description": "Simplify is a project focused on creating intuitive user interfaces and developing functional applications that enhance user experience."
+    },
+    "projectB": {
+      "id": 2,
+      "title": "Dashcoin",
+      "subtitle": "Web Development",
+      "img": "./resources/images/projects-section/2.jpg",
+      "description": "Dashcoin is a web development project aimed at creating efficient and dynamic web solutions for various industries and purposes."
+    },
+    "projectC": {
+      "id": 3,
+      "title": "Vectorfy",
+      "subtitle": "User Experience Design",
+      "img": "./resources/images/projects-section/3.jpg",
+      "description": "Vectorfy specializes in user experience design, creating engaging and user-friendly interfaces for digital products and services."
+    }
+  }
+]
