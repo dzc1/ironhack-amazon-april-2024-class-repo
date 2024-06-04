@@ -1,5 +1,4 @@
 <script setup>
-import { defineAsyncComponent } from "vue";
 import NavBar from "./components/NavBar.vue";
 import FooterComponent from "./components/FooterComponent.vue";
 import Iteration2 from "./components/Iteration2.vue";
@@ -7,10 +6,6 @@ import Iteration3 from "./components/Iteration3.vue";
 import Iteration4 from "./components/Iteration4.vue";
 import Iteration5 from "./components/Iteration5.vue";
 
-//Los componentes asíncronos no son importados hasta que se renderizan. La función defineAsyncComponent nos gestiona todo este proceso.
-const AsyncComp = defineAsyncComponent(() =>
-  import("./components/asyncComponent.vue")
-);
 // ... use `AsyncComp` like a normal component
 </script>
 
@@ -23,8 +18,7 @@ const AsyncComp = defineAsyncComponent(() =>
   <Iteration4 />
   <hr />
   <Iteration5 />
-  <AsyncComp />
-  <!--<FooterComponent /> -->
+  <FooterComponent />
 </template>
 
 <style scoped>
