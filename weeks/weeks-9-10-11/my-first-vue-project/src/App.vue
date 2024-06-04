@@ -15,6 +15,10 @@ Any Vue file contains these 3 tags! -->
 // import HelloWorld from "./components/HelloWorld.vue";
 import FirstComp from "./components/vue-basics/01-FirstComp.vue";
 import FirstReactiveComp from "./components/vue-basics/02-FirstReactiveComp.vue";
+import TextDirectives from "./components/vue-basics/04-TextDirectives.vue";
+import HtmlDirectives from "./components/vue-basics/05-HtmlDirective.vue";
+import ConditionalDirective from "./components/vue-basics/06-ConditionalDirective.vue";
+import IterationDirective from "./components/vue-basics/07-IterationDirective.vue";
 </script>
 
 <!-- This is where you write your HTML -->
@@ -24,7 +28,19 @@ import FirstReactiveComp from "./components/vue-basics/02-FirstReactiveComp.vue"
   </div>
   <!-- Coomps Here -->
   <div class="border">
-    <FirstReactiveComp />
+    <!-- <FirstReactiveComp /> -->
+
+    <!-- Text Directive Comp  -->
+    <!-- <TextDirectives /> -->
+
+    <!-- Html Directive Comp  -->
+    <!-- <HtmlDirectives /> -->
+
+    <!-- Conditional Directive Comp  -->
+    <!-- <ConditionalDirective /> -->
+
+    <!-- Iteration Directive Comp  -->
+    <IterationDirective />
   </div>
 
   <!-- Uncomment Here to see in order -->

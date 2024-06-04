@@ -2,7 +2,9 @@
 <template></template>
 
 <!-- JS  -->
-<script setup></script>
+<script setup>
+import { ref, reactive, computed } from "vue";
+</script>
 
 <!-- CSS -->
 <!-- The scoped attribute means that only the CSS properties available inside this style tag will be applied inside this component and ONLY This component -->
