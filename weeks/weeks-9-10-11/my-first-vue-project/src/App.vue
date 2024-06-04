@@ -23,7 +23,9 @@ import FirstReactiveComp from "./components/vue-basics/02-FirstReactiveComp.vue"
     <h1>Leaarning Vue.js</h1>
   </div>
   <!-- Coomps Here -->
-  <FirstReactiveComp />
+  <div class="border">
+    <FirstReactiveComp />
+  </div>
 
   <!-- Uncomment Here to see in order -->
   <!-- 1 -->

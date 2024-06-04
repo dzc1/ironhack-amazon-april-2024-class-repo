@@ -78,6 +78,10 @@ button:focus-visible {
 }
 
 /* Comp's Border for easdy reading */
+.border {
+  padding: 2rem;
+}
+
 .comps {
   border: 1px solid red;
   padding: 1rem;
