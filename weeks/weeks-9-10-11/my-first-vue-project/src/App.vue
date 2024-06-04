@@ -19,6 +19,7 @@ import TextDirectives from "./components/vue-basics/04-TextDirectives.vue";
 import HtmlDirectives from "./components/vue-basics/05-HtmlDirective.vue";
 import ConditionalDirective from "./components/vue-basics/06-ConditionalDirective.vue";
 import IterationDirective from "./components/vue-basics/07-IterationDirective.vue";
+import VForEx from "./components/exercises/02-Vfor.vue";
 </script>
 
 <!-- This is where you write your HTML -->
@@ -40,7 +41,11 @@ import IterationDirective from "./components/vue-basics/07-IterationDirective.vu
     <!-- <ConditionalDirective /> -->
 
     <!-- Iteration Directive Comp  -->
-    <IterationDirective />
+    <!-- <IterationDirective /> -->
+  </div>
+
+  <div id="excercises">
+    <VForEx />
   </div>
 
   <!-- Uncomment Here to see in order -->
