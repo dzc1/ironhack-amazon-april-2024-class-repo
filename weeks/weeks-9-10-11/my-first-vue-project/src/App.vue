@@ -20,6 +20,7 @@ import HtmlDirectives from "./components/vue-basics/05-HtmlDirective.vue";
 import ConditionalDirective from "./components/vue-basics/06-ConditionalDirective.vue";
 import IterationDirective from "./components/vue-basics/07-IterationDirective.vue";
 import BindDirective from "./components/vue-basics/08-BindDirective.vue";
+import FormDirective from "./components/vue-basics/09-FormDirective.vue";
 
 // Ex's
 import VForEx from "./components/exercises/02-Vfor.vue";
@@ -47,8 +48,10 @@ import VForEx from "./components/exercises/02-Vfor.vue";
     <!-- <IterationDirective /> -->
 
     <!-- Binding Directive Comp  -->
+    <!-- <BindDirective /> -->
 
-    <BindDirective />
+    <!-- Form Directive Comp -->
+    <FormDirective />
   </div>
 
   <div id="excercises">
