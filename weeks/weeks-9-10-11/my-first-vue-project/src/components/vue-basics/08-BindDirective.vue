@@ -166,8 +166,8 @@ remember that we are just displaying text dependding on true or false context
   <!-- ---- -->
   <!-- ---- -->
   <h5 v-bind:class="classBinding" @click="toggleClass">Toggle Class</h5>
-  <h5>Toggle Id</h5>
-  <h5>Toggle Style</h5>
+  <h5 :id="idBinding" @click="toggleId">Toggle Id</h5>
+  <h5 :style="styleBinding" @click="toggleStyle">Toggle Style</h5>
 </template>
 
 <!-- JS  -->
@@ -222,10 +222,21 @@ function toggleClass() {
       : "original-class";
 }
 
+// ID Example
 let idBinding = ref("original-id");
+function toggleId() {
+  idBinding.value =
+    idBinding.value === "original-id" ? "toggled-id" : "original-id";
+}
+
+// Style Example
 let styleBinding = reactive({
   backgroundColor: "blue",
 });
+const toggleStyle = () => {
+  styleBinding.backgroundColor =
+    styleBinding.backgroundColor === "blue" ? "red" : "blue";
+};
 </script>
 
 <!-- CSS -->
@@ -288,17 +299,19 @@ h6 {
   color: green;
 }
 .original-class:hover,
-.toggled-class:hover {
+.toggled-class:hover,
+#original-id:hover,
+#toggled-id:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
 /* Toggle ID Binding */
 #original-id {
-  background-color: white;
+  color: blue;
 }
 #toggled-id {
-  background-color: yellow;
+  color: yellow;
 }
 </style>
 
