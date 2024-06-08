@@ -19,6 +19,9 @@ import TextDirectives from "./components/vue-basics/04-TextDirectives.vue";
 import HtmlDirectives from "./components/vue-basics/05-HtmlDirective.vue";
 import ConditionalDirective from "./components/vue-basics/06-ConditionalDirective.vue";
 import IterationDirective from "./components/vue-basics/07-IterationDirective.vue";
+import BindDirective from "./components/vue-basics/08-BindDirective.vue";
+
+// Ex's
 import VForEx from "./components/exercises/02-Vfor.vue";
 </script>
 
@@ -42,10 +45,14 @@ import VForEx from "./components/exercises/02-Vfor.vue";
 
     <!-- Iteration Directive Comp  -->
     <!-- <IterationDirective /> -->
+
+    <!-- Binding Directive Comp  -->
+
+    <BindDirective />
   </div>
 
   <div id="excercises">
-    <VForEx />
+    <!-- <VForEx /> -->
   </div>
 
   <!-- Uncomment Here to see in order -->
