@@ -22,7 +22,8 @@ import ConditionalDirective from "./components/vue-basics/06-ConditionalDirectiv
 import IterationDirective from "./components/vue-basics/07-IterationDirective.vue";
 import BindDirective from "./components/vue-basics/08-BindDirective.vue";
 import FormDirective from "./components/vue-basics/09-FormDirective.vue";
-
+import Events from "./components/vue-basics/10-EventsInVue.vue";
+import CustomEventParent from "./components/vue-basics/11-CustomEventsParent.vue";
 // Ex's
 import VForEx from "./components/exercises/02-Vfor.vue";
 
@@ -120,7 +121,7 @@ const bands = reactive([
     :bandImg="bands[1].bandInfo.image"
   /> -->
 
-  <BandCard
+  <!-- <BandCard
     v-for="band in bands"
     :key="band.id"
     :bandName="band.bandInfo.name"
@@ -128,7 +129,7 @@ const bands = reactive([
     :bandSong="band.popularSong"
     :songInformation="band.popularSongInfo"
     :bandImg="band.bandInfo.image"
-  />
+  /> -->
 
   <!-- Coomps Here -->
   <div class="border">
@@ -151,6 +152,12 @@ const bands = reactive([
 
     <!-- Form Directive Comp -->
     <!-- <FormDirective /> -->
+
+    <!-- Events in Vue.js comp -->
+    <!-- <Events /> -->
+
+    <!-- Custom parent Comp here -->
+    <CustomEventParent />
   </div>
 
   <div id="excercises">
