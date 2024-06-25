@@ -88,6 +88,10 @@ export const useUserStore = defineStore("user", () => {
     console.log("New user created:", user.value);
   }
 
+  // Function to LOGIN - TO BE CREATED
+
+  // Functioon to LOG-out - TO BE CREATED
+
   /**
    * Returns the reactive variables and functions for external use in components.
    * This allows for easy access and manipulation of the user's state within the application.
