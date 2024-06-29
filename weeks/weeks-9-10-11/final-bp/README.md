@@ -1,29 +1,5 @@
 # global-state-with-piniajs
 
-This template should help get you started developing with Vue 3 in Vite.
+### What are life-cycle hooks in Vue.js
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+Lifecycle hooks in Vue are special functions that run at different stages of a component's life. Think of them as moments when Vue lets you do something specific when creating, updating, or destroying a component

@@ -115,10 +115,16 @@ export const useUserStore = defineStore("user", () => {
   }
 
   // Functioon to LOG-out - TO BE CREATED
+  let signOut = () => {
+    user.value = null;
+    profile.value = null;
+    localStorage.removeItem("user");
+    localStorage.removeItem("profile");
+  };
 
   /**
    * Returns the reactive variables and functions for external use in components.
    * This allows for easy access and manipulation of the user's state within the application.
    */
-  return { user, profile, fetchUser, register, signIn };
+  return { user, profile, fetchUser, register, signIn, signOut };
 });

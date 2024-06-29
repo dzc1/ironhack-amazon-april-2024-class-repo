@@ -2,11 +2,6 @@
 <template>
   <div class="container">
     <h3 class="header-title">Log In to ToDo App</h3>
-    <p class="header-subtitle">
-      We are on the login route. Here you should create a form with the
-      corresponding logic so that it allows the user to log in with their email
-      and password. Take a look at the SignUp logic if you need inspiration :)
-    </p>
     <!-- FORM GOES HERE -->
     <form @submit.prevent="signIn">
       <div class="form">

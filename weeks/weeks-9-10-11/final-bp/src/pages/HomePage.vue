@@ -9,6 +9,7 @@
     <!-- Using 2nd way -->
     <p>{{ countNumber }}</p>
     <p>{{ doubleCountNumber }}</p>
+    <button @click="incrementNumberFunctionFromStore">Add +1</button>
   </main>
 </template>
 
