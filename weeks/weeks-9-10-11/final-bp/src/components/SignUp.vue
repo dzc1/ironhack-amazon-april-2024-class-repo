@@ -46,7 +46,7 @@
         <p>
           Have an account?
           <PersonalRouter
-            :route="route"
+            :route="goToRoute"
             :buttonText="buttonText"
             class="sign-up-link"
           />
@@ -69,7 +69,9 @@ import { useUserStore } from "../stores/user";
 // improving structure and reactivity handling.
 
 // Route Variables for navigating users
-const route = "/";
+// Remember they are just storing strings
+// Not reactive in nature, so nor eff or reactive
+const goToRoute = "/auth/login";
 const buttonText = "Sign In";
 
 // Consolidating input fields and error messages into a reactive object
@@ -82,17 +84,18 @@ const formState = reactive({
 
 // Router instance for navigation
 const router = useRouter();
-
+// Store user accessed easily here
 const userStore = useUserStore();
 
 // Function to handle the SignUp process
 const signUp = () => {
+  // 1st - Conditional Logic only using a simple IF statement
   if (formState.password === formState.confirmPassword) {
     try {
       // Utilizes the signUp function from the user store to register the user
       userStore.register(formState.email, formState.password);
       // On successful sign up, redirect the user to the login page
-      router.push({ path: "/" });
+      router.push({ path: goToRoute });
     } catch (error) {
       // On failure, display an error message
       formState.errorMsg = error.message;
@@ -103,8 +106,11 @@ const signUp = () => {
     }
     return;
   }
-  // Sets error message if passwords do not match
+  // 2nd - Sets error message if passwords do not match
   formState.errorMsg = "Passwords do not match. Please try again.";
+  setTimeout(() => {
+    formState.errorMsg = "";
+  }, 2000);
 };
 </script>
 

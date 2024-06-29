@@ -89,6 +89,30 @@ export const useUserStore = defineStore("user", () => {
   }
 
   // Function to LOGIN - TO BE CREATED
+  /**
+   * Authenticates a user by checking credentials against those stored in local storage.
+   * Updates reactive states if authentication is successful.
+   * @param {String} email - Email of the user trying to sign in.
+   * @param {String} password - Password of the user trying to sign in.
+   */
+
+  function signIn(email, password) {
+    // Lets hit the function getFromLocalStorage, which simulates a get request inside a variable, basically it will cross referenced what ever is stored in storage annsd if a match is found we have a succesfull LOGIN request, thus
+    // If user info is found in localStorage, user exists within database, so redirect user to homePage.
+    let storedUser = getFromLocalStorage("user");
+    // Let's condition in the case if we have or not a user inside localStorage as Database
+    if (
+      storedUser &&
+      storedUser.email === email &&
+      storedUser.password === password
+    ) {
+      user.value = storedUser;
+      profile.value = getFromLocalStorage("profile");
+    } else {
+      // This is waht is executed if there is no users inside the DB
+      throw new Error("User not found or password incorrect");
+    }
+  }
 
   // Functioon to LOG-out - TO BE CREATED
 
@@ -96,5 +120,5 @@ export const useUserStore = defineStore("user", () => {
    * Returns the reactive variables and functions for external use in components.
    * This allows for easy access and manipulation of the user's state within the application.
    */
-  return { user, profile, fetchUser, register };
+  return { user, profile, fetchUser, register, signIn };
 });
