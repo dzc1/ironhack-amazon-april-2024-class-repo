@@ -49,7 +49,7 @@ Before you begin, ensure you have met the following requirements:
    ```bash
    git clone https://github.com/dzc1/ironhack-amazon-april-2024-class-repo/tree/main
    ```
-2. Make a copy of the folder called final-bp located inside the class folder on your desired location.
+2. Make a copy of the folder called `final-bp` located inside the class folder on your desired location.
 3. Open the new copied folder in VS Code
 4. Once opened in VS Code, open an integrated terminal.
 5. Install the dependencies:
