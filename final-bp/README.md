@@ -26,6 +26,7 @@ This is a Vue.js-based ToDo application that utilizes Pinia for state management
       - [taskStore.js](#taskstorejs)
       - [userStore.js](#userstorejs)
     - [Routing](#routing)
+  - [Usage](#usage)
 
 ## Getting Started
 
@@ -119,3 +120,13 @@ Manages user authentication and profile information, including registering, sign
 ### Routing
 
 The routing configuration is defined in `router.js`. The application uses Vue Router to navigate between different pages and includes nested routes for authentication.
+
+## Usage
+
+1.  **Register a new user**: Go to the Register page and provide your email and password to create a new account.
+2.  **Log in**: Go to the Login page and enter your credentials to log in.
+3.  **Add a new task**: Navigate to the Add Task page and fill in the task details to add a new task.
+4.  **View all tasks**: Go to the All Tasks page to see a list of all tasks.
+5.  **View completed tasks**: Go to the Completed Tasks page to see tasks that have been marked as completed.
+6.  **Mark a task as completed**: On the All Tasks page, click the "Mark as Completed" button next to a task.
+7.  **Delete a task**: On the All Tasks page, click the "Delete Task" button next to a task.
