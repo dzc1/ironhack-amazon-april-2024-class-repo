@@ -49,30 +49,30 @@ This will start the application and a route will be provided to you in the integ
 
 ## Project Structure
 
-todo-app/
+`todo-app/
 ├── public/
-│ ├── index.html
+│   ├── index.html
 ├── src/
-│ ├── assets/
-│ ├── components/
-│ │ ├── HelloWorld.vue
-│ │ ├── PersonalRouter.vue
-│ ├── pages/
-│ │ ├── HomePage.vue
-│ │ ├── AboutPage.vue
-│ │ ├── AllTasksPage.vue
-│ │ ├── CompletedTasksPage.vue
-│ │ ├── AddTaskPage.vue
-│ │ ├── AuthPage.vue
-│ │ ├── SignIn.vue
-│ │ ├── SignUp.vue
-│ ├── stores/
-│ │ ├── taskStore.js
-│ │ ├── userStore.js
-│ ├── App.vue
-│ ├── main.js
-│ ├── router.js
+│   ├── assets/
+│   ├── components/
+│   │   ├── HelloWorld.vue
+│   │   ├── PersonalRouter.vue
+│   ├── pages/
+│   │   ├── HomePage.vue
+│   │   ├── AboutPage.vue
+│   │   ├── AllTasksPage.vue
+│   │   ├── CompletedTasksPage.vue
+│   │   ├── AddTaskPage.vue
+│   │   ├── AuthPage.vue
+│   │   ├── SignIn.vue
+│   │   ├── SignUp.vue
+│   ├── stores/
+│   │   ├── taskStore.js
+│   │   ├── userStore.js
+│   ├── App.vue
+│   ├── main.js
+│   ├── router.js
 ├── .gitignore
 ├── README.md
 ├── package.json
-├── vite.config.js
+├── vite.config.js`
