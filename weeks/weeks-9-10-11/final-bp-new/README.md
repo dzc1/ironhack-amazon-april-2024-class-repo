@@ -1,4 +1,4 @@
-# global-state-with-piniajs
+# Final BoilerPlate
 
 ### What are life-cycle hooks in Vue.js
 
