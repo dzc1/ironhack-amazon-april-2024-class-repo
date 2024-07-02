@@ -11,21 +11,21 @@ This is a Vue.js-based ToDo application that utilizes Pinia for state management
     - [Installation](#installation)
     - [Running the Application](#running-the-application)
   - [Project Structure](#project-structure)
-  - [Components](#components)
-    - [HelloWorld.vue](#helloworldvue)
-    - [PersonalRouter.vue](#personalroutervue)
-    - [HomePage.vue](#homepagevue)
-    - [AboutPage.vue](#aboutpagevue)
-    - [AllTasksPage.vue](#alltaskspagevue)
-    - [CompletedTasksPage.vue](#completedtaskspagevue)
-    - [AddTaskPage.vue](#addtaskpagevue)
-    - [AuthPage.vue](#authpagevue)
-    - [SignIn.vue](#signinvue)
-    - [SignUp.vue](#signupvue)
-  - [Stores](#stores)
-    - [taskStore.js](#taskstorejs)
-    - [userStore.js](#userstorejs)
-  - [Routing](#routing)
+    - [Components](#components)
+      - [HelloWorld.vue](#helloworldvue)
+      - [PersonalRouter.vue](#personalroutervue)
+      - [HomePage.vue](#homepagevue)
+      - [AboutPage.vue](#aboutpagevue)
+      - [AllTasksPage.vue](#alltaskspagevue)
+      - [CompletedTasksPage.vue](#completedtaskspagevue)
+      - [AddTaskPage.vue](#addtaskpagevue)
+      - [AuthPage.vue](#authpagevue)
+      - [SignIn.vue](#signinvue)
+      - [SignUp.vue](#signupvue)
+    - [Stores](#stores)
+      - [taskStore.js](#taskstorejs)
+      - [userStore.js](#userstorejs)
+    - [Routing](#routing)
 
 ## Getting Started
 
@@ -64,58 +64,58 @@ This will start the application and a route will be provided to you in the integ
 
 ## Project Structure
 
-## Components
+### Components
 
-### HelloWorld.vue
+#### HelloWorld.vue
 
 Displays a welcome message.
 
-### PersonalRouter.vue
+#### PersonalRouter.vue
 
 Provides navigation links for the application.
 
-### HomePage.vue
+#### HomePage.vue
 
 Displays the home view with a counter example using Pinia.
 
-### AboutPage.vue
+#### AboutPage.vue
 
 Displays information about the application.
 
-### AllTasksPage.vue
+#### AllTasksPage.vue
 
 Displays all tasks and allows marking tasks as completed or deleting them.
 
-### CompletedTasksPage.vue
+#### CompletedTasksPage.vue
 
 Displays completed tasks.
 
-### AddTaskPage.vue
+#### AddTaskPage.vue
 
 Allows users to add new tasks.
 
-### AuthPage.vue
+#### AuthPage.vue
 
 Serves as a parent component for authentication-related nested routes.
 
-### SignIn.vue
+#### SignIn.vue
 
 Handles the sign-in process.
 
-### SignUp.vue
+#### SignUp.vue
 
 Handles the sign-up process.
 
-## Stores
+### Stores
 
-### taskStore.js
+#### taskStore.js
 
 Manages the state of tasks, including adding, marking as completed, and deleting tasks.
 
-### userStore.js
+#### userStore.js
 
 Manages user authentication and profile information, including registering, signing in, and signing out.
 
-## Routing
+### Routing
 
 The routing configuration is defined in `router.js`. The application uses Vue Router to navigate between different pages and includes nested routes for authentication.
