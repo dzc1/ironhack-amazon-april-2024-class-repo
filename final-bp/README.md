@@ -47,8 +47,7 @@ Before you begin, ensure you have met the following requirements:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/todo-app.git
-   cd todo-app
+   git clone https://github.com/dzc1/ironhack-amazon-april-2024-class-repo/tree/main
    ```
 2. Install the dependencies:
    ```bash
