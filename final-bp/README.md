@@ -26,10 +26,6 @@ Before you begin, ensure you have met the following requirements:
 
 1.  Clone the repository:
 
-        bash
-
-        Copy code
-
         git clone https://github.com/dzc1/ironhack-amazon-april-2024-class-repo/tree/main
 
 2.  Install the dependencies:
