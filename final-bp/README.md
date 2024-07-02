@@ -142,7 +142,7 @@ The routing configuration is defined in `router.js`. The application uses Vue Ro
 
 ## Where to Go From Here?
 
-Here are 20 possible updates and enhancements that beginners can work on to improve this application::
+Here are 20 possible updates and enhancements that you can work on to improve this application::
 
 ### Styling Enhancements
 
