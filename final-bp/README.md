@@ -33,7 +33,7 @@ This is a Vue.js-based ToDo application that utilizes Pinia for state management
     - [User Management Enhancements](#user-management-enhancements)
     - [Additional Features](#additional-features)
     - [Third-Party Libraries](#third-party-libraries)
-    - [Local Storage Enhancements - **- Optional**](#local-storage-enhancements-----optional)
+    - [Local Storage Enhancements - **ALL Optional**](#local-storage-enhancements---all-optional)
     - [IF YOU DO NOT UNDERSTAND THE FILE THAT YOU ARE LOOKING , Use ChatGPT](#if-you-do-not-understand-the-file-that-you-are-looking--use-chatgpt)
 
 ## Getting Started
@@ -199,7 +199,7 @@ Here is a list of possible updates and enhancements that you can work on to impr
 28. **Chart.js or ECharts**: Integrate Chart.js or ECharts for data visualization and analytics. **- Optional**
 29. **Vue-i18n**: Add Vue-i18n for internationalization and localization support. **- Optional**
 
-### Local Storage Enhancements - **- Optional**
+### Local Storage Enhancements - **ALL Optional**
 
 Leveraging localStorage can significantly improve the user experience by persisting data across sessions. Here are some updates and enhancements you can make using localStorage to save key-value pairs, such as tasks and user profiles:
 
