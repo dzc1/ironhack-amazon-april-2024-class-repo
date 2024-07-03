@@ -195,9 +195,8 @@ Here is a list of possible updates and enhancements that you can work on to impr
 24. **Vue Draggable**: Implement Vue Draggable for drag-and-drop functionality within lists. **- Optional**
 25. **Vuelidate or VeeValidate**: Add form validation using Vuelidate or VeeValidate to enhance user input handling. **- Optional**
 26. **Toastification**: Implement Toastification for showing toast notifications to users. **- Optional**
-27. **Vuex Persist**: Use Vuex Persist to persist the state of the application across page reloads. **- Optional**
-28. **Chart.js or ECharts**: Integrate Chart.js or ECharts for data visualization and analytics. **- Optional**
-29. **Vue-i18n**: Add Vue-i18n for internationalization and localization support. **- Optional**
+27. **Chart.js or ECharts**: Integrate Chart.js or ECharts for data visualization and analytics. **- Optional**
+28. **Vue-i18n**: Add Vue-i18n for internationalization and localization support. **- Optional**
 
 ### Local Storage Enhancements - **ALL Optional**
 
