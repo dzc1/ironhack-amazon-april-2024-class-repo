@@ -18,6 +18,39 @@
 
 [Zoom Video Link](https://ironhack.zoom.us/j/98932082308)
 
+### Class Recordings
+
+- **April 02 - Tuesday - [Link](https://ironhack.zoom.us/rec/share/r_Kq4hwwaxRqKeIh_CGQPfK-hGnFUVlXSZ75XMvjpoRheiEyKkhvQnudW4nIshsR.vhuNmFpYX_WNq3sR)**
+- **April 06 - Saturday - [Link 1](https://ironhack.zoom.us/rec/share/7no0rhhEi1nSLDZP_4lTDjYw_WgirvOILHUTXYdVDMnxj-_jIwJ5ILEJPtWw7Lbh.gBnK9YSKtcwat8hd)**
+- **April 06 - Saturday - [Link 2](https://ironhack.zoom.us/rec/share/-sVtFCQY9ZuW7CVaR4wzKLXmi44l3P6me3tVp-tKrut8figUBhge4Vof4Fhps5Y.BH2ZUP7yitdHgE5T)**
+- **April 09 - Tuesday - [Link](https://ironhack.zoom.us/rec/share/bSv4PMZflelzwaJEmz55dBuKOur4oa_tahMq8AMV0iZqair_FGM1gagIRGVJ96c0.RHb08Hx8JGaMOvdr)**
+- **April 13 - Saturday - [Link](https://ironhack.zoom.us/rec/share/ztVhBPNh5EmacEeYLWcdUkLX5FGA7MUgXZ09wzNBEn31bHAmD8roPuwkhpcAD3jt.7bTrwx2QCDE8HqBq)**
+- **April 16 - Tuesday - [Link](https://ironhack.zoom.us/rec/share/QdPptBTfryYfHXNxSqj7NmHgHTIVLljGbctVBOa2HDRvcNrZag6eZ-IMBuJ03q28.ysXMMOxHoyh-u_dg)**
+- **April 20 - Saturday - [Link](https://ironhack.zoom.us/rec/share/wePTNkNNJbD2cxaKG9GXxZntPIh84bYh9AYkoNqwByX4QMgazr_EhU-LY-WlkCOc.uXe8RRgxy4LVNf-U)**
+- **April 23 - Tuesday - [Link](https://ironhack.zoom.us/rec/share/PWbtXCIIO0UyT_XdkNmSzZJlhPSI2qChk40QDqXtaLeCOMYDkV4_qaWQVxJQz7xQ.o97ew4HCweeelaxj)**
+- **April 27 - Saturday - [Link](https://ironhack.zoom.us/rec/share/hbfweIEs2mwoPkcrRWkZ7-O81-37sLud5YMO9jr43TBF-UI_zI2rBv8Qp2PnA183.5p8ss5EqSBdg1yiy)**
+- **April 30 - Tuesday - [Link](https://ironhack.zoom.us/rec/share/kKbd0L5-c00Mt0aayeVAniw3u7s5PWgoDTqZdjmEK9KjIWW66XaKI28ct-67FeI4.LoChJj3u_W6-ysIp)**
+- **May 04 - Saturday - [Link](https://ironhack.zoom.us/rec/share/8dmsNktFF4RlEA83ZFAanjpD8vMGjKEVKi_tjAanjgM2q6MSk8mJJkVCNko1yIhh.uSqvrJ4-Y0JcHCOn)**
+- **May 07 - Tuesday - [Link](https://ironhack.zoom.us/rec/share/RSWzhIC0H_XARhIPaWt_sRelRti1G4hMXP_bXrp3hOADoOzzp4YdOLtZuy6BWoxo.nFZQWPpHCJqSrdz6)**
+- **May 11 - Saturday - [Link](https://ironhack.zoom.us/rec/share/m2fX2w_Xlr5DssrlsePkafb7dM5Dlyip3H_C01mFKow1QcyyfGg4KYMNlpPnHAAp.RnTyZSQpFzB-WNL7)**
+- **May 14 - Tuesday - [Link](https://ironhack.zoom.us/rec/share/5cfXQfHiqjlgYIc3gY2a4Lea3IEcn6-BR2EC0PZT89U-tiga_qk6XUocRw96ZaEF.r5NygyllcRIyNKLU)**
+- **May 18 - Saturday - No Recording**
+- **May 21 - Tuesday - Project Week**
+- **May 25 - Saturday - Project Week**
+- **May 28 - Tuesday - [Link](https://ironhack.zoom.us/rec/share/seCDl5r_77Os-t1qWV4hmFZb04SjEVP6EXQJCBQYn8oRR9YScechzsxGDNr2o-m8.X6Jwr_VNdK8I0PYD)**
+- **Jun 01 - Saturday - [Link](https://ironhack.zoom.us/rec/share/seCDl5r_77Os-t1qWV4hmFZb04SjEVP6EXQJCBQYn8oRR9YScechzsxGDNr2o-m8.X6Jwr_VNdK8I0PYD)**
+- **Jun 04 - Tuesday - [Link](https://ironhack.zoom.us/rec/share/4BY9e-LY9jDg_Dra9pr2fJ8w0-I5cEels5XlnWUgyZq2z1SSglyVtqsLAemAwPbq.a1KTkSBslq58igz2)**
+- **Jun 08 - Saturday - [Link](https://ironhack.zoom.us/rec/share/TYTEK4UhW6QX1W6SU0gtW6b_E2bSqSSvOittT2dqcb0xtoMt057iGb4fupNYow.JJ8O5ZiNzzi3RWQP)**
+- **Jun 11 - Tuesday - [Link](https://ironhack.zoom.us/rec/share/UXgZNujpvkyWSIOoByPToFrR6DVWbWDoPSknVBdDsUqHVx0dgXPeDNlHX2vUPFcR.KWDSSC2Xpx31fqeG)**
+- **Jun 18 - Tuesday - [Link](https://ironhack.zoom.us/rec/share/yKlvfSwVNGb2KwpoD3DOxjMRQdswRzKU3lHG6eo0T2iLrfJZtQJXK9HWdgHuO0-E.EpZqPvEdO0HI5uYA)**
+- **Jun 18 - Tuesday - [Link](https://ironhack.zoom.us/rec/share/DOleefVKiztHWk-Qt65RU6cCbysiRGvN1IfO1yWuklZzMpXg-2d5d_M6xqHZxt0x.gzG9IRCt75QWNk7-)**
+- **Jun 19 - Wednesday Class (Make-up for Jun-15 Saturday Class) - [Link](https://ironhack.zoom.us/rec/share/ROPHfKuaSQ49prwSuBLjFZkXIr5dMrnKBzEyOEqULOQYXI07rkyAv4QbJS53-iOo.bKjKiiX-wc0hhwOq)**
+- **Jun 20 - Thursday Class (Recording to make-up for Jun 21 Saturday Class) - [Link](https://ironhack.zoom.us/rec/share/efMBoUZFLGgX9z8oQ6HSvXab5tI7mRRofYbByHep0a175x-b5SH1KimJU75f6Rev.HDelyZCvTXFXfWZi)**
+- **Jun 25 - Tuesday - [Link](https://ironhack.zoom.us/rec/share/u-Bj67zggP1M2EIHdIookLJP__y2NePUJUmk81Z9zU1wUYa71p9IU7ozz6PjY-aI.bfInlIeO_Kgfh4cy)**
+- **Jun 29 - Saturday - [Link](https://ironhack.zoom.us/rec/share/MWNo3x0no8nOiatMRa-7Tlev-a-ifPL_R8PNU2U-A1Q9sSX97GTiu2RrOoC1rNCj.wgs-ZS2plFA9AuGX)**
+- **Jul 02 - Tuesday - [Link](https://ironhack.zoom.us/rec/share/7Y9rWAL52zRL-QcvUNe6kE0ciNLKNh3GgIBq-bJjr6ZRPIrACLwGQOCYClbDItU.t6U13E39WU1-omZ-)**
+- **Jul 09 - Saturday - [Link](https://ironhack.zoom.us/rec/share/SPB2np-2NtN75trLBjA1Ruvxcl0jyGDJumdNno3S1gx0ZTwhGvUcrKjQXoLzRozT.0eg5JYqfgw3CyXhL)**
+
 ## Folder Structure
 
 <details>
