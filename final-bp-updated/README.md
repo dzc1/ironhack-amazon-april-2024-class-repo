@@ -151,7 +151,7 @@ Here is a list of possible updates and enhancements that you can work on to impr
    - **Styling** Improve the overall styling using CSS or a framework like Tailwind CSS. **- Mandatory**
    - **CSS Grid/Flexbox**: Use CSS Grid or Flexbox to create a responsive layout. **- Mandatory**
    - **Variables**: Use CSS variables for consistent theming and easy updates. **- Mandatory**
-   - **Animations**: Add subtle animations for interactions like button clicks or page transitions. **- Mandatory**
+   - **Animations**: Add subtle animations for interactions like button clicks or page transitions. **- Optional**
    - **Hover Effects**: Add hover effects to buttons and links to improve interactivity. **- Mandatory**
    - **Fonts and Icons**: Integrate Google Fonts for custom typography and use a library like Font Awesome for icons. **- Mandatory**
 2. **Responsive Design**:
